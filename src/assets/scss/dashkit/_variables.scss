@@ -37,18 +37,18 @@ $gray-800-dark: #152E4D !default;
 $gray-900-dark: #132A46 !default;
 $black-dark: #12263F !default;
 
-$blue: #2C7BE5 !default;
+$blue: #2C7BE5 !default;    // was previous primary
 $indigo: #727cf5 !default; // NOT USED
 $purple: #6b5eae !default;
 $pink: #ff679b !default; // NOT USED
 $red: #E63757 !default;
 $orange: #fd7e14 !default; // NOT USED
 $yellow: #F6C343 !default;
-$green: #00D97E !default;
+$green: #36BC40 !default;
 $teal: #02a8b5 !default; // NOT USED
 $cyan: #39afd1 !default; // NOT USED
 
-$primary: $blue !default;
+$primary: $green !default;
 $secondary: $gray-700 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -161,6 +161,7 @@ $caret-width: .25em !default;
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: "SVN-Gotham", sans-serif !default;
 $font-family-base: $font-family-sans-serif !default;
+$font-family-serif: "SFU-Toledo", serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base: 0.9375rem !default; // 15px
@@ -368,10 +369,11 @@ $navbar-dark-active-color: $white !default;
 $navbar-dark-toggler-border-color: transparent !default;
 
 $navbar-light-color: $gray-700 !default;
-$navbar-light-hover-color: $black !default;
-$navbar-light-active-color: $black !default;
+$navbar-light-hover-color: $primary !default;
+$navbar-light-active-color: $primary !default;
 $navbar-light-toggler-border-color: transparent !default;
 
+$navbar-decor-space-y: 1.05rem !default;
 
 // Pagination
 
@@ -670,6 +672,7 @@ $modal-card-body-max-height: 350px !default;
 
 $nav-link-padding-y: .5rem !default;
 $nav-link-padding-x: 1rem !default;
+$override-navbar-nav-link-padding-x:         1.875rem !default;
 
 $nav-tabs-link-active-border-width: 1px !default;
 $nav-tabs-link-margin-x: .75rem !default; // Margin used for X so active underline matches width of label
@@ -708,7 +711,7 @@ $navbar-dark-divider-color: $gray-700-dark !default;
 $navbar-dark-brand-filter: none !default;
 
 $navbar-light-bg: $white !default;
-$navbar-light-border-color: $border-color !default;
+$navbar-light-border-color: rgba(#535353, .15) !default;
 $navbar-light-heading-color: $text-muted !default;
 $navbar-light-divider-color: $border-color !default;
 $navbar-light-brand-filter: none;

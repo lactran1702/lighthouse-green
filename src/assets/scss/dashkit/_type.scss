@@ -109,9 +109,9 @@ button {
   }
 }
 
-//
-// Dashkit =====================================
-//
+.serif {
+  font-family: $font-family-serif;
+}
 
 // Include SVN-Gotham
 
@@ -153,6 +153,8 @@ button {
   font-style: normal;
   font-display: swap;
 }
+
+// Include SFU-Toledo
 
 @font-face {
   font-family: "SFU-Toledo";

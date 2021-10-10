@@ -1,0 +1,221 @@
+<nav
+  class="navbar navbar-expand-lg @@if(navColor=='default'){navbar-light}@@if(navColor=='inverted' &&!demoMode){}@@if(navColor=='vibrant'){navbar-dark bg-vibrant}"
+  id="topnav">
+  <div class="container">
+
+    <!-- Toggler -->
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar"
+      aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Brand -->
+    <a class="navbar-brand mr-auto" href="@@webRoot/index.html">
+      <img src="@@webRoot/assets/img/logo.svg" alt="..." class="navbar-brand-img">
+    </a>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse mr-auto order-1" id="navbar">
+
+      <!-- Navigation -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link @@if(page=='index.html' || page=='login.html' || page=='register.html'){active}"
+            href="index.html" id="topnavDashboards" role="button">
+            Trang chủ
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle @@if(category=='product'){active}" href="#" id="topnavProduct"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sản phẩm
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="topnavProduct">
+            <li class="dropright">
+              <a class="dropdown-item dropdown-toggle @@if(subcategory=='profile'){active}" href="#" id="topnavProfile"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+              </a>
+              <div class="dropdown-menu" aria-labelledby="topnavProfile">
+                <a class="dropdown-item @@if(page=='profile-posts.html'){active}" href="@@webRoot/profile-posts.html">
+                  Posts
+                </a>
+                <a class="dropdown-item @@if(page=='profile-groups.html'){active}" href="@@webRoot/profile-groups.html">
+                  Groups
+                </a>
+                <a class="dropdown-item @@if(page=='profile-projects.html'){active}"
+                  href="@@webRoot/profile-projects.html">
+                  Projects
+                </a>
+                <a class="dropdown-item @@if(page=='profile-files.html'){active}" href="@@webRoot/profile-files.html">
+                  Files
+                </a>
+                <a class="dropdown-item @@if(page=='profile-subscribers.html'){active}"
+                  href="@@webRoot/profile-subscribers.html">
+                  Subscribers
+                </a>
+              </div>
+            </li>
+            <li class="dropright">
+              <a class="dropdown-item dropdown-toggle @@if(subcategory=='project'){active}" href="#" id="topnavProject"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Project
+              </a>
+              <div class="dropdown-menu" aria-labelledby="topnavProject">
+                <a class="dropdown-item @@if(page=='project-overview.html'){active}"
+                  href="@@webRoot/project-overview.html">
+                  Overview
+                </a>
+                <a class="dropdown-item @@if(page=='project-files.html'){active}" href="@@webRoot/project-files.html">
+                  Files
+                </a>
+                <a class="dropdown-item @@if(page=='project-reports.html'){active}"
+                  href="@@webRoot/project-reports.html">
+                  Reports
+                </a>
+                <a class="dropdown-item @@if(page=='project-new.html'){active}" href="@@webRoot/project-new.html">
+                  New project
+                </a>
+              </div>
+            </li>
+            <li class="dropright">
+              <a class="dropdown-item dropdown-toggle @@if(subcategory=='team'){active}" href="#" id="topnavTeam"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Team
+              </a>
+              <div class="dropdown-menu" aria-labelledby="topnavTeam">
+                <a class="dropdown-item @@if(page=='team-overview.html'){active}" href="@@webRoot/team-overview.html">
+                  Overview
+                </a>
+                <a class="dropdown-item @@if(page=='team-projects.html'){active}" href="@@webRoot/team-projects.html">
+                  Projects
+                </a>
+                <a class="dropdown-item @@if(page=='team-members.html'){active}" href="@@webRoot/team-members.html">
+                  Members
+                </a>
+                <a class="dropdown-item @@if(page=='team-new.html'){active}" href="team-new.html">
+                  New team
+                </a>
+              </div>
+            </li>
+            <li class="dropright">
+              <a class="dropdown-item dropdown-toggle @@if(subcategory=='feed'){active}" href="#" id="topnavFeed"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Feed
+              </a>
+              <div class="dropdown-menu" aria-labelledby="topnavFeed">
+                <a class="dropdown-item @@if(page=='feed.html'){active}" href="@@webRoot/feed.html">
+                  Platform
+                </a>
+                <a class="dropdown-item @@if(page=='social-feed.html'){active}" href="@@webRoot/social-feed.html">
+                  Social
+                </a>
+              </div>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='wizard.html'){active}" href="@@webRoot/wizard.html">
+                Wizard
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='kanban.html'){active}" href="@@webRoot/kanban.html">
+                Kanban
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='orders.html'){active}" href="@@webRoot/orders.html">
+                Orders
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='settings.html'){active}" href="@@webRoot/settings.html">
+                Settings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='invoice.html'){active}" href="@@webRoot/invoice.html">
+                Invoice
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='pricing.html'){active}" href="@@webRoot/pricing.html">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item @@if(page=='widgets.html'){active}" href="@@webRoot/widgets.html">
+                Widgets
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@if(page=='ve-chung-toi.html'){active}" href="ve-chung-toi.html" id="topnavAbout"
+            role="button">
+            Về chúng tôi
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link @@if(page=='tin-tuc-su-kien.html'){active}" href="tin-tuc-su-kien.html"
+            id="topnavDocumentation" role="button">
+            Tin tức sự kiện
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@if(page=='cong-dong.html'){active}" href="cong-dong.html" role="button">
+            Cộng đồng
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@if(page=='lien-he.html'){active}" href="lien-he.html" role="button">
+            Liên hệ
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- User -->
+    <div class="navbar-user order-3">
+
+      <!-- modal -->
+      <div class="mr-2 d-none d-lg-flex">
+
+        <!-- Toggle -->
+        <button href="#modalShoppingBag" class="navbar-user-link btn btn-rounded-circle " role="button"
+          data-toggle="modal" aria-haspopup="true" aria-expanded="false">
+          <!-- <span class="icon active">
+            <i class="fe fe-bell"></i>
+          </span> -->
+          <!-- <span class="icon "> -->
+          <img src="@@webRoot/assets/img/icons/bag.svg" alt="..." class="">
+          <!-- </span> -->
+          <!-- <span class="badge badge-light">9</span> -->
+        </button>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="dropdown ">
+
+        <!-- Toggle -->
+        <button href="#" class="btn btn-success btn-rounded-circle dropdown-toggle" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="icon">
+            <img src="@@webRoot/assets/img/icons/user.svg" alt="..." class="">
+          </span>
+        </button>
+
+        <!-- Menu -->
+        <div class="dropdown-menu dropdown-menu-right">
+          <a href="@@webRoot/profile-posts.html" class="dropdown-item">Profile</a>
+          <a href="@@webRoot/settings.html" class="dropdown-item">Settings</a>
+          <hr class="dropdown-divider">
+          <a href="@@webRoot/sign-in.html" class="dropdown-item">Logout</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div> <!-- / .container -->
+</nav>

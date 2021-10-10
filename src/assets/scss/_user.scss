@@ -1,4 +1,33 @@
-// 
+//
 // user.scss
 // Use this to write your custom SCSS
 //
+
+.banner-full {
+    // full screen without topnav
+
+    height: calc(100vh - #{$navbar-height});
+}
+.banner {
+    .cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.keen-slider-wrap {
+    
+    .keen-slider-nav {
+    }
+    .keen-slider {
+        z-index: 1;
+    }
+}
+.keen-slider-prev,
+.keen-slider-next {
+    &.disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+}
