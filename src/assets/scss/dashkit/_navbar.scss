@@ -3,7 +3,6 @@
 // Extended from Bootstrap
 //
 
-
 //
 // Bootstrap Overrides =======================
 //
@@ -11,164 +10,8 @@
 .navbar {
   border-width: 0 0 $border-width 0;
   border-style: solid;
+  height: $navbar-height;
 }
-
-
-// Navbar dark
-
-.navbar-dark {
-  background-color: $navbar-dark-bg;
-  border-color: $navbar-dark-border-color;
-}
-
-.navbar-dark .navbar-heading {
-  color: $navbar-dark-heading-color;
-}
-
-.navbar-dark .navbar-divider {
-  border-color: $navbar-dark-divider-color;
-}
-
-.navbar-dark .navbar-user {
-  border-top-color: $navbar-dark-divider-color;
-}
-
-.navbar-dark .navbar-user-link {
-  color: $navbar-dark-color;
-
-  @include hover-focus {
-    color: $navbar-dark-hover-color;
-  }
-}
-
-.navbar-dark .navbar-brand {
-  filter: $navbar-dark-brand-filter;
-}
-
-.navbar-dark .navbar-collapse::before {
-  border-top-color: $navbar-dark-divider-color;
-}
-
-.navbar-dark.navbar-expand {
-
-  @each $breakpoint, $value in $grid-breakpoints {
-    $prev: breakpoint-prev($breakpoint, $grid-breakpoints);
-
-    &-#{$breakpoint} {
-
-      @include media-breakpoint-down(#{$prev}) {
-
-        .navbar-nav .dropdown-item {
-          color: $navbar-dark-color;
-
-          @include hover-focus {
-            color: $navbar-dark-hover-color;
-          }
-        }
-
-        .navbar-nav .show > .nav-link,
-        .navbar-nav .dropdown-item.active,
-        .navbar-nav .dropdown-item:active {
-          color: $navbar-dark-active-color;
-        }
-      }
-    }
-  }
-}
-
-
-// Navbar vibrant
-
-.navbar-dark.navbar-vibrant {
-  background-image: linear-gradient(to bottom right, fade-out(#126FEB, .1), fade-out(#7203E1, .1)), url(#{$path-to-img}/covers/sidebar-cover.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center center, center center;
-  background-size: cover, cover;
-  background-origin: border-box;
-  border-color: $navbar-vibrant-border-color;
-
-  @include media-breakpoint-down(sm) {
-    background-attachment: fixed, fixed;
-  }
-}
-
-.navbar-dark.navbar-vibrant .nav-link {
-  color: $navbar-vibrant-color;
-
-  @include hover-focus {
-    color: $navbar-vibrant-hover-color;
-  }
-}
-
-.navbar-dark.navbar-vibrant .nav-item.active .nav-link,
-.navbar-dark.navbar-vibrant .nav-item .nav-link.active {
-  color: $navbar-vibrant-active-color;
-}
-
-.navbar-dark.navbar-vibrant .navbar-heading {
-  color: $navbar-vibrant-heading-color;
-}
-
-.navbar-dark.navbar-vibrant .navbar-divider {
-  border-color: $navbar-vibrant-divider-color;
-}
-
-.navbar-dark.navbar-vibrant .navbar-user {
-  border-top-color: $navbar-vibrant-divider-color;
-}
-
-.navbar-dark.navbar-vibrant .navbar-user-link {
-  color: $navbar-vibrant-color;
-
-  @include hover-focus {
-    color: $navbar-vibrant-hover-color;
-  }
-}
-
-.navbar-dark.navbar-vibrant .navbar-brand {
-  filter: $navbar-vibrant-brand-filter;
-}
-
-.navbar-dark.navbar-vibrant .navbar-collapse::before {
-  border-top-color: $navbar-vibrant-divider-color;
-}
-
-.navbar-dark.navbar-vibrant .navbar-nav .nav-link.active::before {
-  border-color: $white;
-}
-
-.navbar-dark.navbar-vibrant.navbar-expand {
-
-  @each $breakpoint, $value in $grid-breakpoints {
-    $prev: breakpoint-prev($breakpoint, $grid-breakpoints);
-
-    &-#{$breakpoint} {
-
-      @include media-breakpoint-down(#{$prev}) {
-
-        .navbar-nav .dropdown-item {
-          color: $navbar-vibrant-color;
-
-          @include hover-focus {
-            color: $navbar-vibrant-hover-color;
-          }
-        }
-
-        .navbar-nav .show > .nav-link,
-        .navbar-nav .dropdown-item.active,
-        .navbar-nav .dropdown-item:active {
-          color: $navbar-vibrant-active-color;
-        }
-
-      }
-    }
-  }
-}
-
-.navbar-dark.navbar-vibrant .navbar-toggler-icon {
-  background-image: $navbar-vibrant-toggler-icon-bg;
-}
-
 
 // Navbar light
 
@@ -199,12 +42,15 @@
 
 .navbar-light .navbar-brand {
   filter: $navbar-light-brand-filter;
-}
+} 
 
 .navbar-light .navbar-collapse::before {
   border-top-color: $navbar-light-divider-color;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+}
 
 // Navbar brand
 
@@ -215,9 +61,8 @@
 .navbar-brand-img,
 .navbar-brand > img {
   max-width: 100%;
-  max-height: 1.5rem;
+  max-height: 3.5rem;
 }
-
 
 // Navbar collapse
 
@@ -230,7 +75,7 @@
   // Spacer to replace margin / padding as those
   // cause .navbar-collapse to "jump" when collapsing
   &:before {
-    content: '';
+    content: "";
     display: block;
     border-top-width: $border-width;
     border-top-style: solid;
@@ -238,12 +83,12 @@
   }
 }
 
-
 // Navbar navigaton
 
 .navbar-nav {
   margin-left: -$navbar-padding-x;
   margin-right: -$navbar-padding-x;
+  font-weight: 700;
 }
 
 .navbar-nav .nav-link {
@@ -254,7 +99,7 @@
     position: relative;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: $nav-link-padding-y;
@@ -264,16 +109,14 @@
   }
 }
 
-
 // Navbar icons
 
 .navbar-nav .nav-link > .fe {
   min-width: $navbar-icon-min-width;
-  padding-bottom: .125em;
+  padding-bottom: 0.125em;
   font-size: $font-size-lg;
   line-height: ($font-size-base * $line-height-base);
 }
-
 
 // Navbar dropdowns
 
@@ -281,19 +124,20 @@
   border: none;
 }
 
+.navbar-nav .dropdown-item {
+  font-weight: 700;
+}
+
 .navbar-nav .dropdown-menu .dropdown-menu {
   margin-left: $dropdown-item-padding-x / 2;
 }
 
 .navbar-expand {
-
   @each $breakpoint, $value in $grid-breakpoints {
     $prev: breakpoint-prev($breakpoint, $grid-breakpoints);
 
     &-#{$breakpoint} {
-
       @include media-breakpoint-down(#{$prev}) {
-
         .navbar-nav .dropdown-menu {
           background-color: transparent;
         }
@@ -302,17 +146,13 @@
   }
 }
 
-
 // Expanded
-// 
+//
 // Expanded navbar specific styles
 
 .navbar-expand {
-
   @each $breakpoint, $value in $grid-breakpoints {
-
     &-#{$breakpoint} {
-
       @include media-breakpoint-up(#{$breakpoint}) {
         padding-left: 0;
         padding-right: 0;
@@ -336,31 +176,31 @@
         }
 
         .navbar-nav .nav-link {
-
           // Increase $nav-link-padding-y value to align the underline
           // with the bottom of the navbar
-          padding: .625rem $navbar-nav-link-padding-x;
+          padding: 0.625rem $override-navbar-nav-link-padding-x;
 
           &.active {
             position: relative;
 
             &:before {
               top: auto;
-              bottom: calc(-#{$navbar-padding-y} - #{$border-width});
-              right: $navbar-nav-link-padding-x;
-              left: $navbar-nav-link-padding-x;
+              bottom: calc(-#{$navbar-decor-space-y} - 3px);
+              right: $override-navbar-nav-link-padding-x;
+              left: $override-navbar-nav-link-padding-x;
               border-left: 0;
-              border-bottom: 1px solid $primary;
+              border-bottom: 3px solid $primary;
             }
           }
         }
 
         // Toggle dropdown on hover
         @if ($navbar-dropdown-toggle-on-hover) {
-          .dropup, .dropright, .dropdown, .dropleft {
-
+          .dropup,
+          .dropright,
+          .dropdown,
+          .dropleft {
             @include hover {
-
               > .dropdown-menu {
                 display: block;
               }
@@ -380,7 +220,6 @@
   }
 }
 
-
 //
 // Dashkit ===================================
 //
@@ -392,7 +231,6 @@
 .navbar[class*="fixed-"] {
   z-index: $zindex-fixed;
 }
-
 
 // Navbar overflow
 //
@@ -415,21 +253,19 @@
 .navbar-overflow .navbar-nav {
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-left: -$navbar-nav-link-padding-x;
-  margin-right: -$navbar-nav-link-padding-x;
+  margin-left: -$override-navbar-nav-link-padding-x;
+  margin-right: -$override-navbar-nav-link-padding-x;
 }
 
 .navbar-overflow .navbar-nav .nav-link {
   padding-bottom: ($nav-link-padding-y + $navbar-padding-y);
 
   &.active {
-
     &:before {
       bottom: 0;
     }
   }
 }
-
 
 // Navbar breadcrumb
 //
@@ -438,7 +274,6 @@
 .navbar-breadcrumb {
   padding: $navbar-breadcrumb-padding-y $navbar-breadcrumb-padding-x;
 }
-
 
 // Navbar user
 //
@@ -452,13 +287,11 @@
 }
 
 .navbar-user .dropdown-toggle {
-
   // Remove the default dropdown arrow
   &:after {
     display: none;
   }
 }
-
 
 // Navbar link icon
 
@@ -467,31 +300,27 @@
   min-width: $navbar-icon-min-width;
 }
 
-
 // Vertical
 //
 // Creates a vertically aligned version of the navbar
 
 .navbar-vertical {
-
   .navbar-nav .nav-link {
     display: flex;
     align-items: center;
   }
 
   .navbar-nav .nav-link[data-toggle="collapse"] {
-
     &:after {
       display: block;
-      content: '\e92e';
-      font-family: 'Feather';
+      content: "\e92e";
+      font-family: "Feather";
       margin-left: auto;
-      transition: transform .2s;
+      transition: transform 0.2s;
     }
 
     // Expanded
     &[aria-expanded="true"] {
-
       &:after {
         transform: rotate(-180deg);
       }
@@ -515,20 +344,16 @@
     padding-bottom: $nav-link-padding-y;
     font-size: $font-size-xs;
     text-transform: uppercase;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
   }
 
-
   // Expanded
-  // 
+  //
   // Expanded navbar specific styles
 
   &.navbar-expand {
-
     @each $breakpoint, $value in $grid-breakpoints {
-
       &-#{$breakpoint} {
-
         @include media-breakpoint-up(#{$breakpoint}) {
           display: block;
           position: fixed;
@@ -589,7 +414,6 @@
             padding: $nav-link-padding-y $navbar-vertical-padding-x;
 
             &.active {
-
               &:before {
                 top: $nav-link-padding-y;
                 bottom: $nav-link-padding-y;
@@ -645,23 +469,18 @@
   }
 }
 
-
 // Vertical small
 //
 // Creates a small vertion of the vertical navbar
 
 .navbar-vertical-sm {
-
   // Expanded
-  // 
+  //
   // Expanded navbar specific styles
 
   &.navbar-expand {
-
     @each $breakpoint, $value in $grid-breakpoints {
-
       &-#{$breakpoint} {
-
         @include media-breakpoint-up(#{$breakpoint}) {
           max-width: $navbar-vertical-width-sm;
           padding-left: $navbar-vertical-padding-x-sm;
@@ -698,7 +517,6 @@
           }
 
           .navbar-nav > .nav-item > .dropdown-toggle {
-
             &::after {
               display: none;
             }

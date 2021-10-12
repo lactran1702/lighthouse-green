@@ -1,4 +1,164 @@
-// 
+//
 // user.scss
 // Use this to write your custom SCSS
 //
+
+.banner-full {
+    // full screen without topnav
+
+    height: calc(100vh - #{$navbar-height});
+}
+.banner {
+    .cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.keen-slider-wrap {
+    .keen-slider-nav {
+    }
+    .keen-slider {
+        z-index: 1;
+    }
+}
+.keen-slider-prev,
+.keen-slider-next {
+    opacity: 1;
+    &.disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+
+    .btn {
+        line-height: inherit;
+    }
+
+    .icon-prev,
+    .icon-next {
+        width: 16px;
+        height: 16px;
+        line-height: inherit;
+        vertical-align: -2px;
+    }
+}
+
+.keen-slider-prev {
+    .icon-prev {
+        background-image: url("#{$path-to-img}/icons/prev.svg");
+    }
+}
+.keen-slider-next {
+    .icon-next {
+        background-image: url("#{$path-to-img}/icons/next.svg");
+    }
+}
+
+.keen-slider-dots {
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: -7.5px;
+
+    li {
+        opacity: 1;
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+        border-width: 0;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        transition: $transition-base;
+    }
+
+    .active {
+        width: 6rem;
+        background-color: $primary;
+        border-radius: 2rem;
+    }
+}
+
+.rounded-top-image {
+    overflow: hidden;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+}
+
+.img-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ratio-scale {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+.square-ratio {
+    &:before {
+        content: "";
+        padding-top: 100%;
+        display: block;
+    }
+
+    > .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+}
+
+.no-text-highlight {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.clickable {
+    pointer-events: all;
+}
+.click-through {
+    pointer-events: none;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border-radius {
+    border-radius: $border-radius;
+}
+.border-radius-xl {
+    border-radius: $border-radius-xl;
+}
+.border-radius-lg {
+    border-radius: $border-radius-lg;
+}
+.border-radius-sm {
+    border-radius: $border-radius-sm;
+}
+.border-radius-xs {
+    border-radius: $border-radius-xs;
+}
+
+ol.list-style-none, ul.list-style-none {
+    list-style: none;
+}
