@@ -27,7 +27,7 @@ $gray-400: #D2DDEC !default;
 $gray-500: #B1C2D9 !default;
 $gray-600: #95AAC9 !default;
 $gray-700: #6E84A3 !default;
-$gray-800: #3B506C !default;
+$gray-800: #535353 !default;
 $gray-900: #283E59 !default;
 $black: #12263F !default;
 
@@ -49,7 +49,7 @@ $teal: #02a8b5 !default; // NOT USED
 $cyan: #39afd1 !default; // NOT USED
 
 $primary: $green !default;
-$secondary: $gray-700 !default;
+$secondary: $gray-800 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -145,6 +145,7 @@ $border-width: 1px !default;
 $border-color: $gray-300 !default;
 
 $border-radius: 0.375rem !default;
+$border-radius-xl: 0.65rem !default;
 $border-radius-lg: 0.5rem !default;
 $border-radius-sm: 0.25rem !default;
 $border-radius-xs: .1875rem !default;

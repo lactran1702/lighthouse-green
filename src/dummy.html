@@ -26,14 +26,18 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content">
+    <div class="main-content pDummy">
 
-        @@if (navPosition == 'combo' || demoMode) {
-        @@include("partials/topbar.html")
-        }
-
+        dummy
     </div> <!-- / .main-content -->
 
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
     <!-- JAVASCRIPT
     ================================================== -->
     @@include("partials/scripts.html")
