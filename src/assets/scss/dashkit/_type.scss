@@ -94,7 +94,8 @@ h6.text-uppercase {
 // Bold, strong
 
 b,
-strong {
+strong,
+.text-bold {
   font-weight: $font-weight-bold;
 }
 

@@ -24,14 +24,14 @@
     }
     <!-- MAIN CONTENT
     ================================================== -->
-    <main class="main-content pHome">
+    <main class="main-content cuvre-sections cuvre-sections-last pHome bg-green-dark">
         <section class="banner banner-full">
             <div class="banner-slider keen-slider-wrap position-relative h-100">
                 <div id="bannerSlider" class="keen-slider h-100" data-ride="carousel">
 
                     <div class="keen-slider__slide active">
                         <div class="h-100 slide-content d-flex align-items-center">
-                            <div class="cover w-100 h-100 position-absolute"
+                            <div class="img-cover cover w-100 h-100 position-absolute"
                                 style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
 
                             <div class="container">
@@ -50,7 +50,7 @@
                     </div>
                     <div class="keen-slider__slide">
                         <div class="h-100 slide-content d-flex align-items-center">
-                            <div class="cover w-100 h-100 position-absolute"
+                            <div class="img-cover cover w-100 h-100 position-absolute"
                                 style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
 
                             <div class="container">
@@ -69,8 +69,9 @@
                     </div>
                     <div class="keen-slider__slide">
                         <div class="h-100 slide-content d-flex align-items-center">
-                            <div class="cover w-100 h-100 position-absolute"
-                                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
+                            <div class="img-cover cover w-100 h-100 position-absolute"
+                                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');">
+                            </div>
 
                             <div class="container">
                                 <div class="row">
@@ -112,13 +113,13 @@
 
         </section> <!-- / .banner.banner-full -->
 
-        <section class="intro-brand vh-100">
+        <section class="intro-brand vh-100 curve-top curve-bottom">
             <div class="h-100 d-flex align-items-center">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-xs-12 col-md-6">
                             <div class="copy">
-                                <span class="">Giới thiệu về</span>
+                                <span class="text-green-dark text-bold">Giới thiệu về</span>
                                 <h2 class="display-2 serif text-primary">Lighthouse Green</h2>
                                 <h3 class="head serif">Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo
                                     hóa.</h3>
@@ -151,6 +152,9 @@
 
         <section class="intro-product vh-100">
             <div class="h-100 d-flex align-items-center">
+                <div class="img-cover w-100 h-100 position-absolute"
+                    style="background-image: url('assets/img/demo/homepage-product-1.jpg');">
+                </div>
                 <div class="container">
                     <div class="row justify-content-end align-items-center">
                         <div class="col-xs-12 col-md-5">
@@ -173,7 +177,7 @@
             </div>
         </section> <!-- / .intro-product -->
 
-        <section class="news">
+        <section class="section-news news curve-top curve-bottom">
             <div class="container">
                 <h2 class="display-2 text-center serif text-primary title">Tin tức và sự kiện</h2>
                 <div class="news-wrap text-center">
@@ -266,9 +270,9 @@
     <!-- FOOTER
     ================================================== -->
     @@include("partials/footer.html", {
-        "category": "dashboards",
-        "subcategory": "",
-        "page": "index.html"
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
     })
 
     <!-- JAVASCRIPT
