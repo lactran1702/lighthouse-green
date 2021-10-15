@@ -1,0 +1,23 @@
+.pCommunity {
+    .banner {
+        .container {
+            flex: 0 0 40%;
+        }
+    } // section.banner
+
+    .cores {
+        padding-top: 3.8rem;
+        padding-bottom: 5rem;
+        
+        &::before {
+            width: 250vw;
+        }
+        .core-row {
+            margin-bottom: 3.8rem;
+        }
+        .core-img {
+            background-color: #c4c4c4;
+            max-width: 90%;
+        }
+    } // section.cores
+}
