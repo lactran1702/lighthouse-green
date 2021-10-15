@@ -2,113 +2,136 @@
 <html lang="en">
 
 <head>
-    @@include("partials/head.html", {
-    "title": "Dashkit"
-    })
+  @@include("partials/head.html", {
+  "title": "Dashkit"
+  })
 </head>
 
 <body>
 
-    <!-- NAVIGATION
+  <!-- NAVIGATION
     ================================================== -->
-    @@if (navPosition == 'topnav' || demoMode) {
-    @@include("partials/topnav.html", {
-    "category": "page",
-    "subcategory": "",
-    "page": "login.html"
-    })
-    }
-    <!-- CONTENT
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "page",
+  "subcategory": "",
+  "page": "login.html"
+  })
+  }
+  <!-- CONTENT
     ================================================== -->
-    <div class="main-content d-flex align-items-center bg-auth border-top border-top-2 border-primary">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pLogin">
+    <section class="login curve-bottom bg-white">
+      <div class="d-flex align-items-center">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-5 col-xl-4 my-5">
+          <div class="row justify-content-center my-5">
+            <div class="col-12 ">
+              <!-- Heading -->
+              <h1 class="display-1 text-center serif text-primary text-nowrap heading">
+                Đăng nhập tài khoản
+              </h1>
 
-                    <!-- Heading -->
-                    <h1 class="display-4 text-center mb-3 serif">
-                        Đăng nhập tài khoản
-                    </h1>
+            </div>
+            <div class="col-12 col-md-5 col-xl-4 ">
+              <!-- Form -->
+              <form>
+                <!-- Email address -->
+                <div class="form-group">
 
-                    <!-- Subheading -->
-                    <p class="text-muted text-center mb-5">
-                        Free access to our dashboard.
-                    </p>
-
-                    <!-- Form -->
-                    <form>
-
-                        <!-- Email address -->
-                        <div class="form-group">
-
-                            <!-- Label -->
-                            <label>Email Address</label>
-
-                            <!-- Input -->
-                            <input type="email" class="form-control" placeholder="name@address.com">
-
-                        </div>
-
-                        <!-- Password -->
-                        <div class="form-group">
-
-                            <div class="row">
-                                <div class="col">
-
-                                    <!-- Label -->
-                                    <label>Password</label>
-
-                                </div>
-                                <div class="col-auto">
-
-                                    <!-- Help text -->
-                                    <a href="password-reset.html" class="form-text small text-muted">
-                                        Forgot password?
-                                    </a>
-
-                                </div>
-                            </div> <!-- / .row -->
-
-                            <!-- Input group -->
-                            <div class="input-group input-group-merge">
-
-                                <!-- Input -->
-                                <input type="password" class="form-control form-control-appended"
-                                    placeholder="Enter your password">
-
-                                <!-- Icon -->
-                                <div class="input-group-append">
-                                    <span class="input-group-text">
-                                        <i class="fe fe-eye"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- Submit -->
-                        <button class="btn btn-lg btn-block btn-primary mb-3">
-                            Sign in
-                        </button>
-
-                        <!-- Link -->
-                        <div class="text-center">
-                            <small class="text-muted text-center">
-                                Don't have an account yet? <a href="sign-up.html">Sign up</a>.
-                            </small>
-                        </div>
-
-                    </form>
+                  <!-- Input -->
+                  <input type="email" class="form-control form-control-rounded form-control-lg"
+                    placeholder="Địa chỉ email *">
 
                 </div>
-            </div> <!-- / .row -->
+
+                <!-- Password -->
+                <div class="form-group">
+                  <!-- Input -->
+                  <input type="password" class="form-control form-control-rounded form-control-lg "
+                    placeholder="Mật khẩu">
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-5">
+                    <!-- Submit -->
+                    <button class="btn btn-lg btn-primary rounded-pill ">
+                      Đăng nhập
+                    </button>
+                  </div>
+
+                  <div class="col-5">
+
+                    <!-- Help text -->
+                    <a href="password-reset.html" class="form-text small text-muted">
+                      Quên mật khẩu?
+                    </a>
+
+                  </div>
+                </div>
+
+
+              </form>
+
+            </div>
+
+
+          </div> <!-- / .row -->
+          <div class="row justify-content-center my-5">
+
+            <div class="col-12 col-md-8 col-xl-7 text-center">
+
+              <div class="d-flex flex-nowrap align-items-end cross">
+                <hr>
+                <h5 class="font-weight-light text-secondary">Đăng nhập bằng các tài khoản khác</h5>
+                <hr>
+
+              </div>
+
+              <div class="row button-group">
+                <div class="col-12 col-md-6">
+                  <button class="btn btn-lg btn-primary rounded-pill w-100">
+                    <span class="icon middle-icon ">
+                      <img src="@@webRoot/assets/img/icons/facebook-white.svg" alt="..." class="">
+                    </span>
+                    <span class="ml-2">Đăng nhập bằng Facebook</span>
+                  </button>
+                </div>
+                <div class="col-12 col-md-6">
+                  <button class="btn btn-lg btn-primary rounded-pill w-100">
+                    <span class="icon middle-icon ">
+                      <img src="@@webRoot/assets/img/icons/google.svg" alt="..." class="">
+                    </span>
+                    <span class="ml-2">Đăng nhập bằng Google</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Link -->
+              <div class="text-center">
+                <small class="text-muted text-center">
+                  Chưa có tài khoản ? <a href="register.html">Đăng ký ngay</a>.
+                </small>
+              </div>
+
+            </div>
+          </div>
         </div> <!-- / .container -->
-    </div> <!-- / .main-content -->
+      </div>
 
+    </section>
+  </main> <!-- / .main-content -->
 
-    <!-- JAVASCRIPT
+  <!-- FOOTER
     ================================================== -->
-    @@include("partials/scripts.html")
+  @@include("partials/footer.html", {
+  "category": "page",
+  "subcategory": "",
+  "page": "login.html"
+  })
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
 
 </body>
 

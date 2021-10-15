@@ -1,0 +1,25 @@
+.pContact {
+  .contact {
+    .title {
+    }
+
+    .location-results {
+      position: absolute;
+      right: 0;
+    }
+  }
+  .curve-fig {
+    overflow: hidden;
+  }
+}
+.map-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  z-index: 0;
+}
+#location--map {
+  height: 105%;
+}
