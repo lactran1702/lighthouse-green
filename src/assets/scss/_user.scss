@@ -45,15 +45,15 @@
     }
 }
 
-.keen-slider-prev {
-    .icon-prev {
-        background-image: url("#{$path-to-img}/icons/prev.svg");
-    }
+.icon-prev {
+    background-image: url("#{$path-to-img}/icons/prev.svg");
 }
-.keen-slider-next {
-    .icon-next {
-        background-image: url("#{$path-to-img}/icons/next.svg");
-    }
+.icon-next {
+    background-image: url("#{$path-to-img}/icons/next.svg");
+}
+
+.icon-sm {
+    width: 20%;
 }
 
 .keen-slider-dots {
@@ -243,23 +243,90 @@ main.cuvre-sections-last {
 
 .curve-fig {
     position: absolute;
-    top: -$curves-height;
-    bottom: -$curves-height;
     left: 50%;
     width: 200vw;
+    top: 0;
+    bottom: 0;
     transform: translateX(-50%);
     background-size: auto 100%;
     background-position: center;
 }
 
 .curve-fig-top {
+    top: -$curves-height;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    
 }
 .curve-fig-bottom {
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
+    bottom: -$curves-height;
+}
+
+.curve-fig-bottom-right {
+    width: 150vw;
+    transform: none;
+    border-bottom-right-radius: 100%;
+    bottom: -$curves-height;
+    background-position: center left;
+}
+
+.site-pagination {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn-group {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+// remove arrows/spinners from input
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.btn-group-toggle .btn-check:checked + label,
+.btn-group-toggle label:not(:disabled):not(.disabled).active,
+.btn-group-toggle label:not(:disabled):not(.disabled):active {
+    background-color: $green-dark;
+    border-color: $green-dark;
+    box-shadow: none;
+    color: $white;
+}
+
+.count-input {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    > * {
+        display: inline-block;
+    }
+
+    span {
+        flex: 1 0 27%;
+    }
+
+    input.input {
+        flex: 1 0 46%;
+        padding: 0;
+        border: 0 none;
+        text-align: center;
+    }
 }
 
 //  COMMON SECTIONS
@@ -292,6 +359,39 @@ main.cuvre-sections-last {
         }
     }
 }
+.news-item {
+    position: relative;
+    transition: $transition-base;
+
+    &:hover {
+        background-color: $lighter;
+
+        .news-fig .img {
+            transform: scale(1.1);
+        }
+        .news-title {
+            color: $link-hover-color;
+        }
+    }
+
+    .news-fig {
+        overflow: hidden;
+
+        .img {
+            transition: $transition-base;
+        }
+    }
+    .news-title {
+        transition: $transition-base;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 .section-technology {
     .title {
@@ -311,3 +411,55 @@ main.cuvre-sections-last {
     }
 }
 // COMMON SECTIONS
+
+// fixed quick-buy
+.quick-buy {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    z-index: 10;
+
+    .list {
+        margin: 0;
+    }
+    .item {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 100px;
+        border-bottom: 1px solid $border-color;
+
+        > * {
+            display: inline-block;
+        }
+    }
+    .name {
+        flex: 0 0 15%;
+    }
+    h4 {
+        margin-left: 20px;
+    }
+    .input-group {
+        width: auto;
+    }
+}
+
+.buy-form {
+    .count-input {
+        border-color: $border-color;
+    }
+    .group-norm {
+        label {
+            margin-right: 0.9rem;
+        }
+    }
+    .group-large {
+        .btn {
+            height: 3.75rem;
+        }
+    }
+}
