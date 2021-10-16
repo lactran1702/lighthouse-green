@@ -18,6 +18,24 @@
     border-radius: 20px;
   }
 }
+
+// override
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    & > .container,
+    & > .container-fluid,
+    & > .container-sm,
+    & > .container-md,
+    & > .container-lg,
+    & > .container-xl {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+}
+// override
+
 .banner-full {
   // full screen without topnav
 
@@ -317,6 +335,20 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type="radio"]:checked:after {
+  content: "";
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: $primary;
+  visibility: visible;
+  border: 2px solid $primary;
 }
 
 .btn-check {

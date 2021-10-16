@@ -11826,6 +11826,20 @@ button:focus {
     background: #36BC40;
     border-radius: 20px; }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid,
+  .navbar-expand-lg > .container-sm,
+  .navbar-expand-lg > .container-md,
+  .navbar-expand-lg > .container-lg,
+  .navbar-expand-lg > .container-xl,
+  .navbar-expand-lg > .container-sm,
+  .navbar-expand-lg > .container-md,
+  .navbar-expand-lg > .container-lg,
+  .navbar-expand-lg > .container-xl {
+    padding-right: 12px;
+    padding-left: 12px; } }
+
 .banner-full {
   height: calc(100vh - 80px); }
 
@@ -12083,6 +12097,19 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+input[type="radio"]:checked:after {
+  content: "";
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: #36BC40;
+  visibility: visible;
+  border: 2px solid #36BC40; }
 
 .btn-check {
   position: absolute;
@@ -12678,3 +12705,70 @@ footer {
   margin-bottom: 0.9rem; }
   .pShoppingBag .cart-wrap hr:first-of-type {
     margin-top: 1.25rem; }
+
+.pAccount {
+  position: relative; }
+  .pAccount .account {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: stretch;
+    flex-direction: column; }
+    .pAccount .account > .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+      .pAccount .account > .container > .row {
+        flex: 1; }
+  .pAccount .have-address {
+    padding: 0 0.75rem; }
+    .pAccount .have-address .list-group-item {
+      padding: 1.25rem 1.8rem;
+      border-radius: 0.65rem;
+      margin-bottom: 0.9rem; }
+      .pAccount .have-address .list-group-item.default {
+        border-color: transparent; }
+        .pAccount .have-address .list-group-item.default .default-btn {
+          display: none; }
+      .pAccount .have-address .list-group-item:last-of-type {
+        margin-bottom: 1.9rem; }
+  .pAccount .add-address {
+    padding: 0 0.75rem; }
+    .pAccount .add-address .border {
+      padding: 1.5rem 1.9rem 2.5rem;
+      margin: 0 0 1.9rem; }
+    .pAccount .add-address .head {
+      margin-bottom: 1.7rem; }
+  .pAccount .history thead th {
+    background-color: transparent; }
+    .pAccount .history thead th:first-of-type {
+      border-top-left-radius: 0.65rem;
+      border-bottom-left-radius: 0.65rem; }
+    .pAccount .history thead th:last-of-type {
+      border-top-right-radius: 0.65rem;
+      border-bottom-right-radius: 0.65rem; }
+  .pAccount .history tbody {
+    border: 1px solid transparent;
+    border-radius: 0.65rem;
+    box-shadow: 1px 2px rgba(83, 83, 83, 0.15), -1px -1px rgba(83, 83, 83, 0.15); }
+    .pAccount .history tbody:before {
+      content: "@";
+      display: block;
+      line-height: 20px;
+      text-indent: -99999px; }
+  .pAccount .input-radio {
+    margin: 0 1.25rem 0 0.75rem; }
+  .pAccount .curve-fig {
+    transform: none; }
+  .pAccount .navbar {
+    position: absolute;
+    max-width: 500px;
+    height: calc(100% + 8vh);
+    background-color: transparent; }
+  .pAccount .right {
+    padding-top: 3.3rem;
+    padding-bottom: 3.75rem; }
+  .pAccount .pane > .border {
+    padding: 1.5rem 1.5rem 2.5rem;
+    margin: 0 0.75rem; }
+  .pAccount .order-tabs {
+    margin-bottom: 2.2rem; }
