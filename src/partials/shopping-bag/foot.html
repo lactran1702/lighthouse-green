@@ -1,0 +1,36 @@
+<div class="shopping-bag-foot">
+
+  <ul class="nav">
+    <li class="item active">
+      <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepOne">
+        <span>1</span>
+      </button>
+      <span class="name">
+        Giỏ hàng
+      </span>
+    </li>
+    <li class="space">
+      <hr>
+    </li>
+    <li class="item @@if(active>1){active}">
+      <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepTwo">
+        <span>2</span>
+      </button>
+      <span class="name">
+        Thông tin đặt hàng
+      </span>
+    </li>
+    <li class="space">
+      <hr>
+    </li>
+    <li class="item @@if(active>2){active}">
+      <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepThree">
+        <span>3</span>
+      </button>
+      <span class="name">
+        Thanh toán
+      </span>
+    </li>
+  </ul>
+
+</div>

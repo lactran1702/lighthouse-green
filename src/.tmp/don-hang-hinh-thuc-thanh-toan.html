@@ -24,7 +24,7 @@
   <!-- endbuild -->
    
   <!-- Title -->
-  <title>CONTACT</title>
+  <title>PAYMENT</title>
 </head>
 
 <body>
@@ -222,7 +222,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="lien-he.html" role="button">
+            <a class="nav-link " href="lien-he.html" role="button">
               Liên hệ
             </a>
           </li>
@@ -278,88 +278,191 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pContact">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag">
 
-    <section class="contact banner-full curve-bottom bg-white">
+    <section class="curve-bottom bg-white ">
+      <form action="">
 
-      <div class="h-100 d-flex align-items-center">
-        <div class="curve-fig curve-fig-bottom-left img-cover ">
-          <!-- style="background-image: url('assets/img/demo/product-intro-1.jpg');"
-          > -->
-
-          <div class="map-wrap">
-            <div id="location--map">
-
-            </div>
-          </div>
-
-
-          <ul class="location-results d-none">
-            <li class="coordinates">
-              <div class="coordinates--label">
-                Light house Green
-              </div>
-              <div class="coordinates--address">
-                <span class="value">
-                  106 Đường Số 13, Ấp Hàng Gòn, Xã Hàng Gòn, Thành Phố Long Khánh, Tỉnh Đồng Nai, Việt Nam
-                </span>
-                <span class="icon icon-location">
-                  <img src="assets/img/icons/icon-location.png" alt="icon-location">
-                </span>
-                <span class="lat">10.870990</span> <!-- TEST: unreal coordinates -->
-                <span class="long">107.225970</span>
-              </div>
-
-            </li>
-          </ul>
-
-        </div>
         <div class="container">
-          <div class="row justify-content-end">
-            <div class="col-12 col-md-5">
-              <h2 class="display-1 text-primary serif title">Liên hệ với chúng tôi</h2>
-              <p class="text-secondary mb-4">
-                Nếu bạn có bất cứ câu hỏi nào, hãy liên hệ với chúng tôi
-              </p>
-              <form class="contact-form">
 
-                <div class="form-group ">
-                  <label for="inputcontactdepartment" class="w-100 mb-0">
-                    <select class="form-select mb-3 form-control form-control-rounded" data-toggle="select"
-                      data-options='{"placeholder": "Gửi cho bộ phận"}' id="inputcontactdepartment">
-                      <option></option>
-                      <option value="1">My first option</option>
-                      <option value="2">Another option</option>
-                      <option value="3">Third option is here</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactname"
-                    placeholder="Họ và tên">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-rounded" id="inputcontactemail"
-                    placeholder="Địa chỉ email *">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control form-control-rounded" id="inputcontactphone"
-                    placeholder="Số điện thoại *">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactmessage"
-                    placeholder="Tin nhắn">
+          <!-- THIRD STEP -->
+          <div class="pane payment" id="orderStepThree">
+            <!-- Heading -->
+            <h2 class="display-1 serif text-primary heading">
+              Hình thức thanh toán
+            </h2>
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-7 payment-wrap">
+
+                <div class="list-group list-group-flush input-group btn-group-toggle">
+
+                  <div class="list-group-item border rounded-pill">
+                    <div class="row align-items-start">
+                      <div class="col-auto position-static">
+                        <input type="radio" class="btn-checkk" name="inputpayment" id="option1" autocomplete="off"
+                          checked="">
+                        <label class="payment-radio overlay" for="option1"></label>
+                      </div>
+                      <div class="col ">
+                        <h4 class="text-bold">Thanh toán tiền mặt khi nhận hàng</h4>
+                      </div>
+                    </div>
+                  </div> <!-- .list-group-item border -->
+
+                  <div class="list-group-item border rounded-pill">
+                    <div class="row align-items-start">
+                      <div class="col-auto position-static">
+                        <input type="radio" class="btn-checkk" name="inputpayment" id="option2" autocomplete="off">
+                        <label class="payment-radio overlay" for="option2"></label>
+                      </div>
+                      <div class="col ">
+                        <h4 class="text-bold">Thanh toán qua VTC Pay (Thẻ Tín dụng/ Ghi nợ/ ATM)</h4>
+                      </div>
+                    </div>
+                  </div> <!-- .list-group-item border -->
+
+                  <div class="list-group-item border rounded-pill">
+                    <div class="row align-items-start">
+                      <div class="col-auto position-static">
+                        <input type="radio" class="btn-checkk" name="inputpayment" id="option3" autocomplete="off">
+                        <label class="payment-radio overlay" for="option3"></label>
+                      </div>
+                      <div class="col ">
+                        <h4 class="text-bold">Thanh toán qua Momo</h4>
+                      </div>
+                    </div>
+                  </div> <!-- .list-group-item border -->
                 </div>
 
-                <!-- Button -->
-                <button type="submit" class="btn btn-primary rounded-pill">Gửi tin nhắn</button>
-              </form>
+              </div>
+
+              <div class="col-12 col-md-4 cart-wrap">
+                <div class="cart border border-radius-xl">
+                  <h4 class="text-green-dark text-bold mb-3">Giỏ hàng</h4>
+                  <div class="shopping-bag">
+                    <div class="list-group list-group-flush list">
+
+                      <div class="list-group-item">
+                        <div class="product-fig">
+                          <div class="img img-cover border-radius-xl"
+                            style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                            <canvas width="120" height="120" class="ratio-scale"></canvas>
+                          </div>
+                        </div>
+                        <div class="product-content text-left">
+                          <a href="san-pham-chi-tiet.html" class="">
+                            <h4 class="text-green-dark ">Nấm mối đen</h4>
+                            <h5 class="text-secondary text-body">
+                              Loại khối lượng: 02 kg
+                            </h5>
+                          </a>
+                          <div class="product-price d-flex align-items-center">
+                            <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                          </div>
+                        </div>
+                      </div> <!-- .list-group-item -->
+
+                      <div class="list-group-item">
+                        <div class="product-fig">
+                          <div class="img img-cover border-radius-xl"
+                            style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                            <canvas width="120" height="120" class="ratio-scale"></canvas>
+                          </div>
+                        </div>
+                        <div class="product-content text-left">
+                          <a href="san-pham-chi-tiet.html" class="">
+                            <h4 class="text-green-dark ">Nấm mối đen</h4>
+                            <h5 class="text-secondary text-body">
+                              Loại khối lượng: 02 kg
+                            </h5>
+                          </a>
+                          <div class="product-price d-flex align-items-center">
+                            <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                          </div>
+                        </div>
+                      </div> <!-- .list-group-item -->
+                    </div>
+                  </div>
+
+                  <hr>
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Thành tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>1.000.000đ</span>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Khuyến mại</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>- 200.000đ</span>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row justify-content-between all">
+                    <div class="col-auto">
+                      <span>Tổng số tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-bold text-primary">800.000đ</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill w-100">Hoàn tất đặt hàng</a>
+
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> <!-- .pane.payment -->
+          
+          <div class="row justify-content-center nav-foot">
+            <div class="col-12 col-md-6">
+              <div class="shopping-bag-foot">
 
-    </section> <!-- / .contact -->
+                <ul class="nav">
+                  <li class="item active">
+                    <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepOne">
+                      <span>1</span>
+                    </button>
+                    <span class="name">
+                      Giỏ hàng
+                    </span>
+                  </li>
+                  <li class="space">
+                    <hr>
+                  </li>
+                  <li class="item active">
+                    <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepTwo">
+                      <span>2</span>
+                    </button>
+                    <span class="name">
+                      Thông tin đặt hàng
+                    </span>
+                  </li>
+                  <li class="space">
+                    <hr>
+                  </li>
+                  <li class="item active">
+                    <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepThree">
+                      <span>3</span>
+                    </button>
+                    <span class="name">
+                      Thanh toán
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div> <!-- / .nav-foot -->
+        </div> <!-- / .container -->
+
+      </form>
+    </section> <!-- / .bag -->
+
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -495,9 +598,7 @@
   <!-- endbuild -->
 
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script src="./assets/js/leaflet.js"></script>
-  <script src="./assets/js/pages/pContact.js"></script>
-
+  <script src="./assets/js/pages/pShoppingBag.js"></script>
 </body>
 
 </html>

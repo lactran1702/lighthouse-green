@@ -409,13 +409,13 @@ input::-webkit-inner-spin-button {
   .news-title {
     transition: $transition-base;
   }
-  .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .section-technology {
@@ -494,13 +494,27 @@ input::-webkit-inner-spin-button {
   .modal-body {
     padding: 3.75rem 3.4rem 1rem;
   }
+
+  &.shopping-bag {
+    hr {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .total {
+      margin-bottom: 2rem;
+    }
+    .product-price {
+      align-self: center;
+    }
+
+    .list-group {
+      max-height: 300px;
+      overflow-y: scroll;
+      padding-right: 3rem;
+    }
+  }
 }
 .shopping-bag {
-  .list-group {
-    max-height: 300px;
-    overflow-y: scroll;
-    padding-right: 3rem;
-  }
   .list-group-item {
     display: flex;
     flex-wrap: nowrap;
@@ -523,17 +537,9 @@ input::-webkit-inner-spin-button {
   }
   .product-price {
     flex: 0 0 19%;
-    align-self: center;
   }
   .count-input {
     width: auto;
-  }
-  hr {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .total {
-    margin-bottom: 2rem;
   }
 }
 #modalShoppingBag {

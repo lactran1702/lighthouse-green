@@ -24,7 +24,7 @@
   <!-- endbuild -->
    
   <!-- Title -->
-  <title>CONTACT</title>
+  <title>HAVE_ADDRESS</title>
 </head>
 
 <body>
@@ -222,7 +222,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="lien-he.html" role="button">
+            <a class="nav-link " href="lien-he.html" role="button">
               Liên hệ
             </a>
           </li>
@@ -278,88 +278,226 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pContact">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag">
 
-    <section class="contact banner-full curve-bottom bg-white">
+    <section class="curve-bottom bg-white ">
+      <div class="container">
 
-      <div class="h-100 d-flex align-items-center">
-        <div class="curve-fig curve-fig-bottom-left img-cover ">
-          <!-- style="background-image: url('assets/img/demo/product-intro-1.jpg');"
-          > -->
+        <!-- SECOND STEP -->
+        <div class="pane address add-address" id="orderStepTwo">
+          <!-- Heading -->
+          <h2 class="display-1 serif text-primary heading">
+            Thông tin đặt hàng
+          </h2>
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-7 address-wrap">
+              <div class="border border-radius-xl">
+                <h4 class="text-green-dark text-bold head">Thêm địa chỉ nhận hàng</h4>
+                <form action="">
 
-          <div class="map-wrap">
-            <div id="location--map">
+                  <div class="row justify-content-between">
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Họ và tên</label>
+                        <input type="text" class="form-control form-control-rounded" id="" placeholder="Nhập họ và tên">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Số điện thoại</label>
+                        <input type="number" class="form-control form-control-rounded" id=""
+                          placeholder="Nhập số điện thoại">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Email</label>
+                        <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputcity" class="text-secondary text-bold ">Tỉnh/Thành phố </label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Tỉnh/Thành phố"}' id="inputcity">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="inputdistrict" class="text-secondary text-bold ">Quận/Huyện</label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Quận/Huyện"}' id="inputdistrict">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="inputward" class="text-secondary text-bold ">Phường/Xã</label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Phường/Xã phố"}' id="inputward">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Địa chỉ</label>
+                        <!-- <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email"> -->
+                        <textarea class="form-control border-radius-xl" data-autosize id="" rows="5"
+                          placeholder="Toà nhà, Số nhà, Tên đường..."></textarea>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+
+              <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
+
+            </div>
+
+            <div class="col-12 col-md-4 cart-wrap">
+              <div class="cart border border-radius-xl">
+                <h4 class="text-green-dark text-bold mb-3">Giỏ hàng</h4>
+                <div class="shopping-bag">
+                  <div class="list-group list-group-flush list">
+
+                    <div class="list-group-item">
+                      <div class="product-fig">
+                        <div class="img img-cover border-radius-xl"
+                          style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                          <canvas width="120" height="120" class="ratio-scale"></canvas>
+                        </div>
+                      </div>
+                      <div class="product-content text-left">
+                        <a href="san-pham-chi-tiet.html" class="">
+                          <h4 class="text-green-dark ">Nấm mối đen</h4>
+                          <h5 class="text-secondary text-body">
+                            Loại khối lượng: 02 kg
+                          </h5>
+                        </a>
+                        <div class="product-price d-flex align-items-center">
+                          <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                        </div>
+                      </div>
+                    </div> <!-- .list-group-item -->
+
+                    <div class="list-group-item">
+                      <div class="product-fig">
+                        <div class="img img-cover border-radius-xl"
+                          style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                          <canvas width="120" height="120" class="ratio-scale"></canvas>
+                        </div>
+                      </div>
+                      <div class="product-content text-left">
+                        <a href="san-pham-chi-tiet.html" class="">
+                          <h4 class="text-green-dark ">Nấm mối đen</h4>
+                          <h5 class="text-secondary text-body">
+                            Loại khối lượng: 02 kg
+                          </h5>
+                        </a>
+                        <div class="product-price d-flex align-items-center">
+                          <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                        </div>
+                      </div>
+                    </div> <!-- .list-group-item -->
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row justify-content-between">
+                  <div class="col-auto">
+                    <span>Thành tiền</span>
+                  </div>
+                  <div class="col-auto">
+                    <span>1.000.000đ</span>
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-auto">
+                    <span>Khuyến mại</span>
+                  </div>
+                  <div class="col-auto">
+                    <span>- 200.000đ</span>
+                  </div>
+                </div>
+                <hr>
+                <div class="row justify-content-between all">
+                  <div class="col-auto">
+                    <span>Tổng số tiền</span>
+                  </div>
+                  <div class="col-auto">
+                    <span class="text-bold text-primary">800.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center nav-foot">
+          <div class="col-12 col-md-6">
+            <div class="shopping-bag-foot">
+
+              <ul class="nav">
+                <li class="item active">
+                  <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepOne">
+                    <span>1</span>
+                  </button>
+                  <span class="name">
+                    Giỏ hàng
+                  </span>
+                </li>
+                <li class="space">
+                  <hr>
+                </li>
+                <li class="item active">
+                  <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepTwo">
+                    <span>2</span>
+                  </button>
+                  <span class="name">
+                    Thông tin đặt hàng
+                  </span>
+                </li>
+                <li class="space">
+                  <hr>
+                </li>
+                <li class="item ">
+                  <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepThree">
+                    <span>3</span>
+                  </button>
+                  <span class="name">
+                    Thanh toán
+                  </span>
+                </li>
+              </ul>
 
             </div>
           </div>
+        </div> <!-- / .nav-foot -->
+      </div> <!-- / .container -->
+    </section> <!-- / .bag -->
 
-
-          <ul class="location-results d-none">
-            <li class="coordinates">
-              <div class="coordinates--label">
-                Light house Green
-              </div>
-              <div class="coordinates--address">
-                <span class="value">
-                  106 Đường Số 13, Ấp Hàng Gòn, Xã Hàng Gòn, Thành Phố Long Khánh, Tỉnh Đồng Nai, Việt Nam
-                </span>
-                <span class="icon icon-location">
-                  <img src="assets/img/icons/icon-location.png" alt="icon-location">
-                </span>
-                <span class="lat">10.870990</span> <!-- TEST: unreal coordinates -->
-                <span class="long">107.225970</span>
-              </div>
-
-            </li>
-          </ul>
-
-        </div>
-        <div class="container">
-          <div class="row justify-content-end">
-            <div class="col-12 col-md-5">
-              <h2 class="display-1 text-primary serif title">Liên hệ với chúng tôi</h2>
-              <p class="text-secondary mb-4">
-                Nếu bạn có bất cứ câu hỏi nào, hãy liên hệ với chúng tôi
-              </p>
-              <form class="contact-form">
-
-                <div class="form-group ">
-                  <label for="inputcontactdepartment" class="w-100 mb-0">
-                    <select class="form-select mb-3 form-control form-control-rounded" data-toggle="select"
-                      data-options='{"placeholder": "Gửi cho bộ phận"}' id="inputcontactdepartment">
-                      <option></option>
-                      <option value="1">My first option</option>
-                      <option value="2">Another option</option>
-                      <option value="3">Third option is here</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactname"
-                    placeholder="Họ và tên">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-rounded" id="inputcontactemail"
-                    placeholder="Địa chỉ email *">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control form-control-rounded" id="inputcontactphone"
-                    placeholder="Số điện thoại *">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactmessage"
-                    placeholder="Tin nhắn">
-                </div>
-
-                <!-- Button -->
-                <button type="submit" class="btn btn-primary rounded-pill">Gửi tin nhắn</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section> <!-- / .contact -->
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -495,9 +633,7 @@
   <!-- endbuild -->
 
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script src="./assets/js/leaflet.js"></script>
-  <script src="./assets/js/pages/pContact.js"></script>
-
+  <script src="./assets/js/pages/pShoppingBag.js"></script>
 </body>
 
 </html>

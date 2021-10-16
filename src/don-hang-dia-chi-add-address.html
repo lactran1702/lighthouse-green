@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "ADD_ADDRESS"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- NAVIGATION
+    ================================================== -->
+
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "don-hang.html"
+  })
+  }
+
+  <!-- MAIN CONTENT
+    ================================================== -->
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag">
+
+    <section class="curve-bottom bg-white ">
+      <form action="">
+
+        <div class="container">
+
+          <!-- SECOND STEP -->
+          <div class="pane address add-address" id="orderStepTwo">
+            <!-- Heading -->
+            <h2 class="display-1 serif text-primary heading">
+              Thông tin đặt hàng
+            </h2>
+
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-7 address-wrap">
+                <div class="border border-radius-xl">
+                  <h4 class="text-green-dark text-bold head">Thêm địa chỉ nhận hàng</h4>
+
+                  <div class="row justify-content-between">
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Họ và tên</label>
+                        <input type="text" class="form-control form-control-rounded" id="" placeholder="Nhập họ và tên">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Số điện thoại</label>
+                        <input type="number" class="form-control form-control-rounded" id=""
+                          placeholder="Nhập số điện thoại">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Email</label>
+                        <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputcity" class="text-secondary text-bold ">Tỉnh/Thành phố </label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Tỉnh/Thành phố"}' id="inputcity">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="inputdistrict" class="text-secondary text-bold ">Quận/Huyện</label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Quận/Huyện"}' id="inputdistrict">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="inputward" class="text-secondary text-bold ">Phường/Xã</label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Phường/Xã phố"}' id="inputward">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Địa chỉ</label>
+                        <!-- <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email"> -->
+                        <textarea class="form-control border-radius-xl" data-autosize id="" rows="5"
+                          placeholder="Toà nhà, Số nhà, Tên đường..."></textarea>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
+
+              </div>
+
+              <div class="col-12 col-md-4 cart-wrap">
+                @@include("partials/shopping-bag/cart.html")
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center nav-foot">
+            <div class="col-12 col-md-6">
+              @@include("partials/shopping-bag/foot.html", {
+              active: 2,
+              })
+            </div>
+          </div> <!-- / .nav-foot -->
+        </div> <!-- / .container -->
+      </form>
+    </section> <!-- / .bag -->
+
+  </main> <!-- / .main-content -->
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "don-hang.html"
+  })
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="@@webRoot/assets/js/pages/pShoppingBag.js"></script>
+</body>
+
+</html>

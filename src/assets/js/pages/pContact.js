@@ -21,6 +21,7 @@ var pContact = (function () {
     iconSize: [56, 76],
     popupAnchor: [0, -19],         // The coordinates of the point from which popups will "open", relative to the icon anchor.
   });
+  
   //
   // Functions
   //
