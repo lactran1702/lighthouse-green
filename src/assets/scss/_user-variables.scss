@@ -10,8 +10,11 @@
 $navbar-height: 80px;
 
 $curves-height: 8vh;
+$curves-height-mb: 16px;
 
 $color-google: #cf2d48;
 $color-facebook: #415a93;
 $color-linkedin: #2d95cf;
 $border-light: rgba(83, 83, 83, 0.15);
+
+$transition-scroll: all 1s cubic-bezier(.65,.05,.36,1);

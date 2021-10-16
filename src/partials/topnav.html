@@ -1,5 +1,5 @@
 <nav
-  class="navbar navbar-expand-lg @@if(navColor=='default'){navbar-light}@@if(navColor=='inverted' &&!demoMode){}@@if(navColor=='vibrant'){navbar-dark bg-vibrant}"
+  class="navbar navbar-expand-xl @@if(navColor=='default'){navbar-light}@@if(navColor=='inverted' &&!demoMode){}@@if(navColor=='vibrant'){navbar-dark bg-vibrant}"
   id="topnav">
   <div class="container">
 
@@ -15,7 +15,7 @@
     </a>
 
     <!-- Collapse -->
-    <div class="collapse navbar-collapse mr-auto order-1" id="navbar">
+    <div class="collapse navbar-collapse mr-auto order-lg-1 order-4" id="navbar">
 
       <!-- Navigation -->
       <ul class="navbar-nav mr-auto">
@@ -26,10 +26,14 @@
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a href="san-pham.html" class="nav-link @@if(category=='product'){active}" id="topnavProduct" role="button"
+          <a href="san-pham.html" class="nav-link d-inline-block d-lg-block @@if(category=='product'){active}" id="topnavProduct" role="button"
             aria-haspopup="true" aria-expanded="false">
             Sản phẩm
           </a>
+          <span class="d-inline-block d-lg-none dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+          </span>
+
           <ul class="dropdown-menu" aria-labelledby="topnavProduct">
             <li class="dropright">
               <a class="nav-link text-truncate  @@if(subcategory=='product'){active}" href="san-pham-chi-tiet.html"
@@ -87,7 +91,7 @@
     <div class="navbar-user order-3">
 
       <!-- modal -->
-      <div class="mr-2 d-none d-lg-flex">
+      <div class="mr-2 d-lg-flex">
 
         <!-- Toggle -->
         <button href="#modalShoppingBag" class="navbar-user-link btn btn-rounded-circle " role="button"

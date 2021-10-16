@@ -43,7 +43,7 @@
             <div class="right tab-content">
 
               <!-- TAB PROFILE -->
-              <div class="tab-pane pane fade info" id="accountProfile">
+              <div class="tab-pane pane fade info show active " id="accountProfile">
 
                 <div class="border border-radius-xl">
                   <h4 class="text-green-dark text-bold head">Thông tin tài khoản</h4>
@@ -165,7 +165,7 @@
               </div> <!-- .tab-pane.pane.info -->
 
               <!-- TAB ADRESSES -->
-              <div class="tab-pane pane fade  have-address" id="accountAddress">
+              <div class="tab-pane pane fade have-address" id="accountAddress">
                 <h4 class="text-green-dark text-bold head">Địa chỉ nhận hàng</h4>
                 <div class="list-group list-group-flush ">
 
@@ -380,11 +380,11 @@
               </div> <!-- .tab-pane.pane.add-address -->
 
               <!-- TAB HISTORY -->
-              <div class="tab-pane pane fade show active history" id="accountHistory">
+              <div class="tab-pane pane fade  history" id="accountHistory">
                 <h4 class="text-green-dark text-bold head">Thông tin đặt hàng</h4>
                 <!-- Tabs -->
                 <ul class="nav nav-tabs order-tabs">
-                  <li class="nav-item" data-toggle="order-history" data-target="#historyAll" data-trigger="click"
+                  <li class="nav-item active" data-toggle="order-history" data-target="#historyAll" data-trigger="click"
                     data-action="toggle" data-dataset="0">
                     <a href="#" class="nav-link text-center active" data-toggle="tab">
                       <h4 class="title font-weight-light">
@@ -419,9 +419,11 @@
                 </ul>
 
                 <div class="tab-content">
-                  <div class="tab-pane fade show active" id="all">
 
-                    <table class="table table-sm table-nowrap table-hover card-table">
+                  <!-- #ALL -->
+                  <div class="tab-pane fade show active" id="historyAll">
+
+                    <table class="table table-sm table-nowrap table-hover ">
                       <thead class="bg-green-dark">
                         <tr>
                           <th>
@@ -462,10 +464,10 @@
                             <div class="product-name">
 
                               <!-- Heading -->
-                              <h4 class="font-weight-normal mb-1">Nấm mối đen</h4>
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
 
                               <!-- Text -->
-                              <small class="text-muted">Loại khối lượng: 02 kg</small>
+                              <small class=" ">Loại khối lượng: 02 kg</small>
 
                             </div>
                           </td>
@@ -478,17 +480,20 @@
 
                           <td class="order-date">
 
-                            <h4 class=" mb-1"> Số tiền</h4>
+                            <h4 class=" mb-1"> 500.000đ</h4>
 
                           </td>
 
                           <td class="order-state">
 
-                            <h4 class="font-weight-normal mb-1"> Đang giao hàng</h4>
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal"> Đang giao hàng</h4>
 
-                            <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
-                              aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem chi
-                              tiết</a>
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi
+                                tiết</a>
+                            </div>
                           </td>
 
                         </tr>
@@ -501,30 +506,30 @@
                             <div class="product-name">
 
                               <!-- Heading -->
-                              <h4 class="font-weight-normal mb-1">Nấm mối đen</h4>
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
 
                               <!-- Text -->
-                              <small class="text-muted">Loại khối lượng: 02 kg</small>
+                              <small class=" ">Loại khối lượng: 02 kg</small>
 
                             </div>
 
                             <div class="product-name">
 
                               <!-- Heading -->
-                              <h4 class="font-weight-normal mb-1">Nấm mối đen</h4>
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
 
                               <!-- Text -->
-                              <small class="text-muted">Loại khối lượng: 02 kg</small>
+                              <small class=" ">Loại khối lượng: 02 kg</small>
 
                             </div>
 
                             <div class="product-name">
 
                               <!-- Heading -->
-                              <h4 class="font-weight-normal mb-1">Nấm mối đen</h4>
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
 
                               <!-- Text -->
-                              <small class="text-muted">Loại khối lượng: 02 kg</small>
+                              <small class=" ">Loại khối lượng: 02 kg</small>
 
                             </div>
                           </td>
@@ -537,30 +542,640 @@
 
                           <td class="order-date">
 
-                            <h4 class=" mb-1"> Số tiền</h4>
+                            <h4 class=" mb-1"> 500.000đ</h4>
 
                           </td>
 
                           <td class="order-state">
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal"> Đã giao hàng</h4>
 
-                            <h4 class="font-weight-normal mb-1"> Đã giao hàng</h4>
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi tiết
+                              </a>
+                            </div>
 
-                            <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
-                              aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem chi
-                              tiết</a>
                           </td>
 
                         </tr>
 
                       </tbody>
-
-
                     </table>
+                  </div> <!-- #historyAll -->
 
+                  <!-- #DELIVERING -->
+                  <div class="tab-pane fade" id="historyDelivering">
+
+                    <table class="table table-sm table-nowrap table-hover ">
+                      <thead class="bg-green-dark">
+                        <tr>
+                          <th>
+                            <a href="#" class="text-white">
+                              Mã đơn hàng
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Sản phẩm
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Ngày mua
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Số tiền
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Trạng thái
+                            </a>
+                          </th>
+                        </tr>
+
+                      </thead>
+                      <tbody class="list">
+
+                        <tr>
+                          <td class="order-code">
+                            <h4 class="font-weight-normal mb-1"> #12345678</h4>
+                          </td>
+                          <td class="order-name">
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class="font-weight-normal mb-1"> 15/05/2020</h4>
+
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class=" mb-1"> 500.000đ</h4>
+
+                          </td>
+
+                          <td class="order-state">
+
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal"> Đang giao hàng</h4>
+
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi
+                                tiết</a>
+                            </div>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td class="order-code">
+                            <h4 class="font-weight-normal mb-1"> #12345678</h4>
+                          </td>
+                          <td class="order-name">
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class="font-weight-normal mb-1"> 15/05/2020</h4>
+
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class=" mb-1"> 500.000đ</h4>
+
+                          </td>
+
+                          <td class="order-state">
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal"> Đang giao hàng</h4>
+
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi tiết
+                              </a>
+                            </div>
+
+                          </td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div> <!-- #historyDelivering -->
+
+                  <!-- #DELIVERED -->
+                  <div class="tab-pane fade" id="historyDelivered">
+
+                    <table class="table table-sm table-nowrap table-hover ">
+                      <thead class="bg-green-dark">
+                        <tr>
+                          <th>
+                            <a href="#" class="text-white">
+                              Mã đơn hàng
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Sản phẩm
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Ngày mua
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Số tiền
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Trạng thái
+                            </a>
+                          </th>
+                        </tr>
+
+                      </thead>
+                      <tbody class="list">
+
+                        <tr>
+                          <td class="order-code">
+                            <h4 class="font-weight-normal mb-1"> #12345678</h4>
+                          </td>
+                          <td class="order-name">
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class="font-weight-normal mb-1"> 15/05/2020</h4>
+
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class=" mb-1"> 500.000đ</h4>
+
+                          </td>
+
+                          <td class="order-state">
+
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal"> Đã giao hàng</h4>
+
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi
+                                tiết</a>
+                            </div>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td class="order-code">
+                            <h4 class="font-weight-normal mb-1"> #12345678</h4>
+                          </td>
+                          <td class="order-name">
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class="font-weight-normal mb-1"> 15/05/2020</h4>
+
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class=" mb-1"> 500.000đ</h4>
+
+                          </td>
+
+                          <td class="order-state">
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal"> Đã giao hàng</h4>
+
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi tiết
+                              </a>
+                            </div>
+
+                          </td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div> <!-- #historyDelivered -->
+
+                  <!-- #CANCELED -->
+                  <div class="tab-pane fade" id="historyCanceled">
+
+                    <table class="table table-sm table-nowrap table-hover ">
+                      <thead class="bg-green-dark">
+                        <tr>
+                          <th>
+                            <a href="#" class="text-white">
+                              Mã đơn hàng
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Sản phẩm
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Ngày mua
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Số tiền
+                            </a>
+                          </th>
+                          <th>
+                            <a href="#" class="text-white">
+                              Trạng thái
+                            </a>
+                          </th>
+                        </tr>
+
+                      </thead>
+                      <tbody class="list">
+
+                        <tr>
+                          <td class="order-code">
+                            <h4 class="font-weight-normal mb-1"> #12345678</h4>
+                          </td>
+                          <td class="order-name">
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class="font-weight-normal mb-1"> 15/05/2020</h4>
+
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class=" mb-1"> 500.000đ</h4>
+
+                          </td>
+
+                          <td class="order-state">
+
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal">Đã huỷ</h4>
+
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi
+                                tiết</a>
+                            </div>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td class="order-code">
+                            <h4 class="font-weight-normal mb-1"> #12345678</h4>
+                          </td>
+                          <td class="order-name">
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+
+                            <div class="product-name">
+
+                              <!-- Heading -->
+                              <h4 class="text-green-dark">Nấm mối đen</h4>
+
+                              <!-- Text -->
+                              <small class=" ">Loại khối lượng: 02 kg</small>
+
+                            </div>
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class="font-weight-normal mb-1"> 15/05/2020</h4>
+
+                          </td>
+
+                          <td class="order-date">
+
+                            <h4 class=" mb-1"> 500.000đ</h4>
+
+                          </td>
+
+                          <td class="order-state">
+                            <div class="inside text-right">
+                              <h4 class="font-weight-normal">Đã huỷ</h4>
+
+                              <a href="#accountHistoryDetail" data-toggle="tab-toggler" role="button"
+                                aria-controls="accountHistoryDetail" class="btn btn-lg btn-primary rounded-pill ">Xem
+                                chi tiết
+                              </a>
+                            </div>
+
+                          </td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div> <!-- #historyCanceled -->
+
+                </div>
+
+              </div> <!-- .tab-pane.pane.history -->
+
+              <!--  HISTORY DETAIL -->
+              <div class="tab-pane pane fade history-detail" id="accountHistoryDetail">
+                <h4 class="text-green-dark text-bold head">Chi tiết đơn hàng</h4>
+                <div class="d-inline-block">
+                  <table class="table table-sm table-borderless table-nowrap ">
+                    <tr>
+                      <th>
+                        <span class="font-weight-normal">Mã đơn hàng:</span>
+                      </th>
+                      <td>
+                        <span class="text-bold text-primary">#1234567</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span class="font-weight-normal">Ngày mua:</span>
+                      </th>
+                      <td>
+                        <span class="text-bold text-secondary">15/05/2020</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="state">
+                  <ul>
+                    <li class="item activated">
+                      <span class="icon rounded-circle"><i class="fe fe-check"></i></span>
+                      <span class="text">
+                        Xác nhận
+                      </span>
+                    </li>
+                    <li class="space">
+                      <hr>
+                    </li>
+                    <li class="item activated">
+                      <span class="icon rounded-circle"><i class="fe fe-check"></i></span>
+                      <span class="text">
+                        Chờ lấy hàng
+                      </span>
+                    </li>
+                    <li class="space">
+                      <hr>
+                    </li>
+                    <li class="item activated">
+                      <span class="icon rounded-circle"><i class="fe fe-check"></i></span>
+                      <span class="text">
+                        Đang giao
+                      </span>
+                    </li>
+                    <li class="space">
+                      <hr>
+                    </li>
+                    <li class="item">
+                      <span class="icon rounded-circle"><i class="fe fe-check"></i></span>
+                      <span class="text">
+                        Đã nhận
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="row align-items-stretch info">
+                  <div class="col-12 col-md-7">
+                    <div class="border border-radius-xl h-100">
+                      <h4 class="text-secondary text-bold ">Phan Văn Tất Đạt</h4>
+                      <h4 class="font-weight-light">
+                        <span class="icon ">
+                          <i class="fe fe-map-pin"></i>
+                        </span>
+                        <span> 730/125 Lê Đức Thọ, Phường 15, Quận Gò Vấp, Hồ Chí Minh</span>
+                      </h4>
+                      <h4 class="font-weight-light">
+                        <span class="icon ">
+                          <i class="fe fe-phone"></i>
+                        </span>
+                        <span> 0986179077</span>
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-5">
+                    <div class="border border-radius-xl h-100">
+                      <h4 class="text-secondary text-bold ">Giao hàng tiêu chuẩn</h4>
+                      <h4 class="font-weight-light">Giao hàng sau 2 ngày </h4>
+                      <br>
+                      <h4 class="text-secondary text-bold ">Hình thức thanh toán</h4>
+                      <h4 class="font-weight-light">Thanh toán bằng tiền mặt</h4>
+                    </div>
+                  </div>
+                </div> <!-- .info -->
+
+                <div class="products shopping-bag">
+                  <div class="head  border-radius-xl">
+                    <div class="row ">
+                      <div class="col">Sản phẩm</div>
+                      <div class="col-auto">Số lượng</div>
+                      <div class="col-auto">Số tiền</div>
+                    </div>
+                  </div>
+
+                  <div class="body border border-radius-xl product-item">
+                    <div class="row ">
+                      <div class="col ">
+                        <div class="product-fig">
+                          <div class="img img-cover border-radius-xl"
+                            style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                            <canvas width="143" height="143" class="ratio-scale"></canvas>
+                          </div>
+                        </div>
+                        <div class="product-content text-left">
+                          <a href="san-pham-chi-tiet.html" class="">
+                            <h4 class="text-green-dark ">Nấm mối đen</h4>
+                            <h5 class="text-secondary text-body">
+                              Loại khối lượng: 02 kg
+                            </h5>
+                          </a>
+
+                          <!-- Delete -->
+                          <button class="btn btn-link small text-secondary text-underline p-0">
+                            <small><u>Hủy đơn hàng</u></small>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="product-amount">
+                          3
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="product-price text-right">
+                          <h4 class="text-uppercase text-secondary price">1.500.000đ</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="body border border-radius-xl product-item">
+                    <div class="row ">
+                      <div class="col ">
+                        <div class="product-fig">
+                          <div class="img img-cover border-radius-xl"
+                            style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                            <canvas width="143" height="143" class="ratio-scale"></canvas>
+                          </div>
+                        </div>
+                        <div class="product-content text-left">
+                          <a href="san-pham-chi-tiet.html" class="">
+                            <h4 class="text-green-dark ">Nấm mối đen</h4>
+                            <h5 class="text-secondary text-body">
+                              Loại khối lượng: 02 kg
+                            </h5>
+                          </a>
+
+                          <!-- Delete -->
+                          <button class="btn btn-link small text-secondary text-underline p-0">
+                            <small><u>Hủy đơn hàng</u></small>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="product-amount">
+                          3
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="product-price text-right">
+                          <h4 class="text-uppercase text-secondary price">1.500.000đ</h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
               </div> <!-- .tab-pane.pane.history -->
+
 
             </div>
 
