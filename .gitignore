@@ -12,6 +12,7 @@ package-lock.json
 mocks/
 .fw/
 debug.log
+**/don-hang-add-address.html
 
 # IDE - VSCode
 .vscode/*

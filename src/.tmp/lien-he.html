@@ -24,13 +24,126 @@
   <!-- endbuild -->
    
   <!-- Title -->
-  <title>Dashkit</title>
+  <title>CONTACT</title>
 </head>
 
 <body>
 
+  <!-- MODALS
+    ================================================== -->
+  <!-- Modal: Members -->
+  
+
+  <!-- Modal: Search -->
+  <div class="modal fade site-modal shopping-bag buy-form" id="modalShoppingBag" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-body" data-toggle="lists" data-options='{"valueNames": ["name"]}'>
+          <h2 class="display-1 serif text-primary">
+            Đơn hàng
+          </h2>
+          <!-- Form -->
+          <form class="mb-4">
+            <div class="list-group list-group-flush list">
+              <div class="list-group-item">
+                <div class="product-fig">
+                  <div class="img img-cover border-radius-xl"
+                    style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                    <canvas width="143" height="143" class="ratio-scale"></canvas>
+                  </div>
+                </div>
+                <div class="product-content text-left">
+                  <a href="san-pham-chi-tiet.html" class="">
+                    <h4 class="text-green-dark ">Nấm mối đen</h4>
+                    <h5 class="text-secondary text-body">
+                      Loại khối lượng: 02 kg
+                    </h5>
+                  </a>
+                  <!-- Input -->
+                  <div>
+                    <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                      <span class="" data-toggle="count">-</span>
+                      <input name="countNumber" type="number" class="form-control input" value="1">
+                      <span class="" data-toggle="count">+</span>
+                    </div>
+                  </div>
+                  <!-- Delete -->
+                  <button class="btn btn-link small text-secondary text-underline p-0">
+                    <small><u>Xoá đơn hàng</u></small>
+                  </button>
+                </div>
+
+                <div class="product-price text-right">
+                  <h4 class="text-uppercase text-secondary news-type">500.000đ</h4>
+                </div>
+
+              </div> <!-- / .list-group-item -->
+
+
+              <div class="list-group-item">
+                <div class="product-fig">
+                  <div class="img img-cover border-radius-xl"
+                    style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                    <canvas width="143" height="143" class="ratio-scale"></canvas>
+                  </div>
+                </div>
+                <div class="product-content text-left">
+                  <a href="san-pham-chi-tiet.html" class="">
+                    <h4 class="text-green-dark ">Nấm mối đen</h4>
+                    <h5 class="text-secondary text-body">
+                      Loại khối lượng: 02 kg
+                    </h5>
+                  </a>
+                  <!-- Input -->
+                  <div>
+                    <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                      <span class="" data-toggle="count">-</span>
+                      <input name="countNumber2" type="number" class="form-control input" value="1">
+                      <span class="" data-toggle="count">+</span>
+                    </div>
+                  </div>
+                  <!-- Delete -->
+                  <button class="btn btn-link small text-secondary text-underline p-0">
+                    <small><u>Xoá đơn hàng</u></small>
+                  </button>
+                </div>
+
+                <div class="product-price text-right">
+                  <h4 class="text-uppercase text-secondary news-type">500.000đ</h4>
+                </div>
+
+              </div> <!-- / .list-group-item -->
+            </div>
+
+            <hr>
+            <div class="d-flex justify-content-between total">
+              <h4 class="text-green-dark text-bold">Tổng giá trị</h4>
+              <h4 class="text-secondary text-bold">1.000.000đ</h4>
+
+            </div>
+            <!-- Button -->
+            <!-- <button type="submit" class="btn btn-primary rounded-pill">Thanh toán</button> -->
+            <a href="don-hang-gio-hang.html" class="btn btn-primary rounded-pill">Thanh toán</a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Activity -->
+  
+
+  <!-- Modal: Kanban task -->
+  
+
+  <!-- Modal: Kanban task -->
+  
+
   <!-- NAVIGATION
     ================================================== -->
+
   
   <nav
     class="navbar navbar-expand-lg navbar-light"
@@ -54,7 +167,7 @@
         <!-- Navigation -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active"
+            <a class="nav-link "
               href="index.html" id="topnavDashboards" role="button">
               Trang chủ
             </a>
@@ -109,7 +222,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="lien-he.html" role="button">
+            <a class="nav-link active" href="lien-he.html" role="button">
               Liên hệ
             </a>
           </li>
@@ -162,136 +275,91 @@
     </div> <!-- / .container -->
   </nav>
   
-  <!-- CONTENT
+
+  <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pRegister">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pContact">
 
-    <section class="login curve-bottom bg-white">
+    <section class="contact banner-full curve-bottom bg-white">
 
-      <div class="d-flex align-items-center">
+      <div class="h-100 d-flex align-items-center">
+        <div class="curve-fig curve-fig-bottom-left img-cover ">
+          <!-- style="background-image: url('assets/img/demo/product-intro-1.jpg');"
+          > -->
+
+          <div class="map-wrap">
+            <div id="location--map">
+
+            </div>
+          </div>
+
+
+          <ul class="location-results d-none">
+            <li class="coordinates">
+              <div class="coordinates--label">
+                Light house Green
+              </div>
+              <div class="coordinates--address">
+                <span class="value">
+                  106 Đường Số 13, Ấp Hàng Gòn, Xã Hàng Gòn, Thành Phố Long Khánh, Tỉnh Đồng Nai, Việt Nam
+                </span>
+                <span class="icon icon-location">
+                  <img src="assets/img/icons/icon-location.png" alt="icon-location">
+                </span>
+                <span class="lat">10.870990</span> <!-- TEST: unreal coordinates -->
+                <span class="long">107.225970</span>
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
         <div class="container">
-          <div class="row justify-content-center my-5">
-            <div class="col-12 ">
-              <!-- Heading -->
-              <h1 class="display-1 text-center serif text-primary text-nowrap heading">
-                Đăng ký tài khoản
-              </h1>
-            </div>
-            <div class="col-12 col-md-9 col-xl-8">
+          <div class="row justify-content-end">
+            <div class="col-12 col-md-5">
+              <h2 class="display-1 text-primary serif title">Liên hệ với chúng tôi</h2>
+              <p class="text-secondary mb-4">
+                Nếu bạn có bất cứ câu hỏi nào, hãy liên hệ với chúng tôi
+              </p>
+              <form class="contact-form">
 
-              <!-- Form -->
-              <form>
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <!-- Username -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="text" class="form-control form-control-rounded form-control-lg"
-                        placeholder="Tên đăng nhập ">
-
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <!-- name -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="text" class="form-control form-control-rounded form-control-lg"
-                        placeholder="Họ và tên">
-
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-
-                    <!-- Email address -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="email" class="form-control form-control-rounded form-control-lg"
-                        placeholder="Địa chỉ email *">
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <!-- Email address -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="number" class="form-control form-control-rounded form-control-lg"
-                        placeholder="Số điện thoại">
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <!-- name -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="text" class="form-control form-control-rounded form-control-lg"
-                        placeholder="Địa chỉ">
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <label for="inputcontactdepartment" class="w-100 mb-0">
-                      <select class="form-select form-control form-control-rounded form-control-lg" data-toggle="select"
-                        data-options='{"placeholder": "Thành phố"}' id="inputcontactdepartment">
-                        <option></option>
-                        <option value="1">My </option>
-                        <option value="2">Another </option>
-                        <option value="3">Third </option>
-                      </select>
-                    </label>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <!-- name -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="password" class="form-control form-control-rounded form-control-lg"
-                        autocomplete="new-password" placeholder="Mật khẩu *">
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <!-- name -->
-                    <div class="form-group">
-
-                      <!-- Input -->
-                      <input type="password" class="form-control form-control-rounded form-control-lg"
-                        autocomplete="new-password" placeholder="Nhập lại mật khẩu *">
-
-                    </div>
-                  </div>
+                <div class="form-group ">
+                  <label for="inputcontactdepartment" class="w-100 mb-0">
+                    <select class="form-select mb-3 form-control form-control-rounded" data-toggle="select"
+                      data-options='{"placeholder": "Gửi cho bộ phận"}' id="inputcontactdepartment">
+                      <option></option>
+                      <option value="1">My first option</option>
+                      <option value="2">Another option</option>
+                      <option value="3">Third option is here</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-rounded" id="inputcontactname"
+                    placeholder="Họ và tên">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-rounded" id="inputcontactemail"
+                    placeholder="Địa chỉ email *">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control form-control-rounded" id="inputcontactphone"
+                    placeholder="Số điện thoại *">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-rounded" id="inputcontactmessage"
+                    placeholder="Tin nhắn">
                 </div>
 
-                <!-- Link -->
-                <div class="text-center">
-                  <!-- Submit -->
-                  <button class="btn btn-lg btn-primary rounded-pill">
-                    Đăng ký
-                  </button>
-                </div>
-
+                <!-- Button -->
+                <button type="submit" class="btn btn-primary rounded-pill">Gửi tin nhắn</button>
               </form>
-
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-
+          </div>
+        </div>
       </div>
 
-
-    </section>
-
-
-
+    </section> <!-- / .contact -->
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -382,7 +450,6 @@
       </div>
 
   </footer>
-
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
@@ -427,6 +494,9 @@
   <script src="./assets/js/slider.js"></script>
   <!-- endbuild -->
 
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/pages/pContact.js"></script>
 
 </body>
 

@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "DON_HANG"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- NAVIGATION
+    ================================================== -->
+
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "don-hang.html"
+  })
+  }
+
+  <!-- MAIN CONTENT
+    ================================================== -->
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag">
+
+    <section class="curve-bottom bg-white ">
+      <div class="container tab-content">
+
+        <!-- FIRST STEP -->
+        <div class="tab-pane pane bag fade show active" id="orderStepOne">
+          <!-- Heading -->
+          <h2 class="display-1 serif text-primary heading">
+            Đơn hàng
+          </h2>
+
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-9 order-wrap">
+
+              <div class="shopping-bag buy-form">
+                <div class="list-group list-group-flush list">
+                  <div class="list-group-item border">
+                    <div class="product-fig">
+                      <div class="img img-cover border-radius-xl"
+                        style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                        <canvas width="143" height="143" class="ratio-scale"></canvas>
+                      </div>
+                    </div>
+                    <div class="product-content text-left">
+                      <a href="san-pham-chi-tiet.html" class="">
+                        <h4 class="text-green-dark ">Nấm mối đen</h4>
+                        <h5 class="text-secondary text-body">
+                          Loại khối lượng: 02 kg
+                        </h5>
+                      </a>
+
+                      <!-- Delete -->
+                      <button class="btn btn-link small text-secondary text-underline p-0">
+                        <small><u>Xoá đơn hàng</u></small>
+                      </button>
+                    </div>
+
+                    <!-- Input -->
+                    <div class="product-amount">
+                      <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                        <span class="" data-toggle="count">-</span>
+                        <input name="countNumber" type="number" class="form-control input" value="1">
+                        <span class="" data-toggle="count">+</span>
+                      </div>
+                    </div>
+
+                    <div class="product-price text-right">
+                      <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                    </div>
+
+                  </div> <!-- / .list-group-item -->
+
+
+                  <div class="list-group-item border">
+                    <div class="product-fig">
+                      <div class="img img-cover border-radius-xl"
+                        style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                        <canvas width="143" height="143" class="ratio-scale"></canvas>
+                      </div>
+                    </div>
+                    <div class="product-content text-left">
+                      <a href="san-pham-chi-tiet.html" class="">
+                        <h4 class="text-green-dark ">Nấm mối đen</h4>
+                        <h5 class="text-secondary text-body">
+                          Loại khối lượng: 02 kg
+                        </h5>
+                      </a>
+
+                      <!-- Delete -->
+                      <button class="btn btn-link small text-secondary text-underline p-0">
+                        <small><u>Xoá đơn hàng</u></small>
+                      </button>
+                    </div>
+                    <!-- Input -->
+                    <div class="product-amount">
+                      <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                        <span class="" data-toggle="count">-</span>
+                        <input name="countNumber2" type="number" class="form-control input" value="1">
+                        <span class="" data-toggle="count">+</span>
+                      </div>
+                    </div>
+                    <div class="product-price text-right">
+                      <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                    </div>
+
+                  </div> <!-- / .list-group-item -->
+                </div>
+              </div>
+
+              <a data-toggle="tab-toggler" href="#orderStepTwo" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục mua hàng</a>
+
+            </div> <!-- / .col-12.col-md-9.order-wrap-->
+
+            <div class="col-12 col-md-3 total-wrap">
+              <div class="border border-radius-xl">
+                <form action="">
+                  <h4 class="text-green-dark text-bold mb-3">Nhập mã khuyến mại</h4>
+                  <div class="input-group rounded-pill p-1 overflow-hidden border">
+                    <input type="text" class="form-control border-0" placeholder="Mã khuyến mại"
+                      aria-label="Mã khuyến mại" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary rounded-pill" type="button">Áp dụng</button>
+                    </div>
+                  </div>
+                </form>
+              </div> <!-- / .border -->
+
+              <div class="border border-radius-xl total">
+                <form action="">
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Thành tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>1.500.000đ</span>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Khuyến mại</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>- 200.000đ</span>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between all">
+                    <div class="col-auto">
+                      <span>Tổng số tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-bold text-primary">1.300.000đ</span>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary rounded-pill" type="button">Đặt hàng</button>
+                  </div>
+                </form>
+              </div> <!-- / .border -->
+            </div>
+          </div>
+        </div> <!-- #orderStepOne.pane.bag -->
+
+        <!-- SECOND STEP -->
+        <div class="tab-pane pane address add-address have-address fade " id="orderStepTwo">
+          <!-- Heading -->
+          <h2 class="display-1 serif text-primary heading">
+            Thông tin đặt hàng
+          </h2>
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-7 address-wrap">
+
+              <div class="list-group list-group-flush input-group btn-group-toggle">
+
+                <div class="list-group-item border">
+                  <div class="row align-items-start">
+                    <div class="col-auto position-static">
+                      <input type="radio" class="btn-checkk" name="inputweight" id="option1" autocomplete="off"
+                        checked="">
+                      <label class="address-radio" for="option1"></label>
+                    </div>
+                    <div class="col ">
+                      <h4 class="text-secondary text-bold">Phan Văn Tất Đạt</h4>
+                      <h4 class="font-weight-light">
+                        <span class="icon ">
+                          <i class="fe fe-map-pin"></i>
+                        </span>
+                        <span> 730/125 Lê Đức Thọ, Phường 15, Quận Gò Vấp, Hồ Chí Minh</span>
+                      </h4>
+                      <h4 class="font-weight-light">
+                        <span class="icon ">
+                          <i class="fe fe-phone"></i>
+                        </span>
+                        <span> 0986179077</span>
+                      </h4>
+
+                    </div>
+                    <div class="col-auto ">
+                      <a class="text-reset edit" href="#!" data-target="#address-form" data-toggle="collapse"
+                        class="overlay" aria-expanded="false" aria-label="Toggle address form to edit"
+                        data-toggle="tooltip" title="chinh sửa">
+                        <i class="fe fe-edit"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div> <!-- .list-group-item border -->
+
+                <div class="list-group-item border">
+
+                  <div class="row align-items-start">
+                    <div class="col-auto position-static">
+                      <input type="radio" class="btn-checkk" name="inputweight" id="option2" autocomplete="off">
+                      <label class="address-radio" for="option2"></label>
+                    </div>
+                    <div class="col ">
+                      <h4 class="text-secondary text-bold">Phan Văn Tất Đạt</h4>
+                      <h4 class="font-weight-light">
+                        <span class="icon ">
+                          <i class="fe fe-map-pin"></i>
+                        </span>
+                        <span> 730/125 Lê Đức Thọ, Phường 15, Quận Gò Vấp, Hồ Chí Minh</span>
+                      </h4>
+                      <h4 class="font-weight-light">
+                        <span class="icon ">
+                          <i class="fe fe-phone"></i>
+                        </span>
+                        <span> 0986179077</span>
+                      </h4>
+
+                    </div>
+                    <div class="col-auto ">
+                      <a class="text-reset edit" href="#!" data-target="#address-form" data-toggle="collapse"
+                        class="overlay" aria-expanded="false" aria-label="Toggle address form to edit"
+                        data-toggle="tooltip" title="chinh sửa">
+                        <i class="fe fe-edit"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div> <!-- .list-group-item border -->
+
+                <div class="list-group-item border address-toggle">
+                  <div class="row align-items-start">
+                    <div class="col ">
+                      <h4 class=" text-bold"> Thêm địa chỉ nhận hàng</h4>
+                    </div>
+                    <div class="col-auto ">
+                      <span class="text-reset plus" href="#!" data-toggle="tooltip" title="thêm">
+                        <i class="fe fe-plus"></i>
+                      </span>
+                    </div>
+                    <a href="#!" data-target="#address-form" data-toggle="collapse" class="overlay"
+                      aria-expanded="false" aria-label="Toggle address form"></a>
+                  </div>
+
+                </div> <!-- .list-group-item border -->
+
+              </div>
+
+              <div class="collapse" id="address-form">
+                <div class="border border-radius-xl">
+                  <h4 class="text-green-dark text-bold head">Thêm địa chỉ nhận hàng</h4>
+
+                  <div class="row justify-content-between">
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Họ và tên</label>
+                        <input type="text" class="form-control form-control-rounded" id="" placeholder="Nhập họ và tên">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Số điện thoại</label>
+                        <input type="number" class="form-control form-control-rounded" id=""
+                          placeholder="Nhập số điện thoại">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Email</label>
+                        <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputcity" class="text-secondary text-bold ">Tỉnh/Thành phố </label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Tỉnh/Thành phố"}' id="inputcity">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="inputdistrict" class="text-secondary text-bold ">Quận/Huyện</label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Quận/Huyện"}' id="inputdistrict">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="inputward" class="text-secondary text-bold ">Phường/Xã</label>
+                        <select class="form-select form-control form-control-rounded " data-toggle="select"
+                          data-options='{"placeholder": "Chọn Phường/Xã phố"}' id="inputward">
+                          <option></option>
+                          <option value="1">My </option>
+                          <option value="2">Another </option>
+                          <option value="3">Third </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="" class="text-secondary text-bold">Địa chỉ</label>
+                        <!-- <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email"> -->
+                        <textarea class="form-control border-radius-xl" data-autosize id="" rows="5"
+                          placeholder="Toà nhà, Số nhà, Tên đường..."></textarea>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div> <!-- .border.border-radius-xl -->
+              </div> <!-- #address-form.collapse -->
+
+              <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
+
+            </div><!-- .address-wrap -->
+            
+            <div class="col-12 col-md-4 cart-wrap">
+              @@include("partials/shopping-bag/cart.html")
+            </div>
+          </div>
+        </div> <!-- #orderStepTwo.pane.address -->
+        
+        <!-- THIRD STEP -->
+        <div class="tab-pane pane payment fade" id="orderStepThree">
+          <!-- Heading -->
+          <h2 class="display-1 serif text-primary heading">
+            Hình thức thanh toán
+          </h2>
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-7 payment-wrap">
+
+              <div class="list-group list-group-flush input-group btn-group-toggle">
+
+                <div class="list-group-item border rounded-pill">
+                  <div class="row align-items-start">
+                    <div class="col-auto position-static">
+                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption1" autocomplete="off"
+                        checked="">
+                      <label class="payment-radio overlay" for="inputpaymentoption1"></label>
+                    </div>
+                    <div class="col ">
+                      <h4 class="text-bold">Thanh toán tiền mặt khi nhận hàng</h4>
+                    </div>
+                  </div>
+                </div> <!-- .list-group-item border -->
+
+                <div class="list-group-item border rounded-pill">
+                  <div class="row align-items-start">
+                    <div class="col-auto position-static">
+                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption2" autocomplete="off">
+                      <label class="payment-radio overlay" for="inputpaymentoption2"></label>
+                    </div>
+                    <div class="col ">
+                      <h4 class="text-bold">Thanh toán qua VTC Pay (Thẻ Tín dụng/ Ghi nợ/ ATM)</h4>
+                    </div>
+                  </div>
+                </div> <!-- .list-group-item border -->
+
+                <div class="list-group-item border rounded-pill">
+                  <div class="row align-items-start">
+                    <div class="col-auto position-static">
+                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption3" autocomplete="off">
+                      <label class="payment-radio overlay" for="inputpaymentoption3"></label>
+                    </div>
+                    <div class="col ">
+                      <h4 class="text-bold">Thanh toán qua Momo</h4>
+                    </div>
+                  </div>
+                </div> <!-- .list-group-item border -->
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 cart-wrap">
+              @@include("partials/shopping-bag/cart.html")
+
+              <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill w-100">Hoàn tất đặt hàng</a>
+
+            </div>
+          </div>
+        </div> <!-- #orderStepThree.pane.payment -->
+
+        <div class="row justify-content-center nav-foot">
+          <div class="col-12 col-md-6">
+            @@include("partials/shopping-bag/foot.html", {
+            active: 1,
+            separate: false,
+            })
+          </div>
+        </div> <!-- / .nav-foot -->
+      </div> <!-- / .container -->
+    </section> <!-- / .curve-bottom.bg-white -->
+
+  </main> <!-- / .main-content -->
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "don-hang.html"
+  })
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="@@webRoot/assets/js/pages/pShoppingBag.js"></script>
+</body>
+
+</html>

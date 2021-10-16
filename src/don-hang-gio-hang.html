@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "ADD_ADDRESS"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- NAVIGATION
+    ================================================== -->
+
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "don-hang.html"
+  })
+  }
+
+  <!-- MAIN CONTENT
+    ================================================== -->
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag">
+
+    <section class=" curve-bottom bg-white">
+      <form action="">
+
+        <div class="container">
+
+          <div class="pane bag" id="orderStepOne">
+            <!-- Heading -->
+            <h2 class="display-1 serif text-primary heading">
+              Đơn hàng
+            </h2>
+
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-9 order-wrap">
+
+                <div class="shopping-bag buy-form">
+                  <div class="list-group list-group-flush list">
+                    <div class="list-group-item border">
+                      <div class="product-fig">
+                        <div class="img img-cover border-radius-xl"
+                          style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                          <canvas width="143" height="143" class="ratio-scale"></canvas>
+                        </div>
+                      </div>
+                      <div class="product-content text-left">
+                        <a href="san-pham-chi-tiet.html" class="">
+                          <h4 class="text-green-dark ">Nấm mối đen</h4>
+                          <h5 class="text-secondary text-body">
+                            Loại khối lượng: 02 kg
+                          </h5>
+                        </a>
+
+                        <!-- Delete -->
+                        <button class="btn btn-link small text-secondary text-underline p-0">
+                          <small><u>Xoá đơn hàng</u></small>
+                        </button>
+                      </div>
+
+                      <!-- Input -->
+                      <div class="product-amount">
+                        <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                          <span class="" data-toggle="count">-</span>
+                          <input name="countNumber" type="number" class="form-control input" value="1">
+                          <span class="" data-toggle="count">+</span>
+                        </div>
+                      </div>
+
+                      <div class="product-price text-right">
+                        <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                      </div>
+
+                    </div> <!-- / .list-group-item -->
+
+
+                    <div class="list-group-item border">
+                      <div class="product-fig">
+                        <div class="img img-cover border-radius-xl"
+                          style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                          <canvas width="143" height="143" class="ratio-scale"></canvas>
+                        </div>
+                      </div>
+                      <div class="product-content text-left">
+                        <a href="san-pham-chi-tiet.html" class="">
+                          <h4 class="text-green-dark ">Nấm mối đen</h4>
+                          <h5 class="text-secondary text-body">
+                            Loại khối lượng: 02 kg
+                          </h5>
+                        </a>
+
+                        <!-- Delete -->
+                        <button class="btn btn-link small text-secondary text-underline p-0">
+                          <small><u>Xoá đơn hàng</u></small>
+                        </button>
+                      </div>
+                      <!-- Input -->
+                      <div class="product-amount">
+                        <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                          <span class="" data-toggle="count">-</span>
+                          <input name="countNumber2" type="number" class="form-control input" value="1">
+                          <span class="" data-toggle="count">+</span>
+                        </div>
+                      </div>
+                      <div class="product-price text-right">
+                        <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                      </div>
+
+                    </div> <!-- / .list-group-item -->
+                  </div>
+                </div>
+
+                <a href="san-pham.html" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục mua hàng</a>
+
+              </div> <!-- / .col-12.col-md-9.order-wrap-->
+
+              <div class="col-12 col-md-3 total-wrap">
+                <div class="border border-radius-xl">
+                  <h4 class="text-green-dark text-bold mb-3">Nhập mã khuyến mại</h4>
+                  <div class="input-group rounded-pill p-1 overflow-hidden border">
+                    <input type="text" class="form-control border-0" placeholder="Mã khuyến mại"
+                      aria-label="Mã khuyến mại" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary rounded-pill" type="button">Áp dụng</button>
+                    </div>
+                  </div>
+                </div> <!-- / .border -->
+
+                <div class="border border-radius-xl total">
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Thành tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>1.500.000đ</span>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Khuyến mại</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>- 200.000đ</span>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between all">
+                    <div class="col-auto">
+                      <span>Tổng số tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-bold text-primary">1.300.000đ</span>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary rounded-pill" type="button">Đặt hàng</button>
+                  </div>
+                </div> <!-- / .border -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center nav-foot">
+            <div class="col-12 col-md-6">
+              @@include("partials/shopping-bag/foot.html", {
+              active: 1,
+              })
+            </div>
+          </div> <!-- / .nav-foot -->
+        </div>
+      </form>
+    </section> <!-- / .bag -->
+
+  </main> <!-- / .main-content -->
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "don-hang.html"
+  })
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="@@webRoot/assets/js/pages/pShoppingBag.js"></script>
+</body>
+
+</html>
