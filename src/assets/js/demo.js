@@ -5,7 +5,7 @@
 
 'use strict';
 
-var demoMode = (function() {
+var demoMode = (function () {
 
   //
   // Variables
@@ -23,7 +23,6 @@ var demoMode = (function() {
   var navPositionToggle = document.querySelectorAll('input[name="navPosition"]');
   var containers = document.querySelectorAll('[class^="container"]');
   var stylesheetLight = document.querySelector('#stylesheetLight');
-  var stylesheetDark = document.querySelector('#stylesheetDark');
 
   var config = {
     showPopover: (localStorage.getItem('dashkitShowPopover')) ? localStorage.getItem('dashkitShowPopover') : true,
@@ -52,7 +51,7 @@ var demoMode = (function() {
       }
 
       // Hide popover on click
-      popover.addEventListener('click', function() {
+      popover.addEventListener('click', function () {
         $(popover).popover('hide');
 
         localStorage.setItem('dashkitShowPopover', false);
@@ -81,15 +80,8 @@ var demoMode = (function() {
   }
 
   function toggleColorScheme(colorScheme) {
-    if (colorScheme == 'light') {
-      stylesheetLight.disabled = false;
-      stylesheetDark.disabled = true;
-      colorScheme = 'light';
-    } else if (colorScheme == 'dark') {
-      stylesheetLight.disabled = true;
-      stylesheetDark.disabled = false;
-      colorScheme = 'dark';
-    }
+    stylesheetLight.disabled = false;
+    colorScheme = 'light';
   }
 
   function toggleNavPosition(navPosition) {
@@ -242,14 +234,14 @@ var demoMode = (function() {
   if (form) {
 
     // Form submitted
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
       submitForm(form);
     });
 
     // Nav position changed
-    [].forEach.call(navPositionToggle, function(el) {
-      el.parentElement.addEventListener('click', function() {
+    [].forEach.call(navPositionToggle, function (el) {
+      el.parentElement.addEventListener('click', function () {
         var navPosition = el.value;
         toggleSidebarSizeCongainer(navPosition);
       });

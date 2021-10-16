@@ -18,6 +18,7 @@
     border-radius: 20px;
   }
 }
+
 .banner-full {
   // full screen without topnav
 
@@ -319,6 +320,20 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type="radio"]:checked:after {
+  content: "";
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: $primary;
+  visibility: visible;
+  border: 2px solid $primary;
+}
+
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -545,3 +560,92 @@ input::-webkit-inner-spin-button {
 #modalShoppingBag {
 }
 // MODALS
+
+// decor elements
+.decor-el {
+  position: absolute;
+
+  .wrap {
+    position: relative;
+  }
+  .circle {
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.2);
+    z-index: 1;
+    transition: $transition-scroll;
+    opacity: 0;
+    width: 72%;
+    &.visible {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+  .main {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    & > .container,
+    & > .container-fluid,
+    & > .container-sm,
+    & > .container-md,
+    & > .container-lg,
+    & > .container-xl {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  // curve sections
+  .curve-top {
+    &:before {
+      top: -$curves-height-mb;
+      width: 2320px;
+    }
+  }
+  .curve-bottom {
+    &::after {
+      bottom: -$curves-height-mb;
+      width: 2320px;
+    }
+  }
+  .curve-fig {
+    width: 2320px;
+  }
+  .curve-fig-top {
+    top: -$curves-height-mb;
+  }
+  .curve-fig-bottom {
+    bottom: -$curves-height-mb;
+  }
+  .curve-fig-bottom-right,
+  .curve-fig-bottom-left {
+    width: 1740px;
+  }
+}
+
+// .card-fill {
+
+//   @each $breakpoint, $value in $grid-breakpoints {
+
+//     &-#{$breakpoint} {
+
+//       @include media-breakpoint-up(#{$breakpoint}) {
+//         height: calc(100% - #{$card-margin-bottom});
+
+//         .card-body {
+//           flex-grow: 0;
+//           margin-top: auto;
+//           margin-bottom: auto;
+//         }
+//       }
+//     }
+//   }
+// }

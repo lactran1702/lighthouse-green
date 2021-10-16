@@ -2,234 +2,238 @@
 <html lang="vi">
 
 <head>
-    @@include("partials/head.html", {
-    "title": "HOMEPAGE"
-    })
+  @@include("partials/head.html", {
+  "title": "HOMEPAGE"
+  })
 </head>
 
 <body class="pHome">
 
-    <!-- MODALS
+  <!-- MODALS
     ================================================== -->
-    @@include("partials/modals.html")
+  @@include("partials/modals.html")
 
-    <!-- NAVIGATION
+  <!-- NAVIGATION
     ================================================== -->
-    @@if (navPosition == 'topnav' || demoMode) {
-    @@include("partials/topnav.html", {
-    "category": "dashboards",
-    "subcategory": "",
-    "page": "index.html"
-    })
-    }
-    <!-- MAIN CONTENT
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "index.html"
+  })
+  }
+  <!-- MAIN CONTENT
     ================================================== -->
-    <main class="main-content cuvre-sections cuvre-sections-last pHome bg-green-dark">
-        <section class="banner banner-full">
-            <div class="banner-slider keen-slider-wrap position-relative h-100">
-                <div id="bannerSlider" class="keen-slider h-100" data-ride="carousel">
+  <main class="main-content cuvre-sections cuvre-sections-last pHome bg-green-dark">
+    <section class="banner banner-full">
+      <div class="banner-slider keen-slider-wrap position-relative h-100">
+        <div id="bannerSlider" class="keen-slider h-100" data-ride="carousel">
 
-                    <div class="keen-slider__slide active">
-                        <div class="h-100 slide-content d-flex align-items-center">
-                            <div class="img-cover cover w-100 h-100 position-absolute"
-                                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
+          <div class="keen-slider__slide active">
+            <div class="h-100 slide-content d-flex align-items-center">
+              <div class="img-cover cover w-100 h-100 position-absolute"
+                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <h2 class="display-3 text-white slide-title">Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing
-                                            elit.</h2>
-                                        <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
-                                            Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide">
-                        <div class="h-100 slide-content d-flex align-items-center">
-                            <div class="img-cover cover w-100 h-100 position-absolute"
-                                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <h2 class="display-3 text-white slide-title">Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing
-                                            elit.</h2>
-                                        <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
-                                            Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide">
-                        <div class="h-100 slide-content d-flex align-items-center">
-                            <div class="img-cover cover w-100 h-100 position-absolute"
-                                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');">
-                            </div>
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <h2 class="display-3 text-white slide-title">Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing
-                                            elit.</h2>
-                                        <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
-                                            Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-5">
+                    <h2 class="display-3 text-white slide-title">Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipiscing
+                      elit.</h2>
+                    <a href="/" class="btn btn-lg btn-white rounded-pill text-primary font-weight-light">
+                      Xem chi tiết</a>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="keen-slider__slide">
+            <div class="h-100 slide-content d-flex align-items-center">
+              <div class="img-cover cover w-100 h-100 position-absolute"
+                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
 
-                <a class="carousel-control-prev keen-slider-prev" href="#carouselExampleIndicators" role="button"
-                    data-slide="prev">
-                    <button class="btn btn-success btn-rounded-circle">
-                        <span class="carousel-control-prev-icon icon-prev" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                </a>
-                <a class="carousel-control-next keen-slider-next" href="#carouselExampleIndicators" role="button"
-                    data-slide="next">
-                    <button class="btn btn-success btn-rounded-circle">
-                        <span class="carousel-control-next-icon icon-next" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </button>
-                </a>
-                <ol class="keen-slider-dots carousel-indicators container mx-auto">
-                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="dot active"></li>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-5">
+                    <h2 class="display-3 text-white slide-title">Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipiscing
+                      elit.</h2>
+                    <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
+                      Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="keen-slider__slide">
+            <div class="h-100 slide-content d-flex align-items-center">
+              <div class="img-cover cover w-100 h-100 position-absolute"
+                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');">
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-5">
+                    <h2 class="display-3 text-white slide-title">Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipiscing
+                      elit.</h2>
+                    <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
+                      Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev keen-slider-prev" href="#carouselExampleIndicators" role="button"
+          data-slide="prev">
+          <button class="btn btn-success btn-rounded-circle">
+            <span class="carousel-control-prev-icon icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+        </a>
+        <a class="carousel-control-next keen-slider-next" href="#carouselExampleIndicators" role="button"
+          data-slide="next">
+          <button class="btn btn-success btn-rounded-circle">
+            <span class="carousel-control-next-icon icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </a>
+        <ol class="keen-slider-dots carousel-indicators container mx-auto">
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="dot active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1" class="dot "></li> -->
-                </ol>
+        </ol>
 
+      </div>
+
+    </section> <!-- / .banner.banner-full -->
+
+    <section class="intro-brand vh-100 curve-top curve-bottom">
+      <div class="h-100 d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xs-12 col-md-6">
+              <div class="copy">
+                <span class="text-green-dark text-bold">Giới thiệu về</span>
+                <h2 class="display-2 serif text-primary">Lighthouse Green</h2>
+                <h3 class="head serif">Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo
+                  hóa.</h3>
+                <p>
+                  Nấm là một loại thực vật đặc biệt, chúng chứa rất nhiều vitamin và khoáng chất có
+                  lợi cho cơ thể. Các enzyme quan trọng như protein, các chất hữu cơ và khoáng chất
+                  đồng, kẽm, kali là nguồn duy nhất cho vitamin D
+                  Nấm vô cùng hữu ích trong việc kiểm soát cân nặng. Vì thành phần nấm rất bổ dưỡng
+                  nhưng lại “keo kiệt calo”. Nấm đặc biệt hiệu quả khi thay thế cho thịt đỏ, bởi chúng
+                  làm tăng sản xuất năng lượng trong tế bào. Nấm trở thành một món ăn phổ biến cho các
+                  vận động viên mong muốn gia tăng sức mạnh và độ bền.
+                </p>
+                <a href="/ve-chung-toi.html" class="btn btn-lg btn-primary rounded-pill">
+                  Về chúng tôi</a>
+              </div>
             </div>
 
-        </section> <!-- / .banner.banner-full -->
-
-        <section class="intro-brand vh-100 curve-top curve-bottom">
-            <div class="h-100 d-flex align-items-center">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="copy">
-                                <span class="text-green-dark text-bold">Giới thiệu về</span>
-                                <h2 class="display-2 serif text-primary">Lighthouse Green</h2>
-                                <h3 class="head serif">Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo
-                                    hóa.</h3>
-                                <p>
-                                    Nấm là một loại thực vật đặc biệt, chúng chứa rất nhiều vitamin và khoáng chất có
-                                    lợi cho cơ thể. Các enzyme quan trọng như protein, các chất hữu cơ và khoáng chất
-                                    đồng, kẽm, kali là nguồn duy nhất cho vitamin D
-                                    Nấm vô cùng hữu ích trong việc kiểm soát cân nặng. Vì thành phần nấm rất bổ dưỡng
-                                    nhưng lại “keo kiệt calo”. Nấm đặc biệt hiệu quả khi thay thế cho thịt đỏ, bởi chúng
-                                    làm tăng sản xuất năng lượng trong tế bào. Nấm trở thành một món ăn phổ biến cho các
-                                    vận động viên mong muốn gia tăng sức mạnh và độ bền.
-                                </p>
-                                <a href="/" class="btn btn-primary rounded-pill">
-                                    Xem chi tiết</a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-md-5">
-                            <div class="rounded-top-image img-cover w-100"
-                                style="background-image: url('assets/img/demo/factory.jpg');">
-                                <!-- <img class="w-100" src="assets/img/demo/factory.jpg" alt="img"> -->
-                                <canvas width="496" height="547"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-xs-12 col-md-5">
+              <div class="rounded-top-image img-cover w-100"
+                style="background-image: url('assets/img/demo/factory.jpg');">
+                <!-- <img class="w-100" src="assets/img/demo/factory.jpg" alt="img"> -->
+                <canvas width="496" height="547"></canvas>
+              </div>
             </div>
-        </section> <!-- / .intro-brand -->
+          </div>
 
-        <section class="intro-product vh-100">
-            <div class="h-100 d-flex align-items-center">
-                <div class="img-cover w-100 h-100 position-absolute"
-                    style="background-image: url('assets/img/demo/homepage-product-1.jpg');">
-                </div>
-                <div class="container">
-                    <div class="row justify-content-end align-items-center">
-                        <div class="col-xs-12 col-md-5">
-                            <div class="copy text-left">
-                                <span class="d-block text-center">Sản phẩm đặc trưng</span>
-                                <h2 class="display-2 text-center serif text-primary">Nấm mối đen</h2>
+        </div>
+      </div>
+    </section> <!-- / .intro-brand -->
 
-                                <p class="text-left">
-                                    Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
-                                    từ loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không
-                                    nên ăn những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
-                                </p>
-                                <a href="/" class="btn btn-primary rounded-pill">
-                                    Nấm mối đen</a>
-                            </div>
-                        </div>
-                    </div>
+    <section class="intro-product vh-100">
+      <div class="h-100 d-flex align-items-center">
+        <div class="img-cover w-100 h-100 position-absolute"
+          style="background-image: url('assets/img/demo/homepage-product-1.jpg');">
+        </div>
+        <div class="container">
+          <div class="row justify-content-end align-items-center">
+            <div class="col-xs-12 col-md-5">
+              <div class="copy text-left">
+                <span class="d-block text-center">Sản phẩm đặc trưng</span>
+                <h2 class="display-2 text-center serif text-primary">Nấm mối đen</h2>
 
-                </div>
+                <p class="text-left">
+                  Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
+                  từ loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không
+                  nên ăn những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
+                </p>
+                <a href="/san-pham-chi-tiet.html" class="btn btn-lg btn-white text-primary rounded-pill">
+                  Nấm mối đen</a>
+              </div>
             </div>
-        </section> <!-- / .intro-product -->
+          </div>
 
-        <section class="section-news news curve-top curve-bottom">
-            <div class="container">
-                <h2 class="display-2 text-center serif text-primary title">Tin tức và sự kiện</h2>
-                <div class="news-wrap text-center">
-                    <div class="row list">
+        </div>
+      </div>
+      @@include("partials/decor-el.html", {
+      "cclass": "",
+      })
+    </section> <!-- / .intro-product -->
 
-                        <div class="col-xs-12 col-md-4">
-                            @@include("partials/news/news-item.html", {
-                                "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
-                                "category": "THÔNG CÁO BÁO CHÍ",
-                                "date": "29 June 2021",
-                                "figure": "assets/img/demo/news-item-1.jpg",
-                                })
-                        </div> <!-- / .col-xs-12.col-md-4 -->
+    <section class="section-news news curve-top curve-bottom">
 
-                        <div class="col-xs-12 col-md-4">
-                            @@include("partials/news/news-item.html", {
-                                "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
-                                "category": "TIN TỨC",
-                                "date": "29 June 2021",
-                                "figure": "assets/img/demo/news-item-2.jpg",
-                                })
-                        </div> <!-- / .col-xs-12.col-md-4 -->
+      <div class="container">
+        <h2 class="display-2 text-center serif text-primary title">Tin tức và sự kiện</h2>
+        <div class="news-wrap text-center">
+          <div class="row list">
 
-                        <div class="col-xs-12 col-md-4">
-                            @@include("partials/news/news-item.html", {
-                                "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
-                                "category": "SỰ KIỆN TRUYỀN THÔNG",
-                                "date": "29 June 2021",
-                                "figure": "assets/img/demo/news-item-3.jpg",
-                                })
-                        </div> <!-- / .col-xs-12.col-md-4 -->
-                    </div>
-                    <a href="tin-tuc-su-kien.html" class="btn btn-primary rounded-pill">
-                        Xem thêm bài tin
-                    </a>
-                </div>
-            </div>
+            <div class="col-xs-12 col-md-4">
+              @@include("partials/news/news-item.html", {
+              "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
+              "category": "THÔNG CÁO BÁO CHÍ",
+              "date": "29 June 2021",
+              "figure": "assets/img/demo/news-item-1.jpg",
+              })
+            </div> <!-- / .col-xs-12.col-md-4 -->
 
-        </section> <!-- / .news -->
-    </main>
+            <div class="col-xs-12 col-md-4">
+              @@include("partials/news/news-item.html", {
+              "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
+              "category": "TIN TỨC",
+              "date": "29 June 2021",
+              "figure": "assets/img/demo/news-item-2.jpg",
+              })
+            </div> <!-- / .col-xs-12.col-md-4 -->
 
-    <!-- FOOTER
+            <div class="col-xs-12 col-md-4">
+              @@include("partials/news/news-item.html", {
+              "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
+              "category": "SỰ KIỆN TRUYỀN THÔNG",
+              "date": "29 June 2021",
+              "figure": "assets/img/demo/news-item-3.jpg",
+              })
+            </div> <!-- / .col-xs-12.col-md-4 -->
+          </div>
+          <a href="tin-tuc-su-kien.html" class="btn btn-lg btn-primary rounded-pill">
+            Xem thêm bài tin
+          </a>
+        </div>
+      </div>
+
+    </section> <!-- / .news -->
+  </main>
+
+  <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
-    "category": "dashboards",
-    "subcategory": "",
-    "page": "index.html"
-    })
+  @@include("partials/footer.html", {
+  "category": "dashboards",
+  "subcategory": "",
+  "page": "index.html"
+  })
 
-    <!-- JAVASCRIPT
+  <!-- JAVASCRIPT
     ================================================== -->
-    @@include("partials/scripts.html")
+  @@include("partials/scripts.html")
 
 </body>
 

@@ -1,0 +1,246 @@
+.pAccount {
+  position: relative;
+
+  .account {
+    min-height: calc(100vh - #{$navbar-height});
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+    > .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      > .row {
+        flex: 1;
+      }
+    }
+  }
+  .have-address {
+    padding: 0 0.75rem;
+    .list-group-item {
+      padding: 1.25rem 1.8rem;
+      border-radius: $border-radius-xl;
+      margin-bottom: 0.9rem;
+      &.default {
+        border-color: transparent;
+        .default-btn {
+          display: none;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 1.9rem;
+      }
+    }
+  }
+  .add-address {
+    padding: 0 0.75rem;
+    .border {
+      padding: 1.5rem 1.9rem 2.5rem;
+      margin: 0 0 1.9rem;
+    }
+
+    .head {
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  .history {
+    table {
+      .order-state {
+        .inside {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+        h4 {
+          margin-bottom: 2rem;
+        }
+      }
+      .product-name {
+        margin-bottom: 1.6rem;
+        h4 {
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+    thead {
+      th {
+        background-color: transparent;
+        &:first-of-type {
+          border-top-left-radius: 0.65rem;
+          border-bottom-left-radius: 0.65rem;
+        }
+        &:last-of-type {
+          border-top-right-radius: 0.65rem;
+          border-bottom-right-radius: 0.65rem;
+        }
+      }
+    }
+
+    tbody {
+      border: 1px solid transparent;
+      border-radius: $border-radius-xl;
+      box-shadow: 1px 2px $border-light, -1px -1px $border-light;
+      color: $secondary;
+      &:before {
+        content: "@";
+        display: block;
+        line-height: 20px;
+        text-indent: -99999px;
+      }
+      td {
+        vertical-align: top;
+        height: inherit;
+      }
+
+      tr {
+        height: 1px;
+      }
+    }
+  }
+
+  .history-detail {
+    padding-left: 2.5rem;
+    table {
+      th,
+      td {
+        padding: 0 0.6rem 0 0;
+      }
+    }
+
+    .state {
+      width: 100%;
+      padding-bottom: 4rem;
+      ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      li {
+        position: relative;
+        list-style-type: none;
+      }
+      .activated {
+        .icon {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+      .space {
+        flex: 1;
+        margin: 0 0.5rem;
+        hr {
+          border-top-width: 2px;
+        }
+
+        &.activated {
+          hr {
+            border-color: $primary;
+          }
+        }
+      }
+      .text {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        padding-top: 1rem;
+        color: $secondary;
+      }
+      .icon {
+        background-color: #E0E0E0;
+      }
+    }
+
+    .info {
+      margin-bottom: 1.9rem;
+      .border {
+        padding: 1.3rem 1rem;
+      }
+    }
+
+    .products {
+      .body,
+      .head {
+        padding: 0.9rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .head {
+        background-color: $green-dark;
+        color: $white;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .col-auto {
+        margin: 0 2rem;
+      }
+    }
+    .product-item {
+      .col {
+        display: flex;
+      }
+    }
+  }
+
+  .input-radio {
+    margin: 0 1.25rem 0 0.75rem;
+  }
+
+  .curve-fig {
+    transform: none;
+  }
+  .navbar {
+    position: absolute;
+    max-width: 500px;
+    height: calc(100% + #{$curves-height});
+    background-color: transparent;
+
+    .navbar-nav {
+      margin-bottom: 3.2rem;
+    }
+  }
+  .nav-tabs {
+    .nav-item {
+      margin-left: 2.6rem;
+      margin-right: 2.6rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .nav-link {
+      border-bottom-width: 3px;
+
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+
+  .right {
+    padding-top: 3.3rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .pane {
+    > .border {
+      padding: 1.5rem 1.5rem 2.5rem;
+      margin: 0 0.75rem;
+    }
+  }
+
+  .order-tabs {
+    margin-bottom: 2.2rem;
+  }
+}

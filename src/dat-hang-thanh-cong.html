@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "THANK_YOU"
+  })
+</head>
+
+<body>
+
+  <!-- NAVIGATION
+    ================================================== -->
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "page",
+  "subcategory": "",
+  "page": "dat-hang-thanh-cong.html"
+  })
+  }
+  <!-- CONTENT
+    ================================================== -->
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pThankyou">
+    <section class="thank-you curve-bottom bg-white">
+      <div class="d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center my-5">
+            <div class="col-12 col-md-7">
+              <div class="border border-radius-xl text-center">
+                <!-- Heading -->
+                <div class="ele circle-in d-inline-block">
+                  <span class="circle"></span>
+                  <div class="main img-contain"
+                    style="background-image: url('assets/img/elements/thank-you-illu.png');">
+                    <canvas width="418" height="188" class="ratio-scale"></canvas>
+                  </div>
+                </div>
+                <h2 class="display-3 text-center text-green-dark heading">
+                  Xin cảm ơn!
+                  <br>
+                  Bạn đã đặt hàng thành công
+                </h2>
+                <p class="sub">Chúng tôi sẽ liên hệ với bạn để xác nhận đơn hàng trong vòng ít phút nữa!</p>
+                <table class="table table-sm table-borderless table-nowrap ">
+                  <tr>
+                    <th>
+                      <span class="font-weight-normal">Mã đơn hàng:</span>
+                    </th>
+                    <td>
+                      <span class="text-bold text-primary">#1234567</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <span class="font-weight-normal">Thời gian đặt hàng:</span>
+                    </th>
+                    <td>
+                      <span class="">Thứ 3, 17/05/2020</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <span class="font-weight-normal">Người nhận hàng:</span>
+                    </th>
+                    <td>
+                      <span class=" text-secondary">Trần Hà Linh</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <span class="font-weight-normal">Số điện thoại:</span>
+                    </th>
+                    <td>
+                      <span class=" text-secondary">0986179077</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <span class="font-weight-normal">Địa chỉ:</span>
+                    </th>
+                    <td>
+                      <span class=" text-secondary">730/125 Lê Đức Thọ, Phường 15, Quận Gò Vấp, Hồ Chí
+                        Minh</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <div class="row button-group mx-auto">
+                  <div class="col-12 col-md-6">
+                    <a href="/index.html" class="btn btn-outline-primary rounded-pill w-100">
+                      <span class="">Về trang chủ</span>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <a href="/tai-khoan.html" class="btn btn-primary rounded-pill w-100">
+                      <span class="">Xem chi tiết</span>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a href="/register.html" class="btn btn-primary rounded-pill w-100">
+                      <span class="">Đăng ký tài khoản</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div>
+
+    </section>
+  </main> <!-- / .main-content -->
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "category": "page",
+  "subcategory": "",
+  "page": "dat-hang-thanh-cong.html"
+  })
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

@@ -42,7 +42,7 @@
 
 .navbar-light .navbar-brand {
   filter: $navbar-light-brand-filter;
-} 
+}
 
 .navbar-light .navbar-collapse::before {
   border-top-color: $navbar-light-divider-color;
@@ -71,7 +71,6 @@
   margin-right: -$navbar-padding-x;
   padding-left: $navbar-padding-x;
   padding-right: $navbar-padding-x;
-
   // Spacer to replace margin / padding as those
   // cause .navbar-collapse to "jump" when collapsing
   &:before {
@@ -538,3 +537,26 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .navbar {
+    height: auto;
+
+    .navbar-toggler {
+      flex: 0 0 20%;
+      text-align: left;
+      max-width: 20%;
+    }
+    .navbar-user {
+      flex: 0 0 20%;
+      text-align: right;
+      max-width: 20%;
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      min-height: 100vh;
+    }
+  }
+}
+

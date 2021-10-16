@@ -1,29 +1,42 @@
 .pHome {
-    // section-banner
-    .banner {
-        .carousel-indicators {
-            bottom: 15%;
-        }
-        .slide-title {
-            margin-bottom: 40px;
-        }
+  // section-banner
+  .banner {
+    .carousel-indicators {
+      bottom: 15%;
     }
-    // section-banner
+    .slide-title {
+      margin-bottom: 40px;
+    }
+  }
+  // section-banner
 
-    // section-news
-    .news {
-       
-    } // section-news
-    
-    .intro-brand {
-        > * {
-            z-index: 3;
-        }
-        &:before {
-            background-image: url("#{$path-to-img}/backgrounds/pattern-1.png");
-            background-size: 100vw auto;
-            background-position: top center;
-            z-index: 2;
-        }
+  .intro-product {
+    position: relative;
+    .ele {
+      right: 0;
+      bottom: 0;
+      transform: translate(22.5%, 30%);
+      z-index: 2;
     }
+  } // intro-product
+
+  // section-news
+  .news {
+  } // section-news
+
+  .intro-brand {
+    > * {
+      z-index: 3;
+    }
+    &:before {
+      background-image: url("#{$path-to-img}/backgrounds/pattern-1.png");
+      background-size: 100vw auto;
+      background-position: top center;
+      z-index: 2;
+    }
+  }
+
+  // RESPONSIVE
+  @media all and (max-width: 1025px) {
+  }
 }

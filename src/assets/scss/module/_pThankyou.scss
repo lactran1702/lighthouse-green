@@ -1,0 +1,36 @@
+.pThankyou {
+  .ele {
+    margin-bottom: 0.6rem;
+  }
+  .border {
+    padding: 3.2rem 3rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .sub {
+    margin-bottom: 1.9rem;
+  }
+
+  table {
+    margin-bottom: 2rem;
+    th {
+      text-align: left;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    td {
+      text-align: right;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .button-group {
+    width: 70%;
+
+    .col-md-6 {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
