@@ -1,45 +1,67 @@
 .pProductDetail {
-    .banner {
-        .copy {
-            margin-bottom: 3.5625rem;
-        }
+  .banner {
+    .copy {
+      margin-bottom: 3.5625rem;
+    }
 
-        form {
-            h4 {
-                margin-bottom: 0.8rem;
-            }
-        }
+    form {
+      h4 {
+        margin-bottom: 0.8rem;
+      }
+    }
 
-        .group-large {
-            margin-top: 1.875rem;
-        }
-        .btn-group-toggle {
-            margin-bottom: 0.9rem;
-        }
-    } // section.banner
+    .group-large {
+      margin-top: 1.875rem;
+    }
+    .btn-group-toggle {
+      margin-bottom: 0.9rem;
+    }
+  } // section.banner
 
-    .cores {
-        padding-top: 10rem;
-        padding-bottom: 14rem;
-        
-        .cores-title {
-            margin-bottom: 3.5625rem;
-        }
-        
-        .core-row {
-            margin-bottom: 3.8rem;
-        }
-        .core-img {
-            max-width: 90%;
-        }
-        .core-title {
-            font-size: 1.5rem;
-            margin-bottom: 1.875rem;
-        }
-    } // section.cores
+  .cores {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+
+    .cores-title {
+      margin-bottom: 3.5625rem;
+    }
+
+    .core-row {
+      margin-bottom: 3.8rem;
+    }
+    .core-img {
+      max-width: 90%;
+    }
+    .core-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.875rem;
+    }
     
-    .news {
-        
-        padding-bottom: 4.56rem;
-    } // section.news
+    .row--3 {
+      .core-img {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .ele {
+      right: 0;
+      top: 9rem;
+      transform: translate(22.5%, 0);
+      z-index: 2;
+    }
+    
+    .ele-2 {
+      right: unset;
+      top: 0;
+      left: 0;
+      transform: translate(-58%, -24.5%);
+      z-index: 1;
+    }
+  } // section.cores
+
+  .news {
+    padding-bottom: 4.56rem;
+  } // section.news
 }

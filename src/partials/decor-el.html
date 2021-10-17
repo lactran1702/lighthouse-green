@@ -1,10 +1,17 @@
-<div class="decor-el ele circle-in d-inline-block @@if(cclass) {@@cclass}">
+<div class="decor-el ele circle-in d-inline-block @@if(className) {@@className}">
   <div class="wrap">
     <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
       <canvas width="168" height="178" class="ratio-scale"></canvas>
     </span>
+    @@if(main=="1") {
     <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu.png');">
       <canvas width="232" height="253" class="ratio-scale"></canvas>
     </div>
+    }
+    @@if(main=="2") {
+    <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu-2.png');">
+      <canvas width="188" height="253" class="ratio-scale"></canvas>
+    </div>
+    }
   </div>
 </div>

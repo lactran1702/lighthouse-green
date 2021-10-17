@@ -116,7 +116,8 @@
                 </div>
               </div>
 
-              <a data-toggle="tab-toggler" href="#orderStepTwo" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục mua hàng</a>
+              <a data-toggle="tab-toggler" href="#orderStepTwo" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục
+                mua hàng</a>
 
             </div> <!-- / .col-12.col-md-9.order-wrap-->
 
@@ -166,7 +167,12 @@
                 </form>
               </div> <!-- / .border -->
             </div>
-          </div>
+          </div><!--.row-->
+          
+          @@include("partials/decor-el.html", {
+          "className": "ele-1",
+          "main": 1
+          })
         </div> <!-- #orderStepOne.pane.bag -->
 
         <!-- SECOND STEP -->
@@ -345,16 +351,20 @@
                 </div> <!-- .border.border-radius-xl -->
               </div> <!-- #address-form.collapse -->
 
-              <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
+              <a href="#orderStepThree" data-toggle="tab-toggler" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
 
             </div><!-- .address-wrap -->
-            
+
             <div class="col-12 col-md-4 cart-wrap">
               @@include("partials/shopping-bag/cart.html")
             </div>
-          </div>
+          </div> <!--.row-->
+          @@include("partials/decor-el.html", {
+            "className": "ele-2",
+            "main": 1
+            })
         </div> <!-- #orderStepTwo.pane.address -->
-        
+
         <!-- THIRD STEP -->
         <div class="tab-pane pane payment fade" id="orderStepThree">
           <!-- Heading -->
@@ -369,8 +379,8 @@
                 <div class="list-group-item border rounded-pill">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
-                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption1" autocomplete="off"
-                        checked="">
+                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption1"
+                        autocomplete="off" checked="">
                       <label class="payment-radio overlay" for="inputpaymentoption1"></label>
                     </div>
                     <div class="col ">
@@ -382,7 +392,8 @@
                 <div class="list-group-item border rounded-pill">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
-                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption2" autocomplete="off">
+                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption2"
+                        autocomplete="off">
                       <label class="payment-radio overlay" for="inputpaymentoption2"></label>
                     </div>
                     <div class="col ">
@@ -394,7 +405,8 @@
                 <div class="list-group-item border rounded-pill">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
-                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption3" autocomplete="off">
+                      <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption3"
+                        autocomplete="off">
                       <label class="payment-radio overlay" for="inputpaymentoption3"></label>
                     </div>
                     <div class="col ">
@@ -409,7 +421,7 @@
             <div class="col-12 col-md-4 cart-wrap">
               @@include("partials/shopping-bag/cart.html")
 
-              <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill w-100">Hoàn tất đặt hàng</a>
+              <a href="dat-hang-thanh-cong.html" class="btn btn-lg btn-primary rounded-pill w-100">Hoàn tất đặt hàng</a>
 
             </div>
           </div>
@@ -424,6 +436,7 @@
           </div>
         </div> <!-- / .nav-foot -->
       </div> <!-- / .container -->
+
     </section> <!-- / .curve-bottom.bg-white -->
 
   </main> <!-- / .main-content -->

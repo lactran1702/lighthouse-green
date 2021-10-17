@@ -19,5 +19,23 @@
       background-color: #c4c4c4;
       max-width: 90%;
     }
+
+    .row--2 {
+      .core-img {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .ele-1 {
+      bottom: 0;
+      right: 0;
+      transform: translate(22.5%, 50%);
+    }
+    .ele-2 {
+      top: 0;
+      right: 0;
+      transform: translate(45%, -20%);
+    }
   } // section.cores
 }

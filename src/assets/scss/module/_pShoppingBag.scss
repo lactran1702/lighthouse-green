@@ -7,7 +7,11 @@
 
   .pane {
     &.bag {
+      position: relative;
       margin-bottom: 3.7rem;
+    }
+    &.address {
+      position: relative;
     }
   }
 
@@ -39,7 +43,7 @@
     .space {
       flex: 1;
       margin: 0 0.5rem;
-      hr { 
+      hr {
         border-top-width: 2px;
       }
     }
@@ -183,11 +187,9 @@
     }
 
     .cart-wrap {
-      
     }
     .cart {
       margin-bottom: 2.7rem;
-      
     }
   }
 
@@ -226,5 +228,20 @@
         margin-top: 1.25rem;
       }
     }
+  }
+
+  .ele {
+    width: 16vw;
+  }
+  .ele-1 {
+    left: 100%;
+    bottom: 0;
+    transform: translate(-40%, 26%);
+    
+  }
+  .ele-2 {
+    left: 100%;
+    bottom: 0;
+    transform: translate(-40%, 46%);
   }
 }
