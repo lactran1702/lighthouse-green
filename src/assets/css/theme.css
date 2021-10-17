@@ -12393,6 +12393,12 @@ footer {
   background-position: top center;
   z-index: 2; }
 
+@media all and (max-width: 768px) {
+  .pHome .banner .carousel-indicators {
+    bottom: 10%; }
+  .pHome .banner .slide-content .container {
+    margin-bottom: 20%; } }
+
 .pStory .banner .container {
   flex: 0 0 40%; }
 
