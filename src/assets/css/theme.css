@@ -12275,23 +12275,33 @@ input[type="radio"]:checked:after {
 
 .decor-el {
   position: absolute; }
-  .decor-el .wrap {
-    position: relative; }
-  .decor-el .circle {
-    position: absolute;
-    top: 22.5%;
-    left: 50%;
-    transform: translateX(-50%) scale(0.2);
-    z-index: 1;
-    transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-    opacity: 0;
-    width: 72%; }
-    .decor-el .circle.visible {
+
+.ele .wrap {
+  position: relative; }
+
+.ele .circle {
+  position: absolute;
+  top: 22.5%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.2);
+  z-index: 1;
+  transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  opacity: 0;
+  width: 72%; }
+  .ele .circle.visible {
+    opacity: 1;
+    transform: translateX(-50%) scale(1); }
+    .ele .circle.visible + .main {
       opacity: 1;
-      transform: translateX(-50%) scale(1); }
-  .decor-el .main {
-    position: relative;
-    z-index: 2; }
+      transform: scale(1); }
+
+.ele .main {
+  position: relative;
+  transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition-delay: 0.3s;
+  transform: scale(0.2);
+  opacity: 0;
+  z-index: 2; }
 
 @media (min-width: 992px) {
   .navbar-expand-lg > .container,
@@ -12386,25 +12396,32 @@ footer {
 .pStory .banner .container {
   flex: 0 0 40%; }
 
-.pStory .intro-message .decor-img {
-  bottom: -6%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 115%;
-  height: 75%; }
+.pStory .intro-message {
+  position: relative; }
+  .pStory .intro-message .decor-img {
+    bottom: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115%;
+    height: 75%; }
+  .pStory .intro-message > * {
+    z-index: 3; }
+  .pStory .intro-message:before {
+    background-image: url("../img/backgrounds/pattern-1.png");
+    background-size: 100vw auto;
+    background-position: top center;
+    z-index: 2; }
+  .pStory .intro-message .ele {
+    right: 0;
+    bottom: 0;
+    transform: translate(22.5%, 30%);
+    z-index: 2; }
 
-.pStory .intro-message > * {
-  z-index: 3; }
-
-.pStory .intro-message:before {
-  background-image: url("../img/backgrounds/pattern-1.png");
-  background-size: 100vw auto;
-  background-position: top center;
-  z-index: 2; }
-
-.pStory .intro-factory .size-high {
-  font-size: 5rem;
-  font-weight: 700; }
+.pStory .intro-factory {
+  padding-top: 1.25rem; }
+  .pStory .intro-factory .size-high {
+    font-size: 5rem;
+    font-weight: 700; }
 
 .pStory .technology .title {
   margin-bottom: 2rem; }
@@ -12422,6 +12439,14 @@ footer {
 .pProduct .technology {
   padding-top: 5.2rem; }
 
+.pProduct .product-odd {
+  position: relative; }
+  .pProduct .product-odd .ele {
+    right: 0;
+    bottom: 50%;
+    transform: translate(22.5%, 50%);
+    z-index: 2; }
+
 .pProductDetail .banner .copy {
   margin-bottom: 3.5625rem; }
 
@@ -12435,6 +12460,7 @@ footer {
   margin-bottom: 0.9rem; }
 
 .pProductDetail .cores {
+  position: relative;
   padding-top: 10rem;
   padding-bottom: 14rem; }
   .pProductDetail .cores .cores-title {
@@ -12446,6 +12472,20 @@ footer {
   .pProductDetail .cores .core-title {
     font-size: 1.5rem;
     margin-bottom: 1.875rem; }
+  .pProductDetail .cores .row--3 .core-img {
+    position: relative;
+    z-index: 2; }
+  .pProductDetail .cores .ele {
+    right: 0;
+    top: 9rem;
+    transform: translate(22.5%, 0);
+    z-index: 2; }
+  .pProductDetail .cores .ele-2 {
+    right: unset;
+    top: 0;
+    left: 0;
+    transform: translate(-58%, -24.5%);
+    z-index: 1; }
 
 .pProductDetail .news {
   padding-bottom: 4.56rem; }
@@ -12463,6 +12503,17 @@ footer {
   .pCommunity .cores .core-img {
     background-color: #c4c4c4;
     max-width: 90%; }
+  .pCommunity .cores .row--2 .core-img {
+    position: relative;
+    z-index: 2; }
+  .pCommunity .cores .ele-1 {
+    bottom: 0;
+    right: 0;
+    transform: translate(22.5%, 50%); }
+  .pCommunity .cores .ele-2 {
+    top: 0;
+    right: 0;
+    transform: translate(45%, -20%); }
 
 .pNews .recent {
   padding-top: 4rem;
@@ -12506,10 +12557,15 @@ footer {
     margin-bottom: 0; }
 
 .pNews .news-list {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 60px; }
   .pNews .news-list:after {
     width: 250vw; }
+  .pNews .news-list .ele-1 {
+    right: 0;
+    top: 0;
+    transform: translate(22.5%, -50%); }
 
 .pNewsDetail .detail {
   padding-top: 4rem;
@@ -12593,6 +12649,12 @@ footer {
 .pContact .curve-fig {
   overflow: hidden; }
 
+.pContact .ele-1 {
+  left: 100%;
+  top: 0;
+  width: 52%;
+  transform: translate(0%, -22%); }
+
 .map-wrap {
   position: absolute;
   top: 0;
@@ -12618,14 +12680,28 @@ footer {
 .pLogin .button-group {
   margin-bottom: 2.875rem; }
 
+.pLogin .ele-1 {
+  right: 0;
+  top: 0;
+  transform: translate(22.5%, 12%); }
+
 .pRegister .heading {
   margin-bottom: 3.375rem; }
+
+.pRegister .ele-1 {
+  right: 0;
+  top: 0;
+  transform: translate(22.5%, 12%); }
 
 .pShoppingBag section:first-of-type {
   padding-top: 3.75rem; }
 
 .pShoppingBag .pane.bag {
+  position: relative;
   margin-bottom: 3.7rem; }
+
+.pShoppingBag .pane.address {
+  position: relative; }
 
 .pShoppingBag .heading {
   margin-bottom: 2rem; }
@@ -12771,6 +12847,19 @@ footer {
   margin-bottom: 0.9rem; }
   .pShoppingBag .cart-wrap hr:first-of-type {
     margin-top: 1.25rem; }
+
+.pShoppingBag .ele {
+  width: 16vw; }
+
+.pShoppingBag .ele-1 {
+  left: 100%;
+  bottom: 0;
+  transform: translate(-40%, 26%); }
+
+.pShoppingBag .ele-2 {
+  left: 100%;
+  bottom: 0;
+  transform: translate(-40%, 46%); }
 
 .pAccount {
   position: relative; }
@@ -12921,9 +13010,16 @@ footer {
     margin: 0 0.75rem; }
   .pAccount .order-tabs {
     margin-bottom: 2.2rem; }
+  .pAccount .ele-1 {
+    right: 0;
+    bottom: 0;
+    transform: translate(22.5%, 0%); }
 
-.pThankyou .ele {
+.pThankyou .container .ele {
   margin-bottom: 0.6rem; }
+  .pThankyou .container .ele .circle {
+    top: -12%;
+    width: 40%; }
 
 .pThankyou .border {
   padding: 3.2rem 3rem; }
@@ -12949,3 +13045,8 @@ footer {
   width: 70%; }
   .pThankyou .button-group .col-md-6 {
     margin-bottom: 1.25rem; }
+
+.pThankyou .ele-1 {
+  right: 0;
+  top: 0;
+  transform: translate(22.5%, 19%); }

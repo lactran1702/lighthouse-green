@@ -1,52 +1,63 @@
 .pStory {
-    .banner {
-        .container {
-            flex: 0 0 40%;
-        }
-    } // section.banner
+  .banner {
+    .container {
+      flex: 0 0 40%;
+    }
+  } // section.banner
 
-    .intro-message {
-        .decor-img {
-            bottom: -6%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 115%;
-            height: 75%;
-        }
+  .intro-message {
+    position: relative;
 
-        > * {
-            z-index: 3;
-        }
-        &:before {
-            background-image: url("#{$path-to-img}/backgrounds/pattern-1.png");
-            background-size: 100vw auto;
-            background-position: top center;
-            z-index: 2;
-        }
-    } // secion.intro-message
+    .decor-img {
+      bottom: -6%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 115%;
+      height: 75%;
+    }
 
-    .intro-factory {
-        .size-high {
-            font-size: 5rem;
-            font-weight: 700;
-        }
-    } // secion.intro-factory
+    > * {
+      z-index: 3;
+    }
+    &:before {
+      background-image: url("#{$path-to-img}/backgrounds/pattern-1.png");
+      background-size: 100vw auto;
+      background-position: top center;
+      z-index: 2;
+    }
 
-    .technology {
-        .title {
-            margin-bottom: 2rem;
-        }
-        .technology-fig {
-            margin-bottom: 1.5rem;
-        }
-        .list {
-            margin-right: -28px;
-            margin-left: -28px;
+    .ele {
+      right: 0;
+      bottom: 0;
+      transform: translate(22.5%, 30%);
+      z-index: 2;
+    }
+  } // secion.intro-message
 
-            div[class*="col"] {
-                padding-right: 28px;
-                padding-left: 28px;
-            }
-        }
-    } // secion.technology
+  .intro-factory {
+    padding-top: 1.25rem;
+    
+    .size-high {
+      font-size: 5rem;
+      font-weight: 700;
+    }
+  } // secion.intro-factory
+
+  .technology {
+    .title {
+      margin-bottom: 2rem;
+    }
+    .technology-fig {
+      margin-bottom: 1.5rem;
+    }
+    .list {
+      margin-right: -28px;
+      margin-left: -28px;
+
+      div[class*="col"] {
+        padding-right: 28px;
+        padding-left: 28px;
+      }
+    }
+  } // secion.technology
 }

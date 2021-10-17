@@ -1,66 +1,73 @@
 .pNews {
-    .recent {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        .news-hor {
-        }
-    } // section.recent
-    .recent-news {
-        width: 100%;
-
-        .news-type {
-            font-size: 1rem;
-        }
-
-        .news-title {
-            font-size: 1rem;
-        }
-
-        .news-calendar {
-            font-size: 0.875rem;
-            margin-bottom: 0;
-        }
-    }
-    .news-vert {
-        .news-type {
-            margin-bottom: 10px;
-        }
-        .news-title {
-            font-size: 1.125rem;
-            font-weight: 700;
-        }
-        .news-fig {
-            margin-bottom: 20px;
-        }
-    }
+  .recent {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     .news-hor {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        margin-bottom: 15px;
+    }
+  } // section.recent
+  .recent-news {
+    width: 100%;
 
-        .news-fig {
-            display: inline-block;
-            flex: 0 0 36%;
-            margin-right: 20px;
-        }
-        .news-content {
-            display: inline-block;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
+    .news-type {
+      font-size: 1rem;
     }
 
-    .news-list {
-        padding-top: 30px;
-        padding-bottom: 60px;
-        &:after {
-            width: 250vw;
-        }
-    } // section.news-list
+    .news-title {
+      font-size: 1rem;
+    }
+
+    .news-calendar {
+      font-size: 0.875rem;
+      margin-bottom: 0;
+    }
+  }
+  .news-vert {
+    .news-type {
+      margin-bottom: 10px;
+    }
+    .news-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+    .news-fig {
+      margin-bottom: 20px;
+    }
+  }
+  .news-hor {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-bottom: 15px;
+
+    .news-fig {
+      display: inline-block;
+      flex: 0 0 36%;
+      margin-right: 20px;
+    }
+    .news-content {
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .news-list {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    &:after {
+      width: 250vw;
+    }
+
+    .ele-1 {
+      right: 0;
+      top: 0;
+      transform: translate(22.5%, -50%);
+    }
+  } // section.news-list
 }

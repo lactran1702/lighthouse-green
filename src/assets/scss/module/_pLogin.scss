@@ -4,18 +4,24 @@
   }
   .cross {
     margin-bottom: 1.3rem;
-    
+
     hr {
       flex: 1;
     }
-    
+
     h5 {
       margin: 0 1.5rem;
       align-self: center;
     }
   }
-  
+
   .button-group {
     margin-bottom: 2.875rem;
+  }
+  
+  .ele-1 {
+    right: 0;
+    top: 0;
+    transform: translate(22.5%, 12%);
   }
 }

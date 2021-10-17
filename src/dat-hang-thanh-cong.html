@@ -28,11 +28,16 @@
             <div class="col-12 col-md-7">
               <div class="border border-radius-xl text-center">
                 <!-- Heading -->
-                <div class="ele circle-in d-inline-block">
-                  <span class="circle"></span>
-                  <div class="main img-contain"
-                    style="background-image: url('assets/img/elements/thank-you-illu.png');">
-                    <canvas width="418" height="188" class="ratio-scale"></canvas>
+                <div class="ele circle-in d-inline-block ">
+                  <div class="wrap">
+                    <span class="circle img-contain"
+                      style="background-image: url('assets/img/elements/el-watercolor.png');">
+                      <canvas width="168" height="178" class="ratio-scale"></canvas>
+                    </span>
+                    <div class="main img-contain"
+                      style="background-image: url('assets/img/elements/thank-you-illu.png');">
+                      <canvas width="418" height="188" class="ratio-scale"></canvas>
+                    </div>
                   </div>
                 </div>
                 <h2 class="display-3 text-center text-green-dark heading">
@@ -111,7 +116,10 @@
           </div> <!-- / .row -->
         </div> <!-- / .container -->
       </div>
-
+      @@include("partials/decor-el.html", {
+      "className": "ele-1",
+      "main": 1
+      })
     </section>
   </main> <!-- / .main-content -->
 

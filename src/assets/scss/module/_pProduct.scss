@@ -1,5 +1,16 @@
 .pProduct {
-    .technology {
-        padding-top: 5.2rem;
-    } // secion.technology
+  .technology {
+    padding-top: 5.2rem;
+  } // section.technology
+
+  .product-odd {
+    position: relative;
+
+    .ele {
+      right: 0;
+      bottom: 50%;
+      transform: translate(22.5%, 50%);
+      z-index: 2;
+    }
+  }
 }
