@@ -39,4 +39,19 @@
   // RESPONSIVE
   @media all and (max-width: 1025px) {
   }
+
+  @media all and (max-width: 768px) {
+    // section-banner
+    .banner {
+      .carousel-indicators {
+        bottom: 10%;
+      }
+      .slide-content {
+        .container {
+          margin-bottom: 20%;
+        }
+      }
+    }
+    // section-banner
+  }
 }
