@@ -235,7 +235,7 @@ main.cuvre-sections-last {
     height: 100%;
     top: -$curves-height;
     left: 50%;
-    width: 200vw;
+    width: 3073px;
     background-color: white;
     transform: translateX(-50%);
     z-index: 1;
@@ -250,7 +250,7 @@ main.cuvre-sections-last {
     height: 100%;
     bottom: -$curves-height;
     left: 50%;
-    width: 200vw;
+    width: 3073px;
     background-color: white;
     transform: translateX(-50%);
     z-index: 1;
@@ -260,7 +260,7 @@ main.cuvre-sections-last {
 .curve-fig {
   position: absolute;
   left: 50%;
-  width: 200vw;
+  width: 3073px;
   top: 0;
   bottom: 0;
   transform: translateX(-50%);
@@ -280,7 +280,7 @@ main.cuvre-sections-last {
 }
 
 .curve-fig-bottom-right {
-  width: 150vw;
+  width: 2304px;
   transform: none;
   border-bottom-right-radius: 100%;
   bottom: -$curves-height;
@@ -288,7 +288,7 @@ main.cuvre-sections-last {
 }
 
 .curve-fig-bottom-left {
-  width: 150vw;
+  width: 2304px;
   left: 50%;
   transform: translateX(-100%);
   border-bottom-left-radius: 100%;
@@ -643,21 +643,18 @@ input[type="radio"]:checked:after {
   }
 }
 
-// .card-fill {
+.h {
+  @each $breakpoint, $value in $grid-breakpoints {
+    &-#{$breakpoint} {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        height: calc(100% - #{$card-margin-bottom});
 
-//   @each $breakpoint, $value in $grid-breakpoints {
-
-//     &-#{$breakpoint} {
-
-//       @include media-breakpoint-up(#{$breakpoint}) {
-//         height: calc(100% - #{$card-margin-bottom});
-
-//         .card-body {
-//           flex-grow: 0;
-//           margin-top: auto;
-//           margin-bottom: auto;
-//         }
-//       }
-//     }
-//   }
-// }
+        .card-body {
+          flex-grow: 0;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+    }
+  }
+}

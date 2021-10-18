@@ -51,6 +51,7 @@
             slideChanged(instance) {
                 updateClasses(instance, el)
             },
+            rubberband: false,
         })
     }
 

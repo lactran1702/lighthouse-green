@@ -16,8 +16,8 @@
 }
 
 .select2-selection[aria-expanded="true"] {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  // border-bottom-left-radius: 0;
+  // border-bottom-right-radius: 0;
 }
 
 .select2-container {
@@ -29,6 +29,8 @@
   margin-top: -$input-border-width;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .select2-search--dropdown {
