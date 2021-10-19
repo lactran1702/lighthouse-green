@@ -49,7 +49,6 @@ debug.log
 
 # Maven
 target/
-dist/
 
 # JetBrains IDE
 .idea/
