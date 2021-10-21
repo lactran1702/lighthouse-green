@@ -9,6 +9,13 @@ footer {
 
   .social-links {
     justify-content: flex-end;
+    margin-left: -10px;
+    margin-right: 0;
+    
+    > [class*="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .footer-statement {

@@ -8,4 +8,18 @@
     top: 0;
     transform: translate(22.5%, 12%);
   }
+
+  @media all and (max-width: 767px) {
+    .ele-1 {
+      display: none !important;
+    }
+    .heading {
+      white-space: unset !important;
+    }
+    .form-control {
+      & + .select2 {
+        margin-bottom: 1.375rem;
+      }
+    }
+  }
 }

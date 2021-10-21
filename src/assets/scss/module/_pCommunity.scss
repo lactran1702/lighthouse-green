@@ -2,6 +2,7 @@
   .banner {
     .container {
       flex: 0 0 40%;
+      padding-top: 10%;
     }
   } // section.banner
 
@@ -38,4 +39,49 @@
       transform: translate(45%, -20%);
     }
   } // section.cores
+
+  @media all and (max-width: 768px) {
+    .banner {
+      .container {
+        padding-top: 40%;
+      }
+      .img-cover {
+        background-position: center right 35%;
+      }
+      .slide-title {
+        font-size: 1.5rem;
+        line-height: 1.4;
+      }
+    }
+
+    .cores {
+      &::before {
+        width: 250vw;
+      }
+    }
+  }
+  @media all and (max-width: 767px) {
+    .cores {
+      background-color: $green-light-2 !important;
+      padding-bottom: 3rem;
+      &::before {
+        width: 3000px;
+        background-color: $green-light-2;
+      }
+
+      .core-row {
+        .col-md-5 {
+          order: 1;
+        }
+      }
+      .core-img {
+        margin-top: 1.875rem;
+        max-width: 100%;
+      }
+      .ele-1 {
+        transform: translate(22.5%, 0%);
+        width: 30%;
+      }
+    }
+  }
 }

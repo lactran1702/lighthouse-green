@@ -99,4 +99,20 @@
       overflow-y: hidden;
     }
   }
+
+  @media all and (max-width: 768px) {
+    .hot-news {
+      margin-bottom: 2.5rem;
+    }
+    .site-pagination {
+      display: flex;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .detail {
+      &:after {
+        width: 3000px;
+      }
+    }
+  }
 }

@@ -34,7 +34,7 @@
       background-position: top center;
       z-index: 2;
     }
-  }
+  } // section.intro-brand
 
   // RESPONSIVE
   @media all and (max-width: 1025px) {
@@ -48,10 +48,60 @@
       }
       .slide-content {
         .container {
-          margin-bottom: 20%;
+          margin-bottom: 25%;
         }
       }
     }
     // section-banner
+    .intro-brand {
+      height: auto !important;
+      .copy {
+        margin-bottom: 2.4rem;
+      }
+    } // section.intro-brand
+  }
+
+  @media all and (max-width: 767px) {
+    // section-banner
+    .banner {
+      .slide-title {
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-bottom: 1.25rem;
+      }
+      .carousel-indicators {
+        bottom: 5%;
+      }
+    }
+
+    .intro-brand {
+      padding-top: 3.5rem;
+      padding-bottom: 2.4rem;
+    } // section.intro-brand
+
+    .intro-product {
+      background-color: white;
+
+      > .d-flex {
+        flex-direction: column;
+      }
+      .img-cover {
+        // filter: blur(1px);
+        position: relative !important;
+        height: 35% !important;
+        background-size: 100% auto;
+        background-position: center top;
+      }
+      .copy {
+        margin-top: 10%;
+      }
+      .ele {
+        width: 35%;
+        transform: translate(22.5%, 0%);
+      }
+    } // intro-product
+  }
+
+  @media all and (max-width: 320px) {
   }
 }

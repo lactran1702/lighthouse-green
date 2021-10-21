@@ -36,7 +36,7 @@
 
   .intro-factory {
     padding-top: 1.25rem;
-    
+
     .size-high {
       font-size: 5rem;
       font-weight: 700;
@@ -60,4 +60,68 @@
       }
     }
   } // secion.technology
+
+  @media all and (max-width: 768px) {
+    .banner {
+      > .d-flex {
+        justify-content: end !important;
+      }
+      .container {
+        flex: 0 0 30%;
+      }
+    }
+  }
+  @media all and (max-width: 767px) {
+    .banner {
+      .slide-title {
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .intro-message {
+      padding-top: 3.5rem;
+      padding-bottom: 2.4rem;
+      
+      .img-cover {
+        position: relative;
+        width: 80%!important;
+        margin: 0 auto;
+        overflow: visible;
+      }
+
+      .ele {
+        width: 20%;
+        bottom: -5%;
+      }
+    }
+
+    .intro-factory {
+      background-color: $green-light-2 !important;
+      padding-top: 2.5rem;
+      padding-bottom: 2.4rem;
+
+      .col-12 {
+        &:first-of-type {
+          order: 1;
+        }
+      }
+    }
+    
+    .section-technology {
+      padding-top: 3.5rem;
+      
+      .title {
+        text-align: left!important;
+      }
+      
+      .technology-item {
+        padding: 13px;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+  }
 }
