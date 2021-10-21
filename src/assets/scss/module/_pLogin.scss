@@ -18,10 +18,27 @@
   .button-group {
     margin-bottom: 2.875rem;
   }
-  
+
   .ele-1 {
     right: 0;
     top: 0;
     transform: translate(22.5%, 12%);
+  }
+
+  @media all and (max-width: 767px) {
+    .ele-1 {
+      display: none !important;
+    }
+    .heading {
+      white-space: unset!important;
+    }
+
+    .button-group {
+      margin-bottom: 0;
+
+      button {
+        margin-bottom: 20px;
+      }
+    }
   }
 }

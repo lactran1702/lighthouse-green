@@ -13,4 +13,79 @@
       z-index: 2;
     }
   }
+
+  @media all and (max-width: 768px) {
+    .banner {
+      .img-cover {
+        background-position: center right 45%;
+      }
+    }
+    .product-even {
+      .copy {
+        margin-top: 3rem;
+      }
+    }
+    .product-odd {
+      .img-cover {
+        background-position: center right 45%;
+      }
+      .ele {
+        bottom: 0;
+        transform: translate(22.5%, 20%);
+      }
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    .banner {
+      background-color: $white;
+      .d-flex {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+      }
+      .img-cover {
+        position: relative !important;
+        height: 50% !important;
+        background-size: 100% auto;
+        background-position: bottom right 45%;
+      }
+      .container {
+        padding-top: 2.4rem;
+      }
+    }
+    .product-even {
+      .d-flex {
+        flex-direction: column;
+        justify-content: end;
+      }
+      .copy {
+        margin-bottom: 2.4rem;
+      }
+    }
+    .product-odd {
+      background-color: $green-light-2;
+
+      .d-flex {
+        flex-direction: column;
+        justify-content: end;
+      }
+      .img-cover {
+        position: relative !important;
+        background-position: center left 15%;
+      }
+      .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .ele {
+        width: 20%;
+      }
+    }
+    
+    .section-technology {
+      .technology-item {
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }

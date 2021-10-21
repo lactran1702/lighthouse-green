@@ -18,6 +18,10 @@
 .navbar-light {
   background-color: $navbar-light-bg;
   border-color: $navbar-light-border-color;
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNCAxQzI0IDAuNDQ3NzE1IDIzLjU1MjMgMCAyMyAwSDFDMC40NDc3MTYgMCAwIDAuNDQ3NzE1IDAgMUMwIDEuNTUyMjggMC40NDc3MTYgMiAxIDJIMjNDMjMuNTUyMyAyIDI0IDEuNTUyMjggMjQgMVpNMjQgOEMyNCA3LjQ0NzcyIDIzLjU1MjMgNyAyMyA3SDFDMC40NDc3MTYgNyAwIDcuNDQ3NzIgMCA4QzAgOC41NTIyOCAwLjQ0NzcxNiA5IDEgOUgyM0MyMy41NTIzIDkgMjQgOC41NTIyOCAyNCA4Wk0xMiAxNUMxMiAxNC40NDc3IDExLjU1MjMgMTQgMTEgMTRIMUMwLjQ0NzcxNiAxNCAwIDE0LjQ0NzcgMCAxNUMwIDE1LjU1MjMgMC40NDc3MTYgMTYgMSAxNkgxMUMxMS41NTIzIDE2IDEyIDE1LjU1MjMgMTIgMTVaIiBmaWxsPSIjMzZCQzQwIi8+Cjwvc3ZnPgo=");
+  }
 }
 
 .navbar-light .navbar-heading {
@@ -559,4 +563,3 @@
     }
   }
 }
-

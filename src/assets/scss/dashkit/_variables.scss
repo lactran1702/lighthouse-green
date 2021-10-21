@@ -131,11 +131,26 @@ $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-decoration: none !default;
 
 
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1258px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-gutter-width: 24px !default;
+$grid-gutter-width: 36px !default;
 
 // Components
 //
@@ -662,7 +677,7 @@ $list-group-item-padding-y-lg: $spacer !default;
 // Main content
 
 $main-content-padding-y: 40px !default;
-$main-content-padding-x: 24px !default; // in px to combine with $grid-gutter-width
+$main-content-padding-x: 36px !default; // in px to combine with $grid-gutter-width
 
 
 // Modal
@@ -702,7 +717,7 @@ $navbar-breadcrumb-padding-x: 0 !default;
 $navbar-vibrant-border-color: transparent !default;
 $navbar-vibrant-heading-color: fade-out($white, .6) !default;
 $navbar-vibrant-divider-color: fade-out($white, .8) !default;
-$navbar-vibrant-color: fade-out($white, .3) !default;
+$navbar-vibrant-color: $primary !default;
 $navbar-vibrant-hover-color: $white !default;
 $navbar-vibrant-active-color: $white !default;
 $navbar-vibrant-brand-filter: brightness(0) invert(1) !default;

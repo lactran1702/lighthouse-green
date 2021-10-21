@@ -18,6 +18,47 @@
     width: 52%;
     transform: translate(0%, -22%);
   }
+
+  @media all and (max-width: 768px) {
+    .contact {
+      height: auto;
+
+      > .d-flex {
+        flex-direction: column;
+      }
+      .container {
+        padding-top: 3.75rem;
+      }
+    }
+    .curve-fig {
+      position: relative;
+      width: 100%;
+      left: 0;
+      height: 50vh;
+      transform: unset;
+      bottom: unset;
+      border-radius: unset;
+    }
+    .map-wrap {
+      width: 100%;
+    }
+    .ele-1 {
+      left: 90%;
+      top: 90%;
+      width: 20%;
+      transform: translate(0%, -25%);
+    }
+  }
+  @media all and (max-width: 767px) {
+    .contact {
+      .container {
+        padding-bottom: 2.5rem;
+      }
+    }
+    .curve-fig {
+      padding-top: 130%;
+    }
+  }
 }
 .map-wrap {
   position: absolute;

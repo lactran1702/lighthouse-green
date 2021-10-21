@@ -154,7 +154,7 @@
         color: $secondary;
       }
       .icon {
-        background-color: #E0E0E0;
+        background-color: #e0e0e0;
       }
     }
 
@@ -243,10 +243,81 @@
   .order-tabs {
     margin-bottom: 2.2rem;
   }
-  
+
   .ele-1 {
     right: 0;
     bottom: 0;
     transform: translate(22.5%, 0%);
+  }
+
+  @media all and (max-width: 768px) {
+    .navbar {
+      position: relative;
+      right: 0;
+      bottom: unset;
+      max-width: unset;
+      height: auto;
+      .navbar-nav {
+        min-height: unset;
+        margin-bottom: 0;
+      }
+      .heading {
+      }
+    }
+    .account {
+      > .container {
+        > .row {
+          height: auto !important;
+        }
+      }
+    }
+    .pane {
+      padding-top: 2rem;
+    }
+    .right {
+      padding-top: 0;
+    }
+    .ele-1 {
+      width: 10%;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .history {
+      .tab-pane {
+        overflow-x: auto;
+      }
+    }
+    .history-detail {
+      padding-left: 0;
+      .state {
+        ul {
+          width: 90%;
+          margin: 0 auto;
+          padding-left: 0;
+        }
+      }
+      .info {
+        div[class*="col-"] {
+          margin-bottom: 20px;
+        }
+      }
+      .shopping-bag {
+        .row {
+          flex-wrap: nowrap;
+        }
+        .col-auto {
+          margin: 0 0.5rem;
+        }
+      }
+      .product-item {
+        .col {
+          flex-direction: column;
+        }
+
+      }
+    }
+    .product-fig {
+      margin-right: 0;
+    }
   }
 }

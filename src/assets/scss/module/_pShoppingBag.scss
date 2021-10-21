@@ -57,7 +57,7 @@
       color: $secondary;
     }
     .nav-toggler {
-      background-color: #E0E0E0;
+      background-color: #e0e0e0;
 
       &:hover {
         background-color: $primary;
@@ -84,8 +84,7 @@
       vertical-align: middle;
     }
   }
-  .order-wrap {
-  }
+
   .total-wrap {
     .border {
       padding: 1rem 1.25rem;
@@ -237,11 +236,49 @@
     left: 100%;
     bottom: 0;
     transform: translate(-40%, 26%);
-    
   }
   .ele-2 {
     left: 100%;
     bottom: 0;
     transform: translate(-40%, 46%);
+  }
+
+  @media all and (max-width: 768px) {
+    .shopping-bag {
+      .product-content {
+        flex: 1 1 40%;
+      }
+    }
+    .order-wrap {
+      margin-bottom: 1.875rem;
+    }
+    .have-address,
+    .new-address,
+    .add-address {
+      .address-wrap {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    section {
+      &:first-of-type {
+        padding-bottom: 4rem;
+      }
+    }
+    .shopping-bag {
+      .product-price {
+        text-align: left !important;
+      }
+    }
+    .shopping-bag-foot {
+      width: 93%;
+      .name {
+        white-space: unset;
+        width: 300%;
+        text-align: center;
+      }
+    }
   }
 }
