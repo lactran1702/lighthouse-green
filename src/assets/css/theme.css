@@ -11840,6 +11840,10 @@ button:focus {
     background: #36BC40;
     border-radius: 20px; }
 
+a,
+button {
+  transition: all 0.2s ease-in-out; }
+
 .banner-full {
   height: calc(100vh - 80px); }
 
@@ -12027,7 +12031,7 @@ main.cuvre-sections-last {
   height: 100%;
   top: -8vh;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   background-color: white;
   transform: translateX(-50%);
   z-index: 1; }
@@ -12039,7 +12043,7 @@ main.cuvre-sections-last {
   height: 100%;
   bottom: -8vh;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   background-color: white;
   transform: translateX(-50%);
   z-index: 1; }
@@ -12047,11 +12051,11 @@ main.cuvre-sections-last {
 .curve-fig {
   position: absolute;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   top: 0;
   bottom: 0;
   transform: translateX(-50%);
-  background-size: auto 100%;
+  background-size: 100vw auto;
   background-position: center; }
 
 .curve-fig-top {
@@ -12065,14 +12069,14 @@ main.cuvre-sections-last {
   bottom: -8vh; }
 
 .curve-fig-bottom-right {
-  width: 2304px;
+  width: 3072px;
   transform: none;
   border-bottom-right-radius: 100%;
   bottom: -8vh;
   background-position: center left; }
 
 .curve-fig-bottom-left {
-  width: 2304px;
+  width: 3072px;
   left: 50%;
   transform: translateX(-100%);
   border-bottom-left-radius: 100%;
@@ -12414,6 +12418,8 @@ footer {
     footer .social-links > [class*="col-"] {
       padding-left: 10px;
       padding-right: 10px; }
+    footer .social-links a:hover {
+      background-color: #535353; }
   footer .footer-statement {
     width: 100%;
     max-width: 160px;
@@ -12430,6 +12436,8 @@ footer {
     font-size: 0.87rem; }
     footer .smaller a {
       color: #FFFFFF; }
+      footer .smaller a:hover {
+        color: #93CD2A; }
   footer h4.text-primary:first-of-type {
     margin-bottom: 20px; }
   footer h4.text-primary:last-of-type {
@@ -12543,6 +12551,9 @@ footer {
     padding-right: 28px;
     padding-left: 28px; }
 
+.pStory .technology .technology-item {
+  position: relative; }
+
 @media all and (max-width: 768px) {
   .pStory .banner > .d-flex {
     justify-content: end !important; }
@@ -12581,6 +12592,8 @@ footer {
 
 .pProduct .technology {
   padding-top: 5.2rem; }
+  .pProduct .technology .technology-item {
+    position: relative; }
 
 .pProduct .product-odd {
   position: relative; }

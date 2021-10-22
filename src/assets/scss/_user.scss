@@ -19,6 +19,11 @@
   }
 }
 
+a,
+button {
+  transition: $transition-base;
+}
+
 .banner-full {
   // full screen without topnav
 
@@ -235,7 +240,7 @@ main.cuvre-sections-last {
     height: 100%;
     top: -$curves-height;
     left: 50%;
-    width: 3073px;
+    width: 4096px;
     background-color: white;
     transform: translateX(-50%);
     z-index: 1;
@@ -250,7 +255,7 @@ main.cuvre-sections-last {
     height: 100%;
     bottom: -$curves-height;
     left: 50%;
-    width: 3073px;
+    width: 4096px;
     background-color: white;
     transform: translateX(-50%);
     z-index: 1;
@@ -260,11 +265,11 @@ main.cuvre-sections-last {
 .curve-fig {
   position: absolute;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   top: 0;
   bottom: 0;
   transform: translateX(-50%);
-  background-size: auto 100%;
+  background-size: 100vw auto;
   background-position: center;
 }
 
@@ -280,7 +285,7 @@ main.cuvre-sections-last {
 }
 
 .curve-fig-bottom-right {
-  width: 2304px;
+  width: 3072px;
   transform: none;
   border-bottom-right-radius: 100%;
   bottom: -$curves-height;
@@ -288,7 +293,7 @@ main.cuvre-sections-last {
 }
 
 .curve-fig-bottom-left {
-  width: 2304px;
+  width: 3072px;
   left: 50%;
   transform: translateX(-100%);
   border-bottom-left-radius: 100%;
@@ -715,8 +720,7 @@ input[type="radio"]:checked:after {
   }
 }
 
-
-// gsap not working on inline 
+// gsap not working on inline
 span.stagger-up,
 span.stagger-left,
 span.stagger-right,

@@ -1,6 +1,10 @@
 .pProduct {
   .technology {
     padding-top: 5.2rem;
+
+    .technology-item {
+      position: relative;
+    }
   } // section.technology
 
   .product-odd {
@@ -81,7 +85,7 @@
         width: 20%;
       }
     }
-    
+
     .section-technology {
       .technology-item {
         margin-bottom: 3rem;

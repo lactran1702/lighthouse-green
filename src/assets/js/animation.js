@@ -16,7 +16,7 @@ var animFn = (function () {
       // triggerHook: "onEnter",
       // triggerHook: 0.9, // show, when scrolled 10% into view
       // duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
-      reverse: true,
+      reverse: false,
       ease: Circ.easeInOut,
     }
   });
@@ -82,7 +82,7 @@ var animFn = (function () {
 
       var scene = new ScrollMagic.Scene({ triggerElement: el })
         .setTween(tlSection)
-        .addIndicators({ name: "section" + index })
+        // .addIndicators({ name: "section" + index })
         .addTo(controller)
     })
   }
