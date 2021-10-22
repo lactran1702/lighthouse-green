@@ -28,13 +28,13 @@
     ================================================== -->
   <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pNews ">
 
-    <section class="recent banner-full">
+    <section class="recent banner-full animate">
       <div class="h-100 d-flex justify-content-between">
 
         <div class="container">
-          <h2 class="display-1 serif text-primary">Tin tức mới nhất</h2>
+          <h2 class="display-1 serif text-primary stagger-down">Tin tức mới nhất</h2>
           <div class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7 stagger-left">
               <div class="recent-news news-vert news-item">
                 <div class="news-fig">
                   <div class="img img-cover border-radius-xl"
@@ -61,7 +61,7 @@
             </div>
             <div class="col-12 col-lg-5">
 
-              <div class="recent-news news-hor news-item">
+              <div class="recent-news news-hor news-item stagger-right">
                 <div class="news-fig">
                   <div class="img img-cover border-radius-xl"
                     style="background-image: url('assets/img/demo/news-fig-2.jpg');">
@@ -84,7 +84,7 @@
                 </div>
                 <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
-              <div class="recent-news news-item news-hor">
+              <div class="recent-news news-item news-hor stagger-right">
                 <div class="news-fig">
                   <div class="img img-cover border-radius-xl"
                     style="background-image: url('assets/img/demo/news-fig-3.jpg');">
@@ -105,7 +105,7 @@
                 </div>
                 <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
-              <div class="recent-news news-hor news-item">
+              <div class="recent-news news-hor news-item stagger-right">
                 <div class="news-fig">
                   <div class="img img-cover border-radius-xl"
                     style="background-image: url('assets/img/demo/news-fig-4.jpg');">
@@ -135,13 +135,13 @@
       <!--.d-flex.justify-content-between-->
     </section><!-- .recent -->
 
-    <section class="section-news news-list curve-top curve-bottom bg-white">
+    <section class="section-news news-list curve-top curve-bottom bg-white animate">
       <div class="container">
-        <h2 class="display-1 text-center serif text-primary title">Tin tức và sự kiện</h2>
+        <h2 class="display-1 text-center serif text-primary title stagger-up">Tin tức và sự kiện</h2>
         <div class="news-wrap text-center">
           <div class="row list">
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               @@include("partials/news/news-item.html", {
               "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
               "category": "THÔNG CÁO BÁO CHÍ",
@@ -150,7 +150,7 @@
               })
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               @@include("partials/news/news-item.html", {
               "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
               "category": "TIN TỨC",
@@ -159,7 +159,7 @@
               })
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               @@include("partials/news/news-item.html", {
               "title": "NEWS",
               "category": "SỰ KIỆN TRUYỀN THÔNG",
@@ -168,7 +168,7 @@
               })
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               @@include("partials/news/news-item.html", {
               "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
               "category": "THÔNG CÁO BÁO CHÍ",
@@ -176,7 +176,7 @@
               "figure": "assets/img/demo/news-item-4.jpg",
               })
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               @@include("partials/news/news-item.html", {
               "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
               "category": "TIN TỨC",
@@ -184,7 +184,7 @@
               "figure": "assets/img/demo/news-item-5.jpg",
               })
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               @@include("partials/news/news-item.html", {
               "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
               "category": "SỰ KIỆN TRUYỀN THÔNG",
@@ -193,7 +193,7 @@
               })
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
           </div>
-          <div class="news-pagination site-pagination">
+          <div class="news-pagination site-pagination stagger-up">
             <button class="btn btn-success btn-rounded-circle">
               <span class="carousel-control-prev-icon icon-prev icon middle-icon icon-sm mt-n1 "
                 aria-hidden="true"></span>

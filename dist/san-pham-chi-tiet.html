@@ -42,9 +42,14 @@
     <div class="modal-dialog " role="document">
       <div class="modal-content">
         <div class="modal-body" data-toggle="lists" data-options='{"valueNames": ["name"]}'>
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h2 class="display-1 serif text-primary">
             Đơn hàng
           </h2>
+
           <!-- Form -->
           <form class="mb-4">
             <div class="list-group list-group-flush list">
@@ -285,7 +290,7 @@
     ================================================== -->
   <main class="main-content pProductDetail cuvre-sections cuvre-sections-last bg-green-dark">
 
-    <section class="banner banner-full">
+    <section class="banner banner-full animate">
       <div class="h-100 d-flex align-items-center">
         <div class="img-cover w-100 h-100 position-absolute"
           style="background-image: url('assets/img/demo/homepage-product-1.jpg');"></div>
@@ -294,9 +299,9 @@
           <div class="row justify-content-end">
             <div class="col-12 col-md-6 col-lg-5">
               <div class="copy">
-                <span class="text-green-dark text-bold ml-md-5">Sản phẩm đặc trưng</span>
-                <h2 class="display-2 text-primary serif">Nấm mối đen</h2>
-                <p class="text-secondary">
+                <span class="text-green-dark text-bold ml-md-5 stagger-down">Sản phẩm đặc trưng</span>
+                <h2 class="display-2 text-primary serif stagger-down">Nấm mối đen</h2>
+                <p class="text-secondary stagger-right">
                   Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
                   từ
                   loại thực
@@ -308,8 +313,8 @@
               </div>
               <form action="" class="buy-form">
                 <div class="group-norm">
-                  <h4 class="text-secondary text-bold">Khối Lượng</h4>
-                  <div class="input-group btn-group-toggle ">
+                  <h4 class="text-secondary text-bold stagger-right">Khối Lượng</h4>
+                  <div class="input-group btn-group-toggle stagger-right">
                     <input type="radio" class="btn-check" name="inputweight" id="option1" autocomplete="off" checked="">
                     <label class="btn btn-white rounded-pill font-weight-light" for="option1">
                       1kg
@@ -325,22 +330,22 @@
                       4kg
                     </label>
                   </div>
-                  <span class="text-secondary"><i>*Khi lựa chọn cân nặng giá của sản phẩm sẽ thay
+                  <span class="text-secondary stagger-right"><i>*Khi lựa chọn cân nặng giá của sản phẩm sẽ thay
                       đổi</i>
                   </span>
                 </div>
 
                 <div class="group-large">
-                  <h4 class="text-secondary text-bold">Số lượng</h4>
+                  <h4 class="text-secondary text-bold stagger-up">Số lượng</h4>
                   <div class="row justify-content-between ">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 stagger-up">
                       <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
                         <span class="" data-toggle="count">-</span>
                         <input name="countNumber" type="number" class="form-control input" value="1">
                         <span class="" data-toggle="count">+</span>
                       </div>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-8 stagger-up">
                       <button class="btn btn-primary rounded-pill w-100"> <span>250.000 VND</span>
                         |
                         Mua ngay</button>
@@ -358,30 +363,30 @@
 
     </section> <!-- / .banner.banner-full -->
 
-    <section class="intro vh-100 curve-bottom bg-white">
+    <section class="intro vh-100 curve-bottom bg-white animate">
 
       <div class="h-100 d-flex align-items-center">
-        <div class="curve-fig curve-fig-bottom-right img-cover "
+        <div class="curve-fig curve-fig-bottom-right img-cover stagger-right"
           style="background-image: url('assets/img/demo/product-intro-1.jpg');">
         </div>
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-12 col-lg-5">
-              <span class="text-green-dark text-bold ml-md-5">Đặc điểm nổi bật</span>
-              <h2 class="display-2 text-primary serif">Nấm mối đen</h2>
-              <p class="text-secondary mb-0">
+              <span class="text-green-dark text-bold ml-md-5 stagger-left">Đặc điểm nổi bật</span>
+              <h2 class="display-2 text-primary serif stagger-left">Nấm mối đen</h2>
+              <p class="text-secondary mb-0 stagger-left">
                 Nấm là một loại thực vật đặc biệt, chúng chứa rất nhiều vitamin và khoáng chất có lợi
                 cho cơ thể. Các enzyme quan trọng như protein, các chất hữu cơ và khoáng chất đồng, kẽm,
                 kali là nguồn duy nhất cho vitamin D
               </p>
-              <p class="text-secondary mb-0">
+              <p class="text-secondary mb-0 stagger-left">
 
                 Nấm vô cùng hữu ích trong việc kiểm soát cân nặng. Vì thành phần nấm rất bổ dưỡng nhưng
                 lại “keo kiệt calo”. Nấm đặc biệt hiệu quả khi thay thế cho thịt đỏ, bởi chúng làm tăng
                 sản xuất năng lượng trong tế bào. Nấm trở thành một món ăn phổ biến cho các vận động
                 viên mong muốn gia tăng sức mạnh và độ bền.
               </p>
-              <p class="text-secondary mb-0">
+              <p class="text-secondary mb-0 stagger-left">
 
                 Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp,
                 giảm tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm
@@ -389,7 +394,7 @@
                 và gan của bạn. Giúp giảm thiểu nỗi đau của bệnh viêm khớp, thậm chí hỗ trợ cho cả những
                 bệnh nhân bị hen suyễn.
               </p>
-              <p class="text-secondary mb-0">
+              <p class="text-secondary mb-0 stagger-left">
                 Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời từ
                 loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không nên ăn
                 những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
@@ -401,24 +406,24 @@
 
     </section> <!-- / .intro -->
 
-    <section class="cores bg-white">
+    <section class="cores bg-white animate">
       <div class="container">
         <div class="text-center">
-          <span class="text-green-dark text-bold">Đặc điểm nổi bật</span>
-          <h2 class="cores-title display-1 text-primary serif">Nấm mối đen</h2>
+          <span class="text-green-dark text-bold stagger-down">Đặc điểm nổi bật</span>
+          <h2 class="cores-title display-1 text-primary serif stagger-down">Nấm mối đen</h2>
         </div>
         <div class="row justify-content-between align-items-center core-row row--1">
           <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-contain core-img"
+            <div class="w-100 img-contain core-img stagger-left"
               style="background-image: url('assets/img/demo/product-fact-1.png');">
               <canvas width="1" height="1" class="ratio-scale"></canvas>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <h3 class="core-title serif text-green-dark">
+            <h3 class="core-title serif text-green-dark stagger-right">
               Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
             </h3>
-            <p class="text-left">
+            <p class="text-left stagger-right">
               Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp, giảm
               tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm giúp giảm
               thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận và gan của
@@ -430,10 +435,10 @@
 
         <div class="row justify-content-between align-items-center core-row row--2">
           <div class="col-xs-12 col-md-6">
-            <h3 class="core-title serif text-green-dark">
+            <h3 class="core-title serif text-green-dark stagger-left">
               Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
             </h3>
-            <p class="text-left">
+            <p class="text-left stagger-left">
               Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp, giảm
               tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm giúp giảm
               thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận và gan của
@@ -442,7 +447,7 @@
             </p>
           </div>
           <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-contain core-img"
+            <div class="w-100 img-contain core-img stagger-right"
               style="background-image: url('assets/img/demo/product-fact-2.png');">
               <canvas width="1" height="1" class="ratio-scale"></canvas>
             </div>
@@ -452,7 +457,7 @@
 
         <div class="row justify-content-between align-items-center core-row row--3">
           <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-contain core-img"
+            <div class="w-100 img-contain core-img stagger-left"
               style="background-image: url('assets/img/demo/product-fact-3.png');">
               <canvas width="1" height="1" class="ratio-scale"></canvas>
             </div>
@@ -471,10 +476,10 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <h3 class="core-title serif text-green-dark">
+            <h3 class="core-title serif text-green-dark stagger-right">
               Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
             </h3>
-            <p class="text-left">
+            <p class="text-left stagger-right">
               Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp, giảm
               tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm giúp giảm
               thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận và gan của
@@ -499,12 +504,12 @@
       </div>
     </section> <!-- .cores -->
 
-    <section class="section-news news curve-top curve-bottom bg-white">
+    <section class="section-news news curve-top curve-bottom bg-white animate">
       <div class="container">
-        <h2 class="display-2 text-center serif text-primary title">Tin tức và sự kiện</h2>
+        <h2 class="display-2 text-center serif text-primary title stagger-down">Tin tức và sự kiện</h2>
         <div class="news-wrap text-center">
           <div class="row list">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
                       <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-1.jpg');">
@@ -524,7 +529,7 @@
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
                       <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-2.jpg');">
@@ -544,7 +549,7 @@
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
                       <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-3.jpg');">
@@ -565,7 +570,7 @@
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
           </div>
-          <button class="btn btn-primary rounded-pill">
+          <button class="btn btn-primary rounded-pill stagger-up">
             Xem thêm bài tin
           </button>
         </div>
@@ -575,50 +580,48 @@
 
 
     <div class="quick-buy">
-        <div class="container">
-            <form action="" class="buy-form">
+      <div class="container">
+        <form action="" class="buy-form">
 
-                <ul class="list">
+          <ul class="list">
 
-                    <li class="item">
-                        <span class="text-green-dark text-bold name">Nấm mối đen</span>
-                        <h4 class="text-secondary text-uppercase text-bold mb-0">Khối Lượng</h4>
-                        <div class="input-group btn-group-toggle group-norm">
-                            <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op1"
-                                autocomplete="off" checked="">
-                            <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op1">
-                                1kg
-                            </label>
+            <li class="item">
+              <span class="text-green-dark text-bold name">Nấm mối đen</span>
+              <h4 class="text-secondary text-uppercase text-bold mb-0">Khối Lượng</h4>
+              <div class="input-group btn-group-toggle group-norm">
+                <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op1" autocomplete="off"
+                  checked="">
+                <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op1">
+                  1kg
+                </label>
 
-                            <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op2"
-                                autocomplete="off">
-                            <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op2">
-                                2kg
-                            </label>
+                <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op2" autocomplete="off">
+                <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op2">
+                  2kg
+                </label>
 
-                            <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op3"
-                                autocomplete="off">
-                            <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op3">
-                                4kg
-                            </label>
-                        </div>
+                <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op3" autocomplete="off">
+                <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op3">
+                  4kg
+                </label>
+              </div>
 
-                        <h4 class="text-secondary text-uppercase text-bold mb-0">Số lượng</h4>
-                        <div class="group-large">
-                            <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
-                                <span class="" data-toggle="count">-</span>
-                                <input name="quickbuyamount" type="number" class="form-control input" value="1">
-                                <span class="" data-toggle="count">+</span>
-                            </div>
-                        </div>
-                        <div class="group-large">
-                            <button class="btn btn-primary rounded-pill"> <span>250.000 VND</span> | Mua ngay</button>
-                        </div>
+              <h4 class="text-secondary text-uppercase text-bold mb-0">Số lượng</h4>
+              <div class="group-large">
+                <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                  <span class="" data-toggle="count">-</span>
+                  <input name="quickbuyamount" type="number" class="form-control input" value="1">
+                  <span class="" data-toggle="count">+</span>
+                </div>
+              </div>
+              <div class="group-large">
+                <button class="btn btn-primary rounded-pill"> <span>250.000 VND</span> | Mua ngay</button>
+              </div>
 
-                    </li>
+            </li>
 
-                    <!-- multiple items ? -->
-                    <!-- <li class="item">
+            <!-- multiple items ? -->
+            <!-- <li class="item">
                         <span class="text-green-dark text-bold name">Nấm mối trắng</span>
                         <h4 class="text-secondary text-uppercase text-bold mb-0">Khối Lượng</h4>
                         <div class="input-group btn-group-toggle group-norm">
@@ -654,10 +657,10 @@
                     </li> -->
 
 
-                </ul>
+          </ul>
 
-            </form>
-        </div>
+        </form>
+      </div>
     </div>
   </main> <!-- / .main-content -->
 
@@ -767,14 +770,16 @@
   <script src="./assets/libs/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
-  <!-- <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script> -->
+  <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
+  <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
+  <script src="./assets/libs/scrollmagic/plugins/animation.gsap.min.js"></script>
+  <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script>
 
   <!-- Map -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
   <script src="./assets/js/theme.min.js"></script>
-
 
 </body>
 

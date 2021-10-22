@@ -714,3 +714,12 @@ input[type="radio"]:checked:after {
     }
   }
 }
+
+
+// gsap not working on inline 
+span.stagger-up,
+span.stagger-left,
+span.stagger-right,
+span.stagger-down {
+  display: inline-block;
+}
