@@ -12395,6 +12395,12 @@ input[type="radio"]:checked:after {
   .vh-xl-100 {
     height: 100vh !important; } }
 
+span.stagger-up,
+span.stagger-left,
+span.stagger-right,
+span.stagger-down {
+  display: inline-block; }
+
 footer {
   background-color: #006731;
   padding-top: 6.8rem;
@@ -12780,8 +12786,8 @@ footer {
 
 .pNews .recent {
   background-color: #F4FAEA;
-  padding-top: 4rem;
-  padding-bottom: 4.5rem; }
+  padding-top: 2.5rem;
+  padding-bottom: 4rem; }
 
 .pNews .recent-news {
   width: 100%; }
@@ -12859,6 +12865,8 @@ footer {
 .pNewsDetail .detail {
   padding-top: 4rem;
   padding-bottom: 4.5rem; }
+  .pNewsDetail .detail::after {
+    width: 300vw; }
 
 .pNewsDetail .detail-wrap .news-type {
   font-size: 1rem;
@@ -13400,6 +13408,11 @@ footer {
     .pAccount .ele-1 {
       width: 10%; } }
   @media all and (max-width: 767px) {
+    .pAccount .nav-tabs {
+      flex-wrap: nowrap; }
+      .pAccount .nav-tabs .nav-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem; }
     .pAccount .history .tab-pane {
       overflow-x: auto; }
     .pAccount .history-detail {
@@ -13417,7 +13430,34 @@ footer {
       .pAccount .history-detail .product-item .col {
         flex-direction: column; }
     .pAccount .product-fig {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .pAccount .pane.info .form-select + .select2 {
+      margin-bottom: 1.375rem; }
+    .pAccount .pane > .border {
+      padding: 1.5rem 0.5rem 2.5rem;
+      margin: 0; }
+    .pAccount .add-address .border {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media all and (max-width: 320px) {
+    .pAccount .navbar {
+      padding-left: 0;
+      padding-right: 0; }
+    .pAccount .have-address {
+      padding-left: 0;
+      padding-right: 0; }
+      .pAccount .have-address .list-group-item {
+        padding-left: inherit;
+        padding-right: inherit; }
+        .pAccount .have-address .list-group-item .row {
+          flex-wrap: nowrap; }
+        .pAccount .have-address .list-group-item .col {
+          flex: 1 1 auto; }
+        .pAccount .have-address .list-group-item .col-auto {
+          flex: 0 0 20%; }
+    .pAccount .add-address {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .pThankyou .container .ele {
   margin-bottom: 0.6rem; }
