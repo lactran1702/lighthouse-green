@@ -71,10 +71,16 @@
       transform: translate(22.5%, -50%);
     }
   } // section.news-list
+  
+  @media all and (max-width: 1440px) {
+    .recent {
+      height: auto;
+      
+    }
+  }
 
   @media all and (max-width: 768px) {
     .recent {
-      height: auto;
       padding-bottom: 7.5rem;
     }
     .news-item {

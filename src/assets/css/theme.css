@@ -8950,7 +8950,8 @@ a.text-white:hover, a.text-white:focus {
   border-top-color: #E3EBF6; }
 
 .navbar-light .navbar-user-link {
-  color: #6E84A3; }
+  color: #6E84A3;
+  position: relative; }
   .navbar-light .navbar-user-link:hover, .navbar-light .navbar-user-link:focus {
     color: #36BC40; }
 
@@ -9007,6 +9008,14 @@ a.text-white:hover, a.text-white:focus {
   padding-bottom: 0.125em;
   font-size: 1.0625rem;
   line-height: 1.40625rem; }
+
+.navbar-user .badge-icon {
+  padding: 0.13em 0.3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #006731;
+  color: #FFFFFF; }
 
 .navbar-nav .dropdown-menu {
   border: none; }
@@ -11840,6 +11849,10 @@ button:focus {
     background: #36BC40;
     border-radius: 20px; }
 
+a,
+button {
+  transition: all 0.2s ease-in-out; }
+
 .banner-full {
   height: calc(100vh - 80px); }
 
@@ -12027,7 +12040,7 @@ main.cuvre-sections-last {
   height: 100%;
   top: -8vh;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   background-color: white;
   transform: translateX(-50%);
   z-index: 1; }
@@ -12039,7 +12052,7 @@ main.cuvre-sections-last {
   height: 100%;
   bottom: -8vh;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   background-color: white;
   transform: translateX(-50%);
   z-index: 1; }
@@ -12047,11 +12060,11 @@ main.cuvre-sections-last {
 .curve-fig {
   position: absolute;
   left: 50%;
-  width: 3073px;
+  width: 4096px;
   top: 0;
   bottom: 0;
   transform: translateX(-50%);
-  background-size: auto 100%;
+  background-size: 100vw auto;
   background-position: center; }
 
 .curve-fig-top {
@@ -12065,14 +12078,14 @@ main.cuvre-sections-last {
   bottom: -8vh; }
 
 .curve-fig-bottom-right {
-  width: 2304px;
+  width: 3072px;
   transform: none;
   border-bottom-right-radius: 100%;
   bottom: -8vh;
   background-position: center left; }
 
 .curve-fig-bottom-left {
-  width: 2304px;
+  width: 3072px;
   left: 50%;
   transform: translateX(-100%);
   border-bottom-left-radius: 100%;
@@ -12187,12 +12200,13 @@ input[type="radio"]:checked:after {
 .section-technology .technology-fig {
   margin-bottom: 1.5rem; }
 
-.section-technology .list {
-  margin-right: -28px;
-  margin-left: -28px; }
-  .section-technology .list div[class*="col"] {
-    padding-right: 28px;
-    padding-left: 28px; }
+.section-technology .technology-item {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px; }
+  .section-technology .technology-item:hover {
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1); }
 
 .quick-buy {
   position: fixed;
@@ -12306,24 +12320,12 @@ input[type="radio"]:checked:after {
   position: absolute;
   top: 22.5%;
   left: 50%;
-  transform: translateX(-50%) scale(0.2);
+  transform: translateX(-50%);
   z-index: 1;
-  transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-  opacity: 0;
   width: 72%; }
-  .ele .circle.visible {
-    opacity: 1;
-    transform: translateX(-50%) scale(1); }
-    .ele .circle.visible + .main {
-      opacity: 1;
-      transform: scale(1); }
 
 .ele .main {
   position: relative;
-  transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition-delay: 0.3s;
-  transform: scale(0.2);
-  opacity: 0;
   z-index: 2; }
 
 @media (min-width: 992px) {
@@ -12414,6 +12416,8 @@ footer {
     footer .social-links > [class*="col-"] {
       padding-left: 10px;
       padding-right: 10px; }
+    footer .social-links a:hover {
+      background-color: transparent; }
   footer .footer-statement {
     width: 100%;
     max-width: 160px;
@@ -12430,6 +12434,8 @@ footer {
     font-size: 0.87rem; }
     footer .smaller a {
       color: #FFFFFF; }
+      footer .smaller a:hover {
+        color: #93CD2A; }
   footer h4.text-primary:first-of-type {
     margin-bottom: 20px; }
   footer h4.text-primary:last-of-type {
@@ -12536,12 +12542,8 @@ footer {
 .pStory .technology .technology-fig {
   margin-bottom: 1.5rem; }
 
-.pStory .technology .list {
-  margin-right: -28px;
-  margin-left: -28px; }
-  .pStory .technology .list div[class*="col"] {
-    padding-right: 28px;
-    padding-left: 28px; }
+.pStory .technology .technology-item {
+  position: relative; }
 
 @media all and (max-width: 768px) {
   .pStory .banner > .d-flex {
@@ -12581,6 +12583,8 @@ footer {
 
 .pProduct .technology {
   padding-top: 5.2rem; }
+  .pProduct .technology .technology-item {
+    position: relative; }
 
 .pProduct .product-odd {
   position: relative; }
@@ -12837,9 +12841,12 @@ footer {
     top: 0;
     transform: translate(22.5%, -50%); }
 
+@media all and (max-width: 1440px) {
+  .pNews .recent {
+    height: auto; } }
+
 @media all and (max-width: 768px) {
   .pNews .recent {
-    height: auto;
     padding-bottom: 7.5rem; }
   .pNews .news-item {
     margin-bottom: 20px; }
@@ -13386,9 +13393,10 @@ footer {
   .pAccount .order-tabs {
     margin-bottom: 2.2rem; }
   .pAccount .ele-1 {
-    right: 0;
+    left: 90%;
     bottom: 0;
-    transform: translate(22.5%, 0%); }
+    transform: translate(22.5%, 0%);
+    width: 20%; }
   @media all and (max-width: 768px) {
     .pAccount .navbar {
       position: relative;

@@ -38,6 +38,7 @@
 
 .navbar-light .navbar-user-link {
   color: $navbar-light-color;
+  position: relative;
 
   @include hover-focus {
     color: $navbar-light-hover-color;
@@ -119,6 +120,15 @@
   padding-bottom: 0.125em;
   font-size: $font-size-lg;
   line-height: ($font-size-base * $line-height-base);
+}
+
+.navbar-user .badge-icon {
+  padding: 0.13em 0.3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $green-dark;
+  color: $white;
 }
 
 // Navbar dropdowns
