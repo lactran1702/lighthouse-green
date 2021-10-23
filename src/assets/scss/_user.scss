@@ -452,13 +452,14 @@ input[type="radio"]:checked:after {
   .technology-fig {
     margin-bottom: 1.5rem;
   }
-  .list {
-    margin-right: -28px;
-    margin-left: -28px;
 
-    div[class*="col"] {
-      padding-right: 28px;
-      padding-left: 28px;
+  .technology-item {
+    padding: 10px;
+    transition: $transition-base;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    &:hover {
+      box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -624,30 +625,16 @@ input[type="radio"]:checked:after {
     position: absolute;
     top: 22.5%;
     left: 50%;
-    transform: translateX(-50%) scale(0.2);
+    transform: translateX(-50%);
     z-index: 1;
-    transition: $transition-scroll;
-    opacity: 0;
+    // transition: $transition-scroll;
     width: 72%;
-
-    &.visible {
-      opacity: 1;
-      transform: translateX(-50%) scale(1);
-
-      & + .main {
-        opacity: 1;
-
-        transform: scale(1);
-      }
-    }
   }
 
   .main {
     position: relative;
-    transition: $transition-scroll;
-    transition-delay: 0.3s;
-    transform: scale(0.2);
-    opacity: 0;
+    // transition: $transition-scroll;
+    // transition-delay: 0.3s;
     z-index: 2;
   }
 }

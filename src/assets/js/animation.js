@@ -25,7 +25,11 @@ var animFn = (function () {
   // var itemAwPageL = $('.stagger-left:visible');
   // var itemAwPageR = $('.stagger-right:visible');
   // var itemAwPageD = $('.stagger-down:visible');
-  var staggerSection = $('.animate');
+  var staggerSections = $('.animate');
+  var scrollAnimUp = $('.scroll-anim-up');
+  var scrollAnimDown = $('.scroll-anim-down');
+  var scrollAnimLeft = $('.scroll-anim-left');
+  var scrollAnimRight = $('.scroll-anim-right');
 
   //
   // Functions
@@ -41,7 +45,7 @@ var animFn = (function () {
     $('.animateSection').each(function (index, el) {
       var currentItem = this;
       let directChildren = $(currentItem).children();
-      TweenMax.set($(directChildren), { y: 50, autoAlpha: 0 });
+      TweenLite.set($(directChildren), { y: 50, autoAlpha: 0 });
 
       directChildren.each(function (index, child) {
         let tween = TweenLite.to(child, 2, { y: 0, autoAlpha: 1, })
@@ -55,12 +59,13 @@ var animFn = (function () {
     });
 
     initSectionAnimation();
+    // initElementScrollAnimation();
   }
 
 
   function initSectionAnimation() {
-    staggerSection.each(function (index, el) {
-      
+    staggerSections.each(function (index, el) {
+
       let tlSection = new TimelineLite();
       let currentSection = $(this);
       var itemU = currentSection.find('.stagger-up:visible');
@@ -86,6 +91,17 @@ var animFn = (function () {
         .addTo(controller)
     })
   }
+
+  function initElementScrollAnimation() {
+
+    scrollAnimRight.each(function (index, el) {
+      const triggerElmData = $(this).data("trigger");
+      const triggerElm = $(this).closest(triggerElm);
+      
+    })
+
+  }
+
   //
   // Event
   //

@@ -51,12 +51,12 @@
       margin-bottom: 1.5rem;
     }
     .list {
-      margin-right: -28px;
-      margin-left: -28px;
+      // margin-right: -28px;
+      // margin-left: -28px;
 
       div[class*="col"] {
-        padding-right: 28px;
-        padding-left: 28px;
+        // padding-right: 28px;
+        // padding-left: 28px;
       }
     }
     .technology-item {
@@ -86,10 +86,10 @@
     .intro-message {
       padding-top: 3.5rem;
       padding-bottom: 2.4rem;
-      
+
       .img-cover {
         position: relative;
-        width: 80%!important;
+        width: 80% !important;
         margin: 0 auto;
         overflow: visible;
       }
@@ -111,14 +111,14 @@
         }
       }
     }
-    
+
     .section-technology {
       padding-top: 3.5rem;
-      
+
       .title {
-        text-align: left!important;
+        text-align: left !important;
       }
-      
+
       .technology-item {
         padding: 13px;
         margin-bottom: 2.4rem;

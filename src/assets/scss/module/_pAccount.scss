@@ -245,9 +245,10 @@
   }
 
   .ele-1 {
-    right: 0;
+    left: 90%;
     bottom: 0;
     transform: translate(22.5%, 0%);
+    width: 20%;
   }
 
   @media all and (max-width: 768px) {
