@@ -5,6 +5,20 @@
     padding-bottom: 4rem;
     .news-hor {
     }
+
+    .row {
+      margin-right: -8px;
+      margin-left: -8px;
+      
+      div[class*="col"] {
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+    }
+    
+    .news-item {
+      padding: 10px;
+    }
   } // section.recent
   .recent-news {
     width: 100%;
@@ -70,12 +84,20 @@
       top: 0;
       transform: translate(22.5%, -50%);
     }
+    
+    .btn-group {
+      .btn-white {
+        &:hover {
+          background-color: $green-dark;
+          color: $white!important;
+        }
+      } 
+    }
   } // section.news-list
-  
+
   @media all and (max-width: 1440px) {
     .recent {
       height: auto;
-      
     }
   }
 
@@ -112,7 +134,7 @@
         margin-bottom: 20px;
       }
     }
-    
+
     .section-news {
       &:before,
       &:after {
