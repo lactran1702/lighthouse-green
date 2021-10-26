@@ -60,6 +60,10 @@ footer {
       margin-bottom: 16px;
     }
   }
+  
+  div[class*="col"] {
+    z-index: 4;
+  }
 }
 
 @media all and (max-width: 768px) {
