@@ -14,19 +14,21 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>CONTACT</title>
+  <title>PAYMENT</title>
 </head>
 
 <body>
@@ -233,7 +235,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="lien-he.html" role="button">
+            <a class="nav-link " href="lien-he.html" role="button">
               Liên hệ
             </a>
           </li>
@@ -288,102 +290,191 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pContact" id="pContact">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag" id="pShoppingBag">
 
-    <section class="contact banner-full curve-bottom bg-white animate">
+    <section class="curve-bottom bg-white ">
+      <form action="">
 
-      <div class="h-100 d-flex align-items-center">
-        <div class="curve-fig curve-fig-bottom-left img-cover ">
-
-          <div class="map-wrap stagger-right">
-            <div id="location--map">
-
-            </div>
-          </div>
-
-
-          <ul class="location-results d-none">
-            <li class="coordinates">
-              <div class="coordinates--label">
-                Light house Green
-              </div>
-              <div class="coordinates--address">
-                <span class="value">
-                  106 Đường Số 13, Ấp Hàng Gòn, Xã Hàng Gòn, Thành Phố Long Khánh, Tỉnh Đồng Nai, Việt Nam
-                </span>
-                <span class="icon icon-location">
-                  <img src="assets/img/icons/icon-location.png" alt="icon-location">
-                </span>
-                <span class="lat">10.870990</span> <!-- TEST: unreal coordinates -->
-                <span class="long">107.225970</span>
-              </div>
-
-            </li>
-          </ul>
-
-        </div>
         <div class="container">
-          <div class="row justify-content-end">
-            <div class="col-12 col-lg-5">
-              <h2 class="display-1 text-primary serif title stagger-left">Liên hệ với chúng tôi</h2>
-              <p class="text-secondary mb-4 stagger-left">
-                Nếu bạn có bất cứ câu hỏi nào, hãy liên hệ với chúng tôi
-              </p>
-              <form class="contact-form stagger-up">
 
-                <div class="form-group ">
-                  <label for="inputcontactdepartment" class="w-100 mb-0">
-                    <select class="form-select mb-3 form-control form-control-rounded" data-toggle="select"
-                      data-options='{"placeholder": "Gửi cho bộ phận"}' id="inputcontactdepartment">
-                      <option></option>
-                      <option value="1">My first option</option>
-                      <option value="2">Another option</option>
-                      <option value="3">Third option is here</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactname"
-                    placeholder="Họ và tên">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-rounded" id="inputcontactemail"
-                    placeholder="Địa chỉ email *">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control form-control-rounded" id="inputcontactphone"
-                    placeholder="Số điện thoại *">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactmessage"
-                    placeholder="Tin nhắn">
+          <!-- THIRD STEP -->
+          <div class="pane payment" id="orderStepThree">
+            <!-- Heading -->
+            <h2 class="display-1 serif text-primary heading">
+              Hình thức thanh toán
+            </h2>
+            <div class="row justify-content-between">
+              <div class="col-12 col-lg-7 payment-wrap">
+
+                <div class="list-group list-group-flush input-group btn-group-toggle">
+
+                  <div class="list-group-item border rounded-pill">
+                    <div class="row align-items-start">
+                      <div class="col-auto position-static">
+                        <input type="radio" class="btn-checkk" name="inputpayment" id="option1" autocomplete="off"
+                          checked="">
+                        <label class="payment-radio overlay" for="option1"></label>
+                      </div>
+                      <div class="col ">
+                        <h4 class="text-bold">Thanh toán tiền mặt khi nhận hàng</h4>
+                      </div>
+                    </div>
+                  </div> <!-- .list-group-item border -->
+
+                  <div class="list-group-item border rounded-pill">
+                    <div class="row align-items-start">
+                      <div class="col-auto position-static">
+                        <input type="radio" class="btn-checkk" name="inputpayment" id="option2" autocomplete="off">
+                        <label class="payment-radio overlay" for="option2"></label>
+                      </div>
+                      <div class="col ">
+                        <h4 class="text-bold">Thanh toán qua VTC Pay (Thẻ Tín dụng/ Ghi nợ/ ATM)</h4>
+                      </div>
+                    </div>
+                  </div> <!-- .list-group-item border -->
+
+                  <div class="list-group-item border rounded-pill">
+                    <div class="row align-items-start">
+                      <div class="col-auto position-static">
+                        <input type="radio" class="btn-checkk" name="inputpayment" id="option3" autocomplete="off">
+                        <label class="payment-radio overlay" for="option3"></label>
+                      </div>
+                      <div class="col ">
+                        <h4 class="text-bold">Thanh toán qua Momo</h4>
+                      </div>
+                    </div>
+                  </div> <!-- .list-group-item border -->
                 </div>
 
-                <!-- Button -->
-                <button type="submit" class="btn btn-primary rounded-pill">Gửi tin nhắn</button>
-              </form>
+              </div>
 
-              <div class="pin"></div>
-              <div class="decor-el ele circle-in d-inline-block ele-1">
-                <div class="wrap">
-                  <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
-                    <canvas width="168" height="178" class="ratio-scale"></canvas>
-                  </span>
-                  
-                  <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu.png');">
-                    <canvas width="232" height="253" class="ratio-scale"></canvas>
+              <div class="col-12 col-lg-4 cart-wrap">
+                <div class="cart border border-radius-xl">
+                  <h4 class="text-green-dark text-bold mb-3">Giỏ hàng</h4>
+                  <div class="shopping-bag">
+                    <div class="list-group list-group-flush list">
+
+                      <div class="list-group-item">
+                        <div class="product-fig">
+                          <div class="img img-cover border-radius-xl"
+                            style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                            <canvas width="120" height="120" class="ratio-scale"></canvas>
+                          </div>
+                        </div>
+                        <div class="product-content text-left">
+                          <a href="san-pham-chi-tiet.html" class="">
+                            <h4 class="text-green-dark ">Nấm mối đen</h4>
+                            <h5 class="text-secondary text-body">
+                              Loại khối lượng: 02 kg
+                            </h5>
+                          </a>
+                          <div class="product-price d-flex align-items-center">
+                            <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                          </div>
+                        </div>
+                      </div> <!-- .list-group-item -->
+
+                      <div class="list-group-item">
+                        <div class="product-fig">
+                          <div class="img img-cover border-radius-xl"
+                            style="background-image: url('assets/img/demo/product-order-1.jpg');">
+                            <canvas width="120" height="120" class="ratio-scale"></canvas>
+                          </div>
+                        </div>
+                        <div class="product-content text-left">
+                          <a href="san-pham-chi-tiet.html" class="">
+                            <h4 class="text-green-dark ">Nấm mối đen</h4>
+                            <h5 class="text-secondary text-body">
+                              Loại khối lượng: 02 kg
+                            </h5>
+                          </a>
+                          <div class="product-price d-flex align-items-center">
+                            <h4 class="text-uppercase text-secondary price">500.000đ</h4>
+                          </div>
+                        </div>
+                      </div> <!-- .list-group-item -->
+                    </div>
                   </div>
-                  
-                  
+
+                  <hr>
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Thành tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>1.000.000đ</span>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <span>Khuyến mại</span>
+                    </div>
+                    <div class="col-auto">
+                      <span>- 200.000đ</span>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row justify-content-between all">
+                    <div class="col-auto">
+                      <span>Tổng số tiền</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-bold text-primary">800.000đ</span>
+                    </div>
+                  </div>
                 </div>
+
+                <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill w-100">Hoàn tất đặt hàng</a>
+
               </div>
             </div>
-            <!--.col-12.col-lg-5-->
-          </div>
-        </div>
-      </div>
+          </div> <!-- .pane.payment -->
+          
+          <div class="row justify-content-center nav-foot">
+            <div class="col-12 col-md-6">
+              <div class="shopping-bag-foot">
 
-    </section> <!-- / .contact -->
+                <ul class="nav">
+                  <li class="item active">
+                    <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepOne">
+                      <span>1</span>
+                    </button>
+                    <span class="name">
+                      Giỏ hàng
+                    </span>
+                  </li>
+                  <li class="space">
+                    <hr>
+                  </li>
+                  <li class="item active">
+                    <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepTwo">
+                      <span>2</span>
+                    </button>
+                    <span class="name">
+                      Thông tin đặt hàng
+                    </span>
+                  </li>
+                  <li class="space">
+                    <hr>
+                  </li>
+                  <li class="item active">
+                    <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepThree">
+                      <span>3</span>
+                    </button>
+                    <span class="name">
+                      Thanh toán
+                    </span>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div> <!-- / .nav-foot -->
+        </div> <!-- / .container -->
+
+      </form>
+    </section> <!-- / .bag -->
+
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -477,19 +568,19 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -501,9 +592,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

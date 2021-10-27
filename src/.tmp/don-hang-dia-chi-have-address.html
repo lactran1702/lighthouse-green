@@ -14,19 +14,21 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>PAYMENT</title>
+  <title>HAVE_ADDRESS</title>
 </head>
 
 <body>
@@ -295,58 +297,187 @@
 
         <div class="container">
 
-          <!-- THIRD STEP -->
-          <div class="pane payment" id="orderStepThree">
+          <!-- SECOND STEP -->
+          <div class="pane address have-address" id="orderStepTwo">
             <!-- Heading -->
             <h2 class="display-1 serif text-primary heading">
-              Hình thức thanh toán
+              Thông tin đặt hàng
             </h2>
             <div class="row justify-content-between">
-              <div class="col-12 col-lg-7 payment-wrap">
+              <div class="col-12 col-md-7 address-wrap">
 
                 <div class="list-group list-group-flush input-group btn-group-toggle">
 
-                  <div class="list-group-item border rounded-pill">
+                  <div class="list-group-item border">
                     <div class="row align-items-start">
                       <div class="col-auto position-static">
-                        <input type="radio" class="btn-checkk" name="inputpayment" id="option1" autocomplete="off"
+                        <input type="radio" class="btn-checkk" name="inputweight" id="option1" autocomplete="off"
                           checked="">
-                        <label class="payment-radio overlay" for="option1"></label>
+                        <label class="address-radio" for="option1"></label>
                       </div>
                       <div class="col ">
-                        <h4 class="text-bold">Thanh toán tiền mặt khi nhận hàng</h4>
+                        <h4 class="text-secondary text-bold">Phan Văn Tất Đạt</h4>
+                        <h4 class="font-weight-light">
+                          <span class="icon ">
+                            <i class="fe fe-map-pin"></i>
+                          </span>
+                          <span> 730/125 Lê Đức Thọ, Phường 15, Quận Gò Vấp, Hồ Chí Minh</span>
+                        </h4>
+                        <h4 class="font-weight-light">
+                          <span class="icon ">
+                            <i class="fe fe-phone"></i>
+                          </span>
+                          <span> 0986179077</span>
+                        </h4>
+
+                      </div>
+                      <div class="col-auto ">
+                        <a class="text-reset edit" href="#!" data-target="#address-form" data-toggle="collapse"
+                          class="overlay" aria-expanded="false" aria-label="Toggle address form to edit"
+                          data-toggle="tooltip" title="chinh sửa">
+                          <i class="fe fe-edit"></i>
+                        </a>
                       </div>
                     </div>
                   </div> <!-- .list-group-item border -->
 
-                  <div class="list-group-item border rounded-pill">
+                  <div class="list-group-item border">
+
                     <div class="row align-items-start">
                       <div class="col-auto position-static">
-                        <input type="radio" class="btn-checkk" name="inputpayment" id="option2" autocomplete="off">
-                        <label class="payment-radio overlay" for="option2"></label>
+                        <input type="radio" class="btn-checkk" name="inputweight" id="option2" autocomplete="off">
+                        <label class="address-radio" for="option2"></label>
                       </div>
                       <div class="col ">
-                        <h4 class="text-bold">Thanh toán qua VTC Pay (Thẻ Tín dụng/ Ghi nợ/ ATM)</h4>
+                        <h4 class="text-secondary text-bold">Phan Văn Tất Đạt</h4>
+                        <h4 class="font-weight-light">
+                          <span class="icon ">
+                            <i class="fe fe-map-pin"></i>
+                          </span>
+                          <span> 730/125 Lê Đức Thọ, Phường 15, Quận Gò Vấp, Hồ Chí Minh</span>
+                        </h4>
+                        <h4 class="font-weight-light">
+                          <span class="icon ">
+                            <i class="fe fe-phone"></i>
+                          </span>
+                          <span> 0986179077</span>
+                        </h4>
+
+                      </div>
+                      <div class="col-auto ">
+                        <a class="text-reset edit" href="#!" data-target="#address-form" data-toggle="collapse"
+                          class="overlay" aria-expanded="false" aria-label="Toggle address form to edit"
+                          data-toggle="tooltip" title="chinh sửa">
+                          <i class="fe fe-edit"></i>
+                        </a>
                       </div>
                     </div>
                   </div> <!-- .list-group-item border -->
 
-                  <div class="list-group-item border rounded-pill">
+                  <div class="list-group-item border address-toggle">
                     <div class="row align-items-start">
-                      <div class="col-auto position-static">
-                        <input type="radio" class="btn-checkk" name="inputpayment" id="option3" autocomplete="off">
-                        <label class="payment-radio overlay" for="option3"></label>
-                      </div>
                       <div class="col ">
-                        <h4 class="text-bold">Thanh toán qua Momo</h4>
+                        <h4 class=" text-bold"> Thêm địa chỉ nhận hàng</h4>
                       </div>
+                      <div class="col-auto ">
+                        <span class="text-reset plus" href="#!" data-toggle="tooltip" title="thêm">
+                          <i class="fe fe-plus"></i>
+                        </span>
+                      </div>
+                      <a href="#!" data-target="#address-form" data-toggle="collapse" class="overlay"
+                        aria-expanded="false" aria-label="Toggle address form"></a>
                     </div>
+
                   </div> <!-- .list-group-item border -->
+
                 </div>
 
-              </div>
+                <div class="collapse" id="address-form">
+                  <div class="border border-radius-xl">
+                    <h4 class="text-green-dark text-bold head">Thêm địa chỉ nhận hàng</h4>
 
-              <div class="col-12 col-lg-4 cart-wrap">
+                    <div class="row justify-content-between">
+
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label for="" class="text-secondary text-bold">Họ và tên</label>
+                          <input type="text" class="form-control form-control-rounded" id=""
+                            placeholder="Nhập họ và tên">
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label for="" class="text-secondary text-bold">Số điện thoại</label>
+                          <input type="number" class="form-control form-control-rounded" id=""
+                            placeholder="Nhập số điện thoại">
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label for="" class="text-secondary text-bold">Email</label>
+                          <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email">
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label for="inputcity" class="text-secondary text-bold ">Tỉnh/Thành phố </label>
+                          <select class="form-select form-control form-control-rounded " data-toggle="select"
+                            data-options='{"placeholder": "Chọn Tỉnh/Thành phố"}' id="inputcity">
+                            <option></option>
+                            <option value="1">My </option>
+                            <option value="2">Another </option>
+                            <option value="3">Third </option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+
+                        <div class="form-group">
+                          <label for="inputdistrict" class="text-secondary text-bold ">Quận/Huyện</label>
+                          <select class="form-select form-control form-control-rounded " data-toggle="select"
+                            data-options='{"placeholder": "Chọn Quận/Huyện"}' id="inputdistrict">
+                            <option></option>
+                            <option value="1">My </option>
+                            <option value="2">Another </option>
+                            <option value="3">Third </option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputward" class="text-secondary text-bold ">Phường/Xã</label>
+                          <select class="form-select form-control form-control-rounded " data-toggle="select"
+                            data-options='{"placeholder": "Chọn Phường/Xã phố"}' id="inputward">
+                            <option></option>
+                            <option value="1">My </option>
+                            <option value="2">Another </option>
+                            <option value="3">Third </option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+
+                        <div class="form-group">
+                          <label for="" class="text-secondary text-bold">Địa chỉ</label>
+                          <!-- <input type="email" class="form-control form-control-rounded" id="" placeholder="Nhập email"> -->
+                          <textarea class="form-control border-radius-xl" data-autosize id="" rows="5"
+                            placeholder="Toà nhà, Số nhà, Tên đường..."></textarea>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div> <!-- .border.border-radius-xl -->
+                </div> <!-- #address-form.collapse -->
+                <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
+
+              </div><!-- .address-wrap -->
+              
+              <div class="col-12 col-md-4 cart-wrap">
                 <div class="cart border border-radius-xl">
                   <h4 class="text-green-dark text-bold mb-3">Giỏ hàng</h4>
                   <div class="shopping-bag">
@@ -421,13 +552,10 @@
                     </div>
                   </div>
                 </div>
-
-                <a href="#orderStepThree" class="btn btn-lg btn-primary rounded-pill w-100">Hoàn tất đặt hàng</a>
-
               </div>
             </div>
-          </div> <!-- .pane.payment -->
-          
+          </div>
+
           <div class="row justify-content-center nav-foot">
             <div class="col-12 col-md-6">
               <div class="shopping-bag-foot">
@@ -455,7 +583,7 @@
                   <li class="space">
                     <hr>
                   </li>
-                  <li class="item active">
+                  <li class="item ">
                     <button class="btn btn-sm btn-rounded-circle nav-toggler" data-toggle="tab-toggler" href="#orderStepThree">
                       <span>3</span>
                     </button>
@@ -566,19 +694,19 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -590,7 +718,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

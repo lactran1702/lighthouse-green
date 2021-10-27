@@ -14,19 +14,21 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>CONTACT</title>
+  <title>NEWS_DETAIL</title>
 </head>
 
 <body>
@@ -233,7 +235,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="lien-he.html" role="button">
+            <a class="nav-link " href="lien-he.html" role="button">
               Liên hệ
             </a>
           </li>
@@ -288,102 +290,231 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pContact" id="pContact">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pNewsDetail ">
 
-    <section class="contact banner-full curve-bottom bg-white animate">
+    <section class="detail bg-white curve-bottom animate">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 detail-wrap">
 
-      <div class="h-100 d-flex align-items-center">
-        <div class="curve-fig curve-fig-bottom-left img-cover ">
+            <h4 class="text-uppercase text-secondary news-type stagger-left">TIN TỨC</h4>
+            <h3 class="text-primary news-title stagger-left">CHAIRWOMAN OF VINH HOAN CORP NAMED AMONG FORBES ASIA’S TOP
+              25 POWER BUSINESSWOMEN IN 2020 </h3>
+            <h4 class="news-calendar text-secondary font-weight-light .stagger-up">
+              <span class="icon mr-2">
+                <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
+              </span>
+              <span>29 June 2021</span>
+            </h4>
 
-          <div class="map-wrap stagger-right">
-            <div id="location--map">
+            <div class="content text-secondary .stagger-up">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi massa, ac
+                hendrerit metus fringilla sit amet. Sed ac est porttitor, molestie velit eu, egestas
+                quam
+              </p>
+              <img src="assets/img/demo/news-fig-1.jpg" class="border-radius-xl w-100" alt="">
+              <p>
+                Ut ut erat rutrum, facilisis augue vel, blandit urna. Quisque sodales interdum lacus, at
+                mollis lorem sagittis vitae. Nulla facilisi. Cras posuere, augue eget feugiat tempor,
+                elit lectus consectetur elit, ac pellentesque lorem lectus vitae felis. Nunc vitae felis
+                nec dui consequat dapibus. Proin odio urna, lacinia at nisl et, vulputate commodo
+                ligula. Donec venenatis velit a nunc condimentum lobortis. Proin dictum, eros eu dictum
+                suscipit, neque tellus accumsan ex, eget scelerisque nibh risus et nibh. Maecenas quis
+                tellus et nulla aliquam lobortis. Donec pretium, odio at posuere rutrum, eros enim
+                venenatis lectus, eu tristique arcu sapien at mi. Etiam vel hendrerit nunc, sit amet
+                fringilla orci. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                fames ac turpis egestas. Integer bibendum finibus venenatis.
+              </p>
+              <p>
+                Integer semper commodo risus, ac porta tortor rhoncus eget. Vestibulum ac pellentesque
+                metus. Nulla maximus vehicula felis, eget faucibus diam finibus non. Aenean feugiat
+                purus in sem commodo, id bibendum ex pulvinar. Sed faucibus maximus magna sed placerat.
+                Proin vestibulum tristique augue ut vehicula. Nunc placerat aliquam sem, at aliquet ante
+                eleifend non. Vivamus rhoncus orci id sagittis vehicula. Pellentesque nisl ex,
+                vestibulum ac nulla vel, placerat porta est. Phasellus vel luctus diam. Fusce accumsan
+                iaculis pulvinar. Fusce blandit venenatis felis sed laoreet. Suspendisse vulputate ante
+                eu laoreet venenatis. Aliquam semper purus sit amet leo faucibus euismod.
 
+              </p>
+              <p>
+                Mauris id turpis id sapien euismod luctus a vitae ipsum. Etiam hendrerit feugiat tortor
+                convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce
+                fermentum, ex egestas tristique luctus, est tellus rutrum dui, vel euismod neque mauris
+                eget odio. Ut ut mauris a purus cursus molestie. Aenean vitae tellus semper, pretium ex
+                vitae, dignissim tortor. Integer arcu nisl, congue non nunc ac, bibendum lobortis eros.
+                Cras magna ligula, viverra ut pellentesque ac, tempus sit amet augue. Fusce porta
+                ultricies felis, at ullamcorper nunc ultricies eget. Vivamus commodo urna diam, vel
+                commodo est sollicitudin a. Donec sed odio eu nibh molestie iaculis. Mauris convallis
+                fringilla lectus ac scelerisque. Nullam sit amet laoreet magna, eleifend eleifend augue.
+              </p>
+            </div>
+
+            <div class="social">
+              <div class="text-bold text-uppercase">
+                <h4 class="d-inline-block mr-3">CHIA SẺ</h4>
+                <a href="http://google.com.vn" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-white d-inline-block btn-social facebook">
+                  <span class="icon middle-icon ">
+                    <img src="./assets/img/icons/facebook-white.svg" alt="..." class="">
+                  </span>
+                </a>
+                <a href="http://google.com.vn" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-white d-inline-block btn-social google">
+                  <span class="icon middle-icon ">
+                    <img src="./assets/img/icons/google.svg" alt="..." class="">
+                  </span>
+                </a>
+                <a href="http://google.com.vn" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-white d-inline-block btn-social linkedin">
+                  <span class="icon middle-icon ">
+                    <img src="./assets/img/icons/linkedin-white.svg" alt="..." class="">
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
+          <div class="col-12 col-lg-4">
+            <div class="hot-news bg-green-dark border-radius-cross text-white">
+              <h2 class="display-1 serif text-capitalize stagger-right">
+                hot news
+              </h2>
+              <div class="hot-news-item position-relative stagger-up">
 
-
-          <ul class="location-results d-none">
-            <li class="coordinates">
-              <div class="coordinates--label">
-                Light house Green
+                <a href="tin-tuc-chi-tiet.html" class="">
+                  <img src="assets/img/demo/hot-news-fig-1.jpg" class="border-radius-xl w-100" alt="">
+                  <h3 class="title">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </h3>
+                </a>
               </div>
-              <div class="coordinates--address">
-                <span class="value">
-                  106 Đường Số 13, Ấp Hàng Gòn, Xã Hàng Gòn, Thành Phố Long Khánh, Tỉnh Đồng Nai, Việt Nam
-                </span>
-                <span class="icon icon-location">
-                  <img src="assets/img/icons/icon-location.png" alt="icon-location">
-                </span>
-                <span class="lat">10.870990</span> <!-- TEST: unreal coordinates -->
-                <span class="long">107.225970</span>
-              </div>
-
-            </li>
-          </ul>
-
+              <ul class="list">
+                <li class="hot-news-item stagger-up">
+                  <a href="tin-tuc-chi-tiet.html" class="">
+                    <h3 class="title d-inline">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </h3>
+                  </a>
+                </li>
+                <li class="hot-news-item stagger-up">
+                  <a href="tin-tuc-chi-tiet.html" class="">
+                    <h3 class="title d-inline">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </h3>
+                  </a>
+                </li>
+                <li class="hot-news-item stagger-up">
+                  <a href="tin-tuc-chi-tiet.html" class="">
+                    <h3 class="title d-inline">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </h3>
+                  </a>
+                </li>
+            </div>
+          </div>
         </div>
-        <div class="container">
-          <div class="row justify-content-end">
-            <div class="col-12 col-lg-5">
-              <h2 class="display-1 text-primary serif title stagger-left">Liên hệ với chúng tôi</h2>
-              <p class="text-secondary mb-4 stagger-left">
-                Nếu bạn có bất cứ câu hỏi nào, hãy liên hệ với chúng tôi
-              </p>
-              <form class="contact-form stagger-up">
 
-                <div class="form-group ">
-                  <label for="inputcontactdepartment" class="w-100 mb-0">
-                    <select class="form-select mb-3 form-control form-control-rounded" data-toggle="select"
-                      data-options='{"placeholder": "Gửi cho bộ phận"}' id="inputcontactdepartment">
-                      <option></option>
-                      <option value="1">My first option</option>
-                      <option value="2">Another option</option>
-                      <option value="3">Third option is here</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactname"
-                    placeholder="Họ và tên">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-rounded" id="inputcontactemail"
-                    placeholder="Địa chỉ email *">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control form-control-rounded" id="inputcontactphone"
-                    placeholder="Số điện thoại *">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-rounded" id="inputcontactmessage"
-                    placeholder="Tin nhắn">
-                </div>
+        <div class="row related-list">
+          <div class="col-12 col-lg-8">
+            <h4 class=" text-primary">Related news</h4>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
 
-                <!-- Button -->
-                <button type="submit" class="btn btn-primary rounded-pill">Gửi tin nhắn</button>
-              </form>
-
-              <div class="pin"></div>
-              <div class="decor-el ele circle-in d-inline-block ele-1">
-                <div class="wrap">
-                  <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
-                    <canvas width="168" height="178" class="ratio-scale"></canvas>
-                  </span>
-                  
-                  <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu.png');">
-                    <canvas width="232" height="253" class="ratio-scale"></canvas>
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
                   </div>
-                  
-                  
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
+
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
+
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
+
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
                 </div>
               </div>
             </div>
-            <!--.col-12.col-lg-5-->
+
+            <div class="news-pagination site-pagination">
+              <button class="btn btn-light disabled btn-rounded-circle">
+                <span class="carousel-control-prev-icon icon-prev icon middle-icon icon-sm mt-n1 "
+                  aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <div class="btn-group" role="group" aria-label="">
+                <button type="button" class="btn border-0 btn-white text-primary text-bold  ">1</button>
+                <button type="button" class="btn border-0 btn-white text-secondary  ">2</button>
+                <button type="button" class="btn border-0 btn-white text-secondary  ">3</button>
+                <button type="button" class="btn border-0 btn-white text-secondary  ">4</button>
+              </div>
+              <button class="btn btn-success btn-rounded-circle">
+                <span class="carousel-control-next-icon icon-next icon middle-icon icon-sm mt-n1 "
+                  aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-    </section> <!-- / .contact -->
+    </section>
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -477,19 +608,19 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -501,8 +632,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 
 </body>
 
