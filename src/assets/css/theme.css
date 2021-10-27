@@ -11853,6 +11853,9 @@ a,
 button {
   transition: all 0.2s ease-in-out; }
 
+.btn-green-light-2 {
+  background-color: #F4FAEA; }
+
 .banner-full {
   height: calc(100vh - 80px); }
 
@@ -12082,7 +12085,8 @@ main.cuvre-sections-last {
   transform: none;
   border-bottom-right-radius: 100%;
   bottom: -8vh;
-  background-position: center left; }
+  background-position: center left;
+  background-size: 50vw 100%; }
 
 .curve-fig-bottom-left {
   width: 3072px;
@@ -12123,6 +12127,14 @@ input[type="radio"]:checked:after {
   background-color: #36BC40;
   visibility: visible;
   border: 2px solid #36BC40; }
+
+input[type="radio"]:checked + label {
+  background-color: #F4FAEA; }
+
+.form-control:focus {
+  background-color: #F4FAEA; }
+  .form-control:focus + .select2 .select2-selection--single {
+    background-color: #F4FAEA; }
 
 .btn-check {
   position: absolute;
@@ -12569,7 +12581,9 @@ footer {
     z-index: 2; }
 
 .pStory .intro-factory {
-  padding-top: 1.25rem; }
+  background-color: #F4FAEA;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
   .pStory .intro-factory .size-high {
     font-size: 5rem;
     font-weight: 700; }
@@ -12690,6 +12704,7 @@ footer {
   margin-bottom: 0.9rem; }
 
 .pProductDetail .cores {
+  background-color: #F4FAEA;
   position: relative;
   padding-top: 10rem;
   padding-bottom: 14rem; }
@@ -12778,9 +12793,11 @@ footer {
   padding-top: 10%; }
 
 .pCommunity .cores {
+  background-color: #F4FAEA;
   padding-top: 3.8rem;
   padding-bottom: 5rem; }
   .pCommunity .cores::before {
+    background-color: #F4FAEA;
     width: 250vw; }
   .pCommunity .cores .core-row {
     margin-bottom: 3.8rem; }
@@ -13130,6 +13147,8 @@ footer {
     background-color: #36BC40;
     color: #FFFFFF;
     font-weight: 500; }
+  .pShoppingBag .shopping-bag-foot .active hr {
+    border-color: #36BC40; }
   .pShoppingBag .shopping-bag-foot .space {
     flex: 1;
     margin: 0 0.5rem; }
@@ -13216,21 +13235,31 @@ footer {
   position: relative;
   z-index: 2; }
 
+.pShoppingBag .have-address .list-group-item.default,
+.pShoppingBag .new-address .list-group-item.default {
+  background-color: #F4FAEA;
+  border-color: transparent !important; }
+
 .pShoppingBag .payment {
   margin-bottom: 2.5rem; }
   .pShoppingBag .payment .payment-wrap .list-group-item {
     position: relative;
     overflow: hidden;
     padding: 1rem 0.9rem;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    border-color: transparent !important; }
     .pShoppingBag .payment .payment-wrap .list-group-item h4 {
       margin-bottom: 0; }
+  .pShoppingBag .payment .payment-wrap input[type="radio"]:checked + .payment-radio {
+    background-color: #b2e759;
+    border-color: transparent; }
   .pShoppingBag .payment .payment-wrap .payment-radio {
-    border-radius: inherit;
     cursor: pointer;
     z-index: 1;
     opacity: 0.2;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    border: 1px solid black;
+    border-radius: 50px; }
     .pShoppingBag .payment .payment-wrap .payment-radio:focus, .pShoppingBag .payment .payment-wrap .payment-radio:hover {
       background-color: #535353; }
   .pShoppingBag .payment .cart {
@@ -13281,6 +13310,8 @@ footer {
   .pShoppingBag .have-address .address-wrap,
   .pShoppingBag .new-address .address-wrap,
   .pShoppingBag .add-address .address-wrap {
+    margin-bottom: 1.875rem; }
+  .pShoppingBag .payment .payment-wrap {
     margin-bottom: 1.875rem; } }
 
 @media all and (max-width: 767px) {
@@ -13315,7 +13346,8 @@ footer {
       border-radius: 0.65rem;
       margin-bottom: 0.9rem; }
       .pAccount .have-address .list-group-item.default {
-        border-color: transparent; }
+        border-color: transparent;
+        background-color: #F4FAEA; }
         .pAccount .have-address .list-group-item.default .default-btn {
           display: none; }
       .pAccount .have-address .list-group-item:last-of-type {
@@ -13425,6 +13457,14 @@ footer {
     background-color: transparent; }
     .pAccount .navbar .navbar-nav {
       margin-bottom: 3.2rem; }
+    .pAccount .navbar .nav-link.active {
+      background-color: #F4FAEA; }
+      .pAccount .navbar .nav-link.active::before {
+        top: 0 rem;
+        bottom: 0 rem; }
+    .pAccount .navbar .logout-btn {
+      background-color: #F4FAEA;
+      margin-left: -1.5rem; }
   .pAccount .nav-tabs .nav-item {
     margin-left: 2.6rem;
     margin-right: 2.6rem; }
@@ -13467,6 +13507,9 @@ footer {
       padding-top: 0; }
     .pAccount .ele-1 {
       width: 10%; } }
+  @media all and (max-width: 1024px) {
+    .pAccount .navbar .navbar-nav {
+      min-height: unset; } }
   @media all and (max-width: 767px) {
     .pAccount .nav-tabs {
       flex-wrap: nowrap; }

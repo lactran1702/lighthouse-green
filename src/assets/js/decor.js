@@ -62,7 +62,7 @@ var decorFn = (function () {
         // .on("leave", function () {
         //   circle.removeClass("visible");
         // })
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
 
     });

@@ -39,6 +39,10 @@
         color: $white;
         font-weight: 500;
       }
+
+      hr {
+        border-color: $primary;
+      }
     }
     .space {
       flex: 1;
@@ -156,6 +160,11 @@
         z-index: 2;
       }
     }
+
+    .list-group-item.default {
+      background-color: $green-light-2;
+      border-color: transparent !important;
+    }
   }
 
   .payment {
@@ -166,18 +175,26 @@
         overflow: hidden;
         padding: 1rem 0.9rem;
         margin-bottom: 1.25rem;
+        border-color: transparent!important;
 
         h4 {
           margin-bottom: 0;
         }
       }
+      input[type="radio"]:checked {
+        & + .payment-radio {
+          background-color: #b2e759;
+          border-color: transparent;
+        }
+      }
       .payment-radio {
-        border-radius: inherit;
         cursor: pointer;
         z-index: 1;
         opacity: 0.2;
         transition: $transition-base;
-
+        border: 1px solid black;
+        border-radius: 50px;
+        
         &:focus,
         &:hover {
           background-color: $secondary;
@@ -256,6 +273,11 @@
     .new-address,
     .add-address {
       .address-wrap {
+        margin-bottom: 1.875rem;
+      }
+    }
+    .payment {
+      .payment-wrap {
         margin-bottom: 1.875rem;
       }
     }

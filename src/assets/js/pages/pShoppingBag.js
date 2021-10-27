@@ -11,6 +11,7 @@ var pShoppingBag = (function () {
   // Variables
   //
   var toggles = document.querySelectorAll('[data-toggle="tab-toggler"]');
+  var steps = document.querySelectorAll('.shopping-bag-foot li');
 
   //
   // Functions
@@ -22,6 +23,7 @@ var pShoppingBag = (function () {
     // PRELOADER.hide();
     // alert('Ok!');
     initTabPane();
+
   }
 
   function onResize(e) {
@@ -33,7 +35,13 @@ var pShoppingBag = (function () {
     [].forEach.call(toggles, function (toggle) {
       toggle.addEventListener('click', function (e) {
         e.preventDefault();
-        $(this).parent("li").addClass("active");
+        // remove all active
+        $(steps).removeClass("active");
+        
+        // active from this backward
+        const parent = $(this).parent("li");
+        parent.addClass("active");
+        parent.prevAll().addClass("active");
         // Toggle tab
         $(toggle).tab('show').removeClass('active');
       });

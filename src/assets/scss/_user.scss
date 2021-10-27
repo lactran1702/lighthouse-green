@@ -24,6 +24,10 @@ button {
   transition: $transition-base;
 }
 
+.btn-green-light-2 {
+  background-color: $green-light-2;
+}
+
 .banner-full {
   // full screen without topnav
 
@@ -290,6 +294,7 @@ main.cuvre-sections-last {
   border-bottom-right-radius: 100%;
   bottom: -$curves-height;
   background-position: center left;
+  background-size: 50vw 100%;
 }
 
 .curve-fig-bottom-left {
@@ -325,18 +330,34 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type="radio"]:checked:after {
-  content: "";
-  position: relative;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  background-color: $primary;
-  visibility: visible;
-  border: 2px solid $primary;
+input[type="radio"]:checked {
+  &:after {
+    content: "";
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: $primary;
+    visibility: visible;
+    border: 2px solid $primary;
+  }
+
+  & + label {
+    background-color: $green-light-2;
+  }
+}
+
+.form-control:focus {
+  background-color: $green-light-2;
+
+  & + .select2 {
+    .select2-selection--single {
+      background-color: $green-light-2;
+    }
+  }
 }
 
 .btn-check {

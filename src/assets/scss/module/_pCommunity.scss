@@ -7,10 +7,12 @@
   } // section.banner
 
   .cores {
+    background-color: $green-light-2;
     padding-top: 3.8rem;
     padding-bottom: 5rem;
 
     &::before {
+      background-color: $green-light-2;
       width: 250vw;
     }
     .core-row {
