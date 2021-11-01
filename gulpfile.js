@@ -37,6 +37,9 @@ const paths = {
     },
     libs: {
       dir: './dist/assets/libs'
+    },
+    js: {
+      pages: './dist/assets/js/pages'
     }
   },
   src: {
@@ -58,7 +61,8 @@ const paths = {
     },
     js: {
       dir: './src/assets/js',
-      files: './src/assets/js/**/*'
+      files: './src/assets/js/**/*',
+      pages: './src/assets/js/pages/*',
     },
     partials: {
       dir: './src/partials',
@@ -80,7 +84,7 @@ const paths = {
 // Tasks ===================================
 //
 
-gulp.task('browsersync', function(callback) {
+gulp.task('browsersync', function (callback) {
   browsersync.init({
     server: {
       baseDir: [paths.src.tmp.dir, paths.src.base.dir, paths.base.base.dir]
@@ -89,18 +93,18 @@ gulp.task('browsersync', function(callback) {
   callback();
 });
 
-gulp.task('browsersyncReload', function(callback) {
+gulp.task('browsersyncReload', function (callback) {
   browsersync.reload();
   callback();
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(paths.src.scss.files, gulp.series('scss'));
   gulp.watch([paths.src.js.files, paths.src.img.files], gulp.series('browsersyncReload'));
   gulp.watch([paths.src.html.files, paths.src.partials.files], gulp.series('fileinclude', 'browsersyncReload'));
 });
 
-gulp.task('scss', function() {
+gulp.task('scss', function () {
   return gulp
     .src(paths.src.scss.main)
     .pipe(sass().on('error', sass.logError))
@@ -109,7 +113,7 @@ gulp.task('scss', function() {
     .pipe(browsersync.stream());
 });
 
-gulp.task('fileinclude', function(callback) {
+gulp.task('fileinclude', function (callback) {
   return gulp
     .src([
       paths.src.html.files,
@@ -126,17 +130,17 @@ gulp.task('fileinclude', function(callback) {
     .pipe(gulp.dest(paths.src.tmp.dir));
 });
 
-gulp.task('clean:tmp', function(callback) {
+gulp.task('clean:tmp', function (callback) {
   del.sync(paths.src.tmp.dir);
   callback();
 });
 
-gulp.task('clean:dist', function(callback) {
+gulp.task('clean:dist', function (callback) {
   del.sync(paths.dist.base.dir);
   callback();
 });
 
-gulp.task('copy:all', function() {
+gulp.task('copy:all', function () {
   return gulp
     .src([
       paths.src.base.files,
@@ -150,7 +154,7 @@ gulp.task('copy:all', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
-gulp.task('copy:libs', function() {
+gulp.task('copy:libs', function () {
   return gulp
     .src(npmdist(), {
       base: paths.base.node.dir
@@ -158,7 +162,14 @@ gulp.task('copy:libs', function() {
     .pipe(gulp.dest(paths.dist.libs.dir));
 });
 
-gulp.task('html', function() {
+gulp.task('copy:pages', function () {
+  return gulp
+    .src([paths.src.js.pages])
+    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulp.dest(paths.dist.js.pages));
+});
+
+gulp.task('html', function () {
   return gulp
     .src([
       paths.src.html.files,
@@ -180,7 +191,7 @@ gulp.task('html', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
-gulp.task('html-preview', function() {
+gulp.task('html-preview', function () {
   return gulp
     .src([
       paths.src.html.files,
@@ -202,6 +213,6 @@ gulp.task('html-preview', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
+gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs', 'copy:pages'), 'scss', 'html'));
 gulp.task('build-preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html-preview'));
 gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));

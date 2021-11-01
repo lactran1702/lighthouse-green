@@ -25,6 +25,7 @@
       margin-bottom: 0.9rem;
       &.default {
         border-color: transparent;
+        background-color: $green-light-2;
         .default-btn {
           display: none;
         }
@@ -206,6 +207,21 @@
     .navbar-nav {
       margin-bottom: 3.2rem;
     }
+    .nav-link {
+      &.active {
+        background-color: $green-light-2;
+
+        &::before {
+          top: 0 rem;
+          bottom: 0 rem;
+        }
+      }
+    }
+
+    .logout-btn {
+      background-color: $green-light-2;
+      margin-left: -1.5rem;
+    }
   }
   .nav-tabs {
     .nav-item {
@@ -280,6 +296,13 @@
     }
     .ele-1 {
       width: 10%;
+    }
+  }
+  @media all and (max-width: 1024px) {
+    .navbar {
+      .navbar-nav {
+        min-height: unset;
+      }
     }
   }
   @media all and (max-width: 767px) {
@@ -360,11 +383,11 @@
       .list-group-item {
         padding-left: inherit;
         padding-right: inherit;
-        
+
         .row {
           flex-wrap: nowrap;
         }
-        
+
         .col {
           flex: 1 1 auto;
         }
@@ -373,7 +396,7 @@
         }
       }
     }
-    
+
     .add-address {
       padding-left: 0;
       padding-right: 0;

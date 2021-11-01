@@ -288,7 +288,7 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pShoppingBag" id="pShoppingBag">
 
     <section class="curve-bottom bg-white ">
       <div class="container tab-content">
@@ -429,8 +429,9 @@
                 </form>
               </div> <!-- / .border -->
             </div>
-          </div><!--.row-->
-          
+          </div>
+          <!--.row-->
+
           <div class="pin"></div>
           <div class="decor-el ele circle-in d-inline-block ele-1">
             <div class="wrap">
@@ -458,7 +459,7 @@
 
               <div class="list-group list-group-flush input-group btn-group-toggle">
 
-                <div class="list-group-item border">
+                <div class="list-group-item border default">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
                       <input type="radio" class="btn-checkk" name="inputweight" id="option1" autocomplete="off"
@@ -623,7 +624,9 @@
                 </div> <!-- .border.border-radius-xl -->
               </div> <!-- #address-form.collapse -->
 
-              <a href="#orderStepThree" data-toggle="tab-toggler" class="btn btn-lg btn-primary rounded-pill ">Tiếp tục</a>
+              <a data-toggle="tab-toggler" href="#orderStepOne" class="btn btn-lg btn-primary rounded-pill ">Quay lại</a>
+              <a href="#orderStepThree" data-toggle="tab-toggler" class="btn btn-lg btn-primary rounded-pill ">Tiếp
+                tục</a>
 
             </div><!-- .address-wrap -->
 
@@ -703,7 +706,8 @@
                 </div>
               </div>
             </div>
-          </div> <!--.row-->
+          </div>
+          <!--.row-->
           <div class="pin"></div>
           <div class="decor-el ele circle-in d-inline-block ele-2">
             <div class="wrap">
@@ -731,7 +735,7 @@
 
               <div class="list-group list-group-flush input-group btn-group-toggle">
 
-                <div class="list-group-item border rounded-pill">
+                <div class="list-group-item  rounded-pill">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
                       <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption1"
@@ -742,9 +746,9 @@
                       <h4 class="text-bold">Thanh toán tiền mặt khi nhận hàng</h4>
                     </div>
                   </div>
-                </div> <!-- .list-group-item border -->
+                </div> <!-- .list-group-item  -->
 
-                <div class="list-group-item border rounded-pill">
+                <div class="list-group-item  rounded-pill">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
                       <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption2"
@@ -755,9 +759,9 @@
                       <h4 class="text-bold">Thanh toán qua VTC Pay (Thẻ Tín dụng/ Ghi nợ/ ATM)</h4>
                     </div>
                   </div>
-                </div> <!-- .list-group-item border -->
+                </div> <!-- .list-group-item  -->
 
-                <div class="list-group-item border rounded-pill">
+                <div class="list-group-item  rounded-pill">
                   <div class="row align-items-start">
                     <div class="col-auto position-static">
                       <input type="radio" class="btn-checkk" name="inputpayment" id="inputpaymentoption3"
@@ -768,9 +772,10 @@
                       <h4 class="text-bold">Thanh toán qua Momo</h4>
                     </div>
                   </div>
-                </div> <!-- .list-group-item border -->
+                </div> <!-- .list-group-item  -->
               </div>
-
+              <a data-toggle="tab-toggler" href="#orderStepTwo" class="btn btn-lg btn-primary rounded-pill ">Quay lại</a>
+              
             </div>
 
             <div class="col-12 col-lg-4 cart-wrap">
@@ -1010,7 +1015,7 @@
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/scrollmagic/plugins/animation.gsap.min.js"></script>
-  <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script>
+  <!-- <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script> -->
 
   <!-- Map -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
