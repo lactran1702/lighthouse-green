@@ -13114,6 +13114,9 @@ footer {
   top: 0;
   transform: translate(22.5%, 12%); }
 
+.pRegister .input-radio {
+  margin: 0 1.25rem 0 0.75rem; }
+
 @media all and (max-width: 767px) {
   .pRegister .ele-1 {
     display: none !important; }

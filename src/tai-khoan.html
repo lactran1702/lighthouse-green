@@ -58,7 +58,8 @@
                             <input type="text" class="form-control form-control-rounded form-control-appended border-0"
                               id="" placeholder="Nhập họ và tên">
                             <div class="input-group-append">
-                              <button class="btn btn-link btn-green-light-2 rounded-pill" type="button">Thay đổi</button>
+                              <button class="btn btn-link btn-green-light-2 rounded-pill" type="button">Thay
+                                đổi</button>
                             </div>
                           </div>
                         </div>
@@ -72,7 +73,8 @@
                               class="form-control form-control-rounded form-control-appended border-0" id=""
                               placeholder="Nhập số điện thoại">
                             <div class="input-group-append">
-                              <button class="btn btn-link rounded-pill btn-green-light-2" type="button">Thay đổi</button>
+                              <button class="btn btn-link rounded-pill btn-green-light-2" type="button">Thay
+                                đổi</button>
                             </div>
                           </div>
                         </div>
@@ -85,7 +87,8 @@
                             <input type="email" class="form-control form-control-rounded form-control-appended border-0"
                               id="" placeholder="Nhập email">
                             <div class="input-group-append">
-                              <button class="btn btn-link rounded-pill btn-green-light-2" type="button">Thay đổi</button>
+                              <button class="btn btn-link rounded-pill btn-green-light-2" type="button">Thay
+                                đổi</button>
                             </div>
                           </div>
                         </div>
@@ -116,43 +119,15 @@
                         </div>
                       </div>
 
-                      <div class="col-12 col-md-12">
+                      <div class="col-12 col-md-6">
 
                         <div class="form-group">
                           <label for="inputbirth" class="text-secondary text-bold d-block">Ngày sinh</label>
-                          <div class="row">
-                            <div class="col-12 col-md-3">
-                              <select class="form-select form-control form-control-rounded " data-toggle="select"
-                                data-options='{"placeholder": "Ngày"}' id="inputbd">
-                                <option></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                              </select>
-                            </div>
+                          <!-- Input -->
+                          <input type="text" class="form-control form-control-rounded form-control-lg"
+                            placeholder="Ngày sinh" name="inputbirth" data-toggle="flatpickr"
+                            data-options='{"dateFormat": "d/m/Y"}'>
 
-                            <div class="col-12 col-md-3">
-
-                              <select class="form-select form-control form-control-rounded " data-toggle="select"
-                                data-options='{"placeholder": "Tháng"}' id="inputbm">
-                                <option></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                              </select>
-                            </div>
-
-                            <div class="col-12 col-md-3">
-
-                              <select class="form-select form-control form-control-rounded " data-toggle="select"
-                                data-options='{"placeholder": "Năm"}' id="inputby">
-                                <option></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                              </select>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div> <!-- .row.justify-content-between -->
@@ -161,10 +136,10 @@
 
                   </form>
                 </div> <!-- .border.border-radius-xl -->
-                
+
                 @@include("partials/decor-el.html", {
-                  "className": "ele-1",
-                  "main": 1
+                "className": "ele-1",
+                "main": 1
                 })
               </div> <!-- .tab-pane.pane.info -->
 

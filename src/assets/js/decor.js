@@ -31,6 +31,8 @@ var decorFn = (function () {
       var wrap = $(ele).find(".wrap");
       var closestPin = $(ele).prev(".pin")[0];
       let tl = new TimelineLite({ paused: true });
+      let moving = false;
+      const isAnimate = !$(ele).hasClass("static");
 
       if ($(ele).hasClass("left")) {
 
@@ -50,18 +52,28 @@ var decorFn = (function () {
       var scene = new ScrollMagic.Scene({
         triggerElement: closestPin,
         // offset: 50, // move trigger to center of element,
-        // duration: "100%",
+        duration: "100%",
       })
         // .setClassToggle(circle, "visible")
-        .setPin(ele)
-        .setTween(tl.play())
-        // .on("enter", function (e) {
-        //   circle.addClass("visible");
+        // .setPin(ele)
+        // .setTween(tl.play())
+        .on("enter", function (e) {
+          if(isAnimate) {
+            moving = true;
+            
+          }
+          tl.play();
+        })
+        .on("leave", function () {
+          moving = false;
+        })
+        .on("update", function (event) {
+          let scrolled = event.scrollPos - event.startPos;
+          if (scrolled > 0 && moving) {
+            TweenLite.to(ele, 3, { y: scrolled, delay: 0.1, ease: Sine.easeInOut })
+          }
 
-        // })
-        // .on("leave", function () {
-        //   circle.removeClass("visible");
-        // })
+        })
         // .addIndicators()
         .addTo(controller);
 
