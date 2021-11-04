@@ -9,13 +9,13 @@
     .row {
       margin-right: -8px;
       margin-left: -8px;
-      
+
       div[class*="col"] {
         padding-right: 8px;
         padding-left: 8px;
       }
     }
-    
+
     .news-item {
       padding: 10px;
     }
@@ -79,21 +79,21 @@
       width: 250vw;
     }
 
-    .ele-1 {
-      right: 0;
-      top: 0;
-      transform: translate(22.5%, -50%);
-    }
-    
     .btn-group {
       .btn-white {
         &:hover {
           background-color: $green-dark;
-          color: $white!important;
+          color: $white !important;
         }
-      } 
+      }
     }
   } // section.news-list
+
+  .ele-1 {
+    right: 0;
+    top: 0;
+    transform: translate(22.5%, -50%);
+  }
 
   @media all and (max-width: 1440px) {
     .recent {
@@ -108,10 +108,8 @@
     .news-item {
       margin-bottom: 20px;
     }
-    .news-list {
-      .ele-1 {
-        width: 20%;
-      }
+    .ele-1 {
+      width: 20%;
     }
   }
 
