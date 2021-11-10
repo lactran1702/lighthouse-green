@@ -130,12 +130,15 @@
             </div>
           </div>
         </div> <!-- .container-->
-
       </div>
       <!--.d-flex.justify-content-between-->
     </section><!-- .recent -->
 
     <section class="section-news news-list curve-top curve-bottom bg-white animate">
+      @@include("partials/decor-el.html", {
+      "className": "ele-1",
+      "main": 1
+      })
       <div class="container">
         <h2 class="display-1 text-center serif text-primary title stagger-up">Tin tức và sự kiện</h2>
         <div class="news-wrap text-center">
@@ -214,10 +217,6 @@
         </div>
       </div>
       <!--.container-->
-      @@include("partials/decor-el.html", {
-      "className": "ele-1",
-      "main": 1
-      })
     </section> <!-- / .news-list -->
 
   </main> <!-- / .main-content -->

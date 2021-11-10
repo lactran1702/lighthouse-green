@@ -14,19 +14,21 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>COMMUNITY</title>
+  <title>PRODUCT</title>
 </head>
 
 <body>
@@ -180,8 +182,8 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block " id="topnavProduct" role="button"
-              aria-haspopup="true" aria-expanded="false">
+            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block active"
+              id="topnavProduct" role="button" aria-haspopup="true" aria-expanded="false">
               Sản phẩm
             </a>
             <span class="d-inline-block d-lg-none dropdown-toggle" data-toggle="dropdown" role="button"
@@ -227,9 +229,14 @@
               Tin tức sự kiện
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="cong-dong.html" role="button">
+          <!-- <li class="nav-item">
+            <a class="nav-link " href="cong-dong.html" role="button">
               Cộng đồng
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " href="mon-ngon-moi-ngay.html" role="button">
+              Món ngon mỗi ngày
             </a>
           </li>
           <li class="nav-item">
@@ -288,128 +295,85 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pCommunity">
+  <main class="main-content pProduct cuvre-sections cuvre-sections-last bg-green-dark ">
 
     <section class="banner banner-full animate">
-      <div class="h-100 d-flex flex-column justify-content-center ">
-        <div class="img-cover w-100 h-100 position-absolute d-none d-md-block"
-          style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
-        <div class="img-cover w-100 h-100 position-absolute d-block d-md-none"
-          style="background-image: url('assets/img/demo/homepage-banner-1-mb.jpg');"></div>
+      <div class="h-100 d-flex align-items-center">
+        <div class="img-cover w-100 h-100 position-absolute"
+          style="background-image: url('assets/img/demo/homepage-product-1.jpg');"></div>
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-6">
-              <h2 class="display-3 text-white slide-title stagger-up">
-                Phát triển bền vững từ cộng đồng Lighthouse Green
-              </h2>
+          <div class="row justify-content-end">
+            <div class="col-xs-12 col-md-6 col-lg-5">
+
+              <span class="text-green-dark text-bold stagger-right">Sản phẩm đặc trưng</span>
+
+              <h2 class="display-2 text-primary serif stagger-right">Nấm mối đen</h2>
+              <p class="text-secondary stagger-right">
+                Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời từ
+                loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không nên ăn
+                những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
+              </p>
+              <a href="/san-pham-chi-tiet.html" class="btn btn-lg btn-primary rounded-pill font-weight-light stagger-up">
+                Xem chi tiết</a>
             </div>
           </div>
         </div>
       </div>
     </section><!-- .banner -->
 
-    <section class="cores curve-top ">
-      <div class="container">
-        <div class="row justify-content-between align-items-center core-row row--1 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold scroll-anim-right stagger-right"
-              data-trigger=".col-xs-12.col-md-6">Giá trị cốt
-              lõi</span>
-            <h2 class="display-2 serif text-primary scroll-anim-right stagger-right" data-trigger=".col-xs-12.col-md-6">
-              Trách nhiệm xã
-              hội</h2>
-            <h3 class="serif text-green-dark stagger-right">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-between align-items-center core-row row--2 animate">
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-left">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-left">Nhân văn
-              <br>
-              Môi trường
-            </h2>
-            <h3 class="serif text-green-dark stagger-left">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-5">
-            <div class="pin"></div>
-            <div class="decor-el ele circle-in d-inline-block ele-2">
-              <div class="wrap">
-                <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
-                  <canvas width="168" height="178" class="ratio-scale"></canvas>
-                </span>
-                
-                
-                <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu-2.png');">
-                  <canvas width="188" height="253" class="ratio-scale"></canvas>
-                </div>
-                
+    <section class="product-even vh-100 with-curve-fig animate">
+      <div class="curve-fig curve-fig-top curve-fig-bottom img-cover "
+        style="background-image: url('assets/img/demo/product-large-1.jpg');">
+      </div>
+      <div class="h-100 d-flex align-items-center">
+        <!-- <div class="img-cover w-100 h-100 position-absolute"
+                    style="background-image: url('assets/img/demo/homepage-product-1.jpg');">
+                </div> -->
+        <div class="container">
+          <div class="row justify-content-start align-items-center">
+            <div class="col-xs-12 col-md-6 col-lg-5">
+              <div class="copy text-left">
+                <h2 class="display-2 serif text-primary stagger-left">Nấm mối đen</h2>
+                <p class="text-white stagger-left">
+                  Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
+                  từ loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không
+                  nên ăn những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
+                </p>
+                <a href="/san-pham-chi-tiet.html" class="btn btn-lg btn-primary rounded-pill font-weight-light stagger-up">
+                  Xem chi tiết</a>
               </div>
             </div>
-            <div class="w-100 img-cover rounded-circle core-img stagger-right" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
           </div>
 
-        </div>
-
-        <div class="row justify-content-between align-items-center core-row row--3 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-right">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-right">Lợi nhuận - Phát triển</h2>
-            <h3 class="serif text-green-dark stagger-right">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
         </div>
       </div>
-      <!--.container-->
+    </section><!-- .intro-message -->
+
+    <section class="product-odd vh-100 animate">
+      <div class="h-100 d-flex align-items-center">
+        <div class="img-cover w-100 h-100 position-absolute"
+          style="background-image: url('assets/img/demo/homepage-product-1.jpg');">
+        </div>
+        <div class="container">
+          <div class="row justify-content-end align-items-center">
+            <div class="col-xs-12 col-md-6 col-lg-5">
+              <div class="copy text-left">
+                <h2 class="display-2 serif text-primary stagger-right">Nấm mối đen</h2>
+                <p class="text-secondary stagger-right">
+                  Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
+                  từ loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không
+                  nên ăn những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
+                </p>
+                <a href="/san-pham-chi-tiet.html" class="btn btn-lg btn-primary rounded-pill font-weight-light stagger-right">
+                  Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
       <div class="pin"></div>
-      <div class="decor-el ele circle-in d-inline-block ele-1 static">
+      <div class="decor-el ele circle-in d-inline-block ">
         <div class="wrap">
           <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
             <canvas width="168" height="178" class="ratio-scale"></canvas>
@@ -422,84 +386,79 @@
           
         </div>
       </div>
-    </section><!-- .cores -->
+    </section><!-- .product-odd -->
 
-    <section class="section-news news curve-top curve-bottom bg-white animate">
+    <section class="section-technology technology curve-top curve-bottom bg-white animate">
       <div class="container">
-        <h2 class="display-2 text-center serif text-primary title stagger-down">Tin tức và sự kiện</h2>
-        <div class="news-wrap text-center">
+        <div class="text-center title">
+          <span class="text-green-dark text-bold stagger-down">Thực phẩm hữu cơ</span>
+          <h2 class="display-2 serif text-primary title stagger-down">Công nghệ nuôi trồng sản xuất</h2>
+        </div>
+        <div class="technology-wrap text-center">
           <div class="row list">
 
             <div class="col-12 col-md-6 col-lg-4 stagger-up">
-              <div class="news-item">
-                  <div class="news-fig">
-                      <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-1.jpg');">
-                          <canvas width="380" height="254" class="ratio-scale"></canvas>
-                      </div>
+              <div class="technology-item">
+                <div class="technology-fig">
+                  <div class="img img-cover border-radius-cross"
+                    style="background-image: url('assets/img/demo/tech-item-1.jpg');">
+                    <canvas width="360" height="360" class="ratio-scale"></canvas>
                   </div>
-                  <div class="news-content text-left">
-                      <h4 class="text-uppercase text-secondary news-type">THÔNG CÁO BÁO CHÍ</h4>
-                      <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.</h3>
-                      <h4 class="news-calendar text-secondary font-weight-light">
-                          <span class="icon mr-2">
-                              <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
-                          </span>
-                          <span>29 June 2021</span>
-                      </h4>
-                  </div>
-                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+                <div class="technology-content text-left">
+                  <h3 class="technology-title text-green-dark">
+                    In Pond Raceway System
+                    <br />
+                    (IPRS) Project
+                  </h3>
+                </div>
+                <a href="#" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
 
             <div class="col-12 col-md-6 col-lg-4 stagger-up">
-              <div class="news-item">
-                  <div class="news-fig">
-                      <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-2.jpg');">
-                          <canvas width="380" height="254" class="ratio-scale"></canvas>
-                      </div>
+              <div class="technology-item">
+                <div class="technology-fig">
+                  <div class="img img-cover border-radius-cross"
+                    style="background-image: url('assets/img/demo/tech-item-1.jpg');">
+                    <canvas width="360" height="360" class="ratio-scale"></canvas>
                   </div>
-                  <div class="news-content text-left">
-                      <h4 class="text-uppercase text-secondary news-type">TIN TỨC</h4>
-                      <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.</h3>
-                      <h4 class="news-calendar text-secondary font-weight-light">
-                          <span class="icon mr-2">
-                              <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
-                          </span>
-                          <span>29 June 2021</span>
-                      </h4>
-                  </div>
-                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+                <div class="technology-content text-left">
+                  <h3 class="technology-title text-green-dark">
+                    In Pond Raceway System
+                    <br />
+                    (IPRS) Project
+                  </h3>
+                </div>
+                <a href="#" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
 
             <div class="col-12 col-md-6 col-lg-4 stagger-up">
-              <div class="news-item">
-                  <div class="news-fig">
-                      <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-3.jpg');">
-                          <canvas width="380" height="254" class="ratio-scale"></canvas>
-                      </div>
+              <div class="technology-item">
+                <div class="technology-fig">
+                  <div class="img img-cover border-radius-cross"
+                    style="background-image: url('assets/img/demo/tech-item-1.jpg');">
+                    <canvas width="360" height="360" class="ratio-scale"></canvas>
                   </div>
-                  <div class="news-content text-left">
-                      <h4 class="text-uppercase text-secondary news-type">SỰ KIỆN TRUYỀN THÔNG</h4>
-                      <h3 class="text-green-dark news-title ">NEWS</h3>
-                      <h4 class="news-calendar text-secondary font-weight-light">
-                          <span class="icon mr-2">
-                              <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
-                          </span>
-                          <span>29 June 2021</span>
-                      </h4>
-                  </div>
-                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+                <div class="technology-content text-left">
+                  <h3 class="technology-title text-green-dark">
+                    In Pond Raceway System
+                    <br />
+                    (IPRS) Project
+                  </h3>
+                </div>
+                <a href="#" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
           </div>
-          <button class="btn btn-primary rounded-pill stagger-up">
-            Xem thêm bài tin
-          </button>
         </div>
       </div>
+    </section><!-- .technology -->
 
-    </section> <!-- / .news -->
+
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -593,19 +552,19 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -617,7 +576,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 
 </body>
 

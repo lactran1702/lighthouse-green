@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 
 <head>
   <meta charset="utf-8" />
@@ -14,22 +14,24 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>COMMUNITY</title>
+  <title>HOMEPAGE</title>
 </head>
 
-<body>
+<body class="pHome">
 
   <!-- MODALS
     ================================================== -->
@@ -150,7 +152,6 @@
 
   <!-- NAVIGATION
     ================================================== -->
-
   
   <nav
     class="navbar sticky-top navbar-expand-xl navbar-light"
@@ -174,14 +175,14 @@
         <!-- Navigation -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link "
+            <a class="nav-link active"
               href="index.html" id="topnavDashboards" role="button">
               Trang chủ
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block " id="topnavProduct" role="button"
-              aria-haspopup="true" aria-expanded="false">
+            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block "
+              id="topnavProduct" role="button" aria-haspopup="true" aria-expanded="false">
               Sản phẩm
             </a>
             <span class="d-inline-block d-lg-none dropdown-toggle" data-toggle="dropdown" role="button"
@@ -227,9 +228,14 @@
               Tin tức sự kiện
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="cong-dong.html" role="button">
+          <!-- <li class="nav-item">
+            <a class="nav-link " href="cong-dong.html" role="button">
               Cộng đồng
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " href="mon-ngon-moi-ngay.html" role="button">
+              Món ngon mỗi ngày
             </a>
           </li>
           <li class="nav-item">
@@ -285,131 +291,161 @@
     </div> <!-- / .container -->
   </nav>
   
-
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pCommunity">
+  <main class="main-content cuvre-sections cuvre-sections-last pHome bg-green-dark">
+    <section class="banner banner-full">
+      <div class="banner-slider keen-slider-wrap position-relative h-100">
+        <div id="bannerSlider" class="keen-slider h-100" data-ride="carousel">
 
-    <section class="banner banner-full animate">
-      <div class="h-100 d-flex flex-column justify-content-center ">
-        <div class="img-cover w-100 h-100 position-absolute d-none d-md-block"
-          style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
-        <div class="img-cover w-100 h-100 position-absolute d-block d-md-none"
-          style="background-image: url('assets/img/demo/homepage-banner-1-mb.jpg');"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-6">
-              <h2 class="display-3 text-white slide-title stagger-up">
-                Phát triển bền vững từ cộng đồng Lighthouse Green
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- .banner -->
+          <div class="keen-slider__slide active">
+            <div class="h-100 slide-content d-flex align-items-end align-items-lg-center">
+              <div class="img-cover cover w-100 h-100 position-absolute"
+                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
 
-    <section class="cores curve-top ">
-      <div class="container">
-        <div class="row justify-content-between align-items-center core-row row--1 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold scroll-anim-right stagger-right"
-              data-trigger=".col-xs-12.col-md-6">Giá trị cốt
-              lõi</span>
-            <h2 class="display-2 serif text-primary scroll-anim-right stagger-right" data-trigger=".col-xs-12.col-md-6">
-              Trách nhiệm xã
-              hội</h2>
-            <h3 class="serif text-green-dark stagger-right">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-between align-items-center core-row row--2 animate">
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-left">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-left">Nhân văn
-              <br>
-              Môi trường
-            </h2>
-            <h3 class="serif text-green-dark stagger-left">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-5">
-            <div class="pin"></div>
-            <div class="decor-el ele circle-in d-inline-block ele-2">
-              <div class="wrap">
-                <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
-                  <canvas width="168" height="178" class="ratio-scale"></canvas>
-                </span>
-                
-                
-                <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu-2.png');">
-                  <canvas width="188" height="253" class="ratio-scale"></canvas>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-lg-5">
+                    <h2 class="display-md-3 display-4 text-white slide-title">Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipiscing
+                      elit.</h2>
+                    <a href="/san-pham-chi-tiet.html" class="btn btn-lg btn-white rounded-pill text-primary font-weight-light">
+                      Xem chi tiết</a>
+                  </div>
                 </div>
-                
               </div>
             </div>
-            <div class="w-100 img-cover rounded-circle core-img stagger-right" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
+          </div>
+          <div class="keen-slider__slide">
+            <div class="h-100 slide-content d-flex align-items-end align-items-lg-center">
+              <div class="img-cover cover w-100 h-100 position-absolute"
+                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-lg-5">
+                    <h2 class="display-md-3 display-4 text-white slide-title">Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipiscing
+                      elit.</h2>
+                    <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
+                      Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="keen-slider__slide">
+            <div class="h-100 slide-content d-flex align-items-end align-items-lg-center">
+              <div class="img-cover cover w-100 h-100 position-absolute"
+                style="background-image: url('assets/img/demo/homepage-banner-1.jpg');">
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-lg-5">
+                    <h2 class="display-md-3 display-4 text-white slide-title">Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipiscing
+                      elit.</h2>
+                    <a href="/" class="btn btn-white rounded-pill text-primary font-weight-light">
+                      Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
 
-        <div class="row justify-content-between align-items-center core-row row--3 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
+        <a class="carousel-control-prev keen-slider-prev" href="#carouselExampleIndicators" role="button"
+          data-slide="prev">
+          <button class="btn btn-success btn-rounded-circle">
+            <span class="carousel-control-prev-icon icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+        </a>
+        <a class="carousel-control-next keen-slider-next" href="#carouselExampleIndicators" role="button"
+          data-slide="next">
+          <button class="btn btn-success btn-rounded-circle">
+            <span class="carousel-control-next-icon icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </a>
+        <ol class="keen-slider-dots carousel-indicators container mx-auto">
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="dot active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="dot "></li> -->
+        </ol>
+
+      </div>
+
+    </section> <!-- / .banner.banner-full -->
+
+    <section class="intro-brand vh-auto curve-top curve-bottom animate">
+      <div class="h-auto h-lg-100 d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xs-12 col-lg-6">
+              <div class="copy">
+                <span class="text-green-dark text-bold  stagger-left">Giới thiệu về</span>
+                <h2 class="display-2 serif text-primary  stagger-left">Lighthouse Green</h2>
+                <h3 class="head serif  stagger-left">Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo
+                  hóa.</h3>
+                <p class="stagger-up">
+                  Nấm là một loại thực vật đặc biệt, chúng chứa rất nhiều vitamin và khoáng chất có
+                  lợi cho cơ thể. Các enzyme quan trọng như protein, các chất hữu cơ và khoáng chất
+                  đồng, kẽm, kali là nguồn duy nhất cho vitamin D
+                  Nấm vô cùng hữu ích trong việc kiểm soát cân nặng. Vì thành phần nấm rất bổ dưỡng
+                  nhưng lại “keo kiệt calo”. Nấm đặc biệt hiệu quả khi thay thế cho thịt đỏ, bởi chúng
+                  làm tăng sản xuất năng lượng trong tế bào. Nấm trở thành một món ăn phổ biến cho các
+                  vận động viên mong muốn gia tăng sức mạnh và độ bền.
+                </p>
+                <a href="/ve-chung-toi.html" class="btn btn-lg btn-primary rounded-pill stagger-up">
+                  Về chúng tôi</a>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-lg-5">
+              <div class="rounded-top-image img-cover w-100 stagger-right"
+                style="background-image: url('assets/img/demo/factory.jpg');">
+                <!-- <img class="w-100" src="assets/img/demo/factory.jpg" alt="img"> -->
+                <canvas width="496" height="547" class="ratio-scale"></canvas>
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-right">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-right">Lợi nhuận - Phát triển</h2>
-            <h3 class="serif text-green-dark stagger-right">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
+
         </div>
       </div>
-      <!--.container-->
+    </section> <!-- / .intro-brand -->
+
+    <section class="intro-product vh-100 animate">
+      <div class="h-100 d-flex align-items-center">
+        <div class="img-cover w-100 h-100 position-absolute"
+          style="background-image: url('assets/img/demo/homepage-product-1.jpg');">
+        </div>
+        <div class="container">
+          <div class="row justify-content-end align-items-center">
+            <div class="col-xs-12 col-md-5">
+              <div class="copy text-left">
+                <span class="d-block text-center stagger-right">Sản phẩm đặc trưng</span>
+                <h2 class="display-2 text-center serif text-primary stagger-right">Nấm mối đen</h2>
+
+                <p class="text-left stagger-right">
+                  Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
+                  từ loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không
+                  nên ăn những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
+                </p>
+                <a href="/san-pham-chi-tiet.html" class="btn btn-lg btn-white text-primary rounded-pill stagger-up">
+                  Nấm mối đen</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
       <div class="pin"></div>
-      <div class="decor-el ele circle-in d-inline-block ele-1 static">
+      <div class="decor-el ele circle-in d-inline-block right">
         <div class="wrap">
           <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
             <canvas width="168" height="178" class="ratio-scale"></canvas>
@@ -422,15 +458,16 @@
           
         </div>
       </div>
-    </section><!-- .cores -->
+    </section> <!-- / .intro-product -->
 
-    <section class="section-news news curve-top curve-bottom bg-white animate">
+    <section class="section-news news curve-top curve-bottom animate">
+
       <div class="container">
-        <h2 class="display-2 text-center serif text-primary title stagger-down">Tin tức và sự kiện</h2>
+        <h2 class="display-2 text-center serif text-primary title">Tin tức và sự kiện</h2>
         <div class="news-wrap text-center">
           <div class="row list">
 
-            <div class="col-12 col-md-6 col-lg-4 stagger-up">
+            <div class="col-xs-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
                       <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-1.jpg');">
@@ -449,9 +486,9 @@
                   </div>
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
-            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
+            </div> <!-- / .col-xs-12.col-md-6 col-lg-4 -->
 
-            <div class="col-12 col-md-6 col-lg-4 stagger-up">
+            <div class="col-xs-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
                       <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-2.jpg');">
@@ -470,9 +507,9 @@
                   </div>
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
-            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
+            </div> <!-- / .col-xs-12.col-md-6 col-lg-4 -->
 
-            <div class="col-12 col-md-6 col-lg-4 stagger-up">
+            <div class="col-xs-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
                       <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-3.jpg');">
@@ -481,7 +518,7 @@
                   </div>
                   <div class="news-content text-left">
                       <h4 class="text-uppercase text-secondary news-type">SỰ KIỆN TRUYỀN THÔNG</h4>
-                      <h3 class="text-green-dark news-title ">NEWS</h3>
+                      <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.</h3>
                       <h4 class="news-calendar text-secondary font-weight-light">
                           <span class="icon mr-2">
                               <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
@@ -491,16 +528,16 @@
                   </div>
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
-            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
+            </div> <!-- / .col-xs-12.col-md-6 col-lg-4 -->
           </div>
-          <button class="btn btn-primary rounded-pill stagger-up">
+          <a href="tin-tuc-su-kien.html" class="btn btn-lg btn-primary rounded-pill stagger-down">
             Xem thêm bài tin
-          </button>
+          </a>
         </div>
       </div>
 
     </section> <!-- / .news -->
-  </main> <!-- / .main-content -->
+  </main>
 
   <!-- FOOTER
     ================================================== -->
@@ -590,22 +627,23 @@
       </div>
 
   </footer>
+
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -617,7 +655,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 
 </body>
 

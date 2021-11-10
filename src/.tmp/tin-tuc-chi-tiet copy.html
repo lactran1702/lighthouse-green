@@ -14,19 +14,21 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>COMMUNITY</title>
+  <title>NEWS_DETAIL</title>
 </head>
 
 <body>
@@ -180,8 +182,8 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block " id="topnavProduct" role="button"
-              aria-haspopup="true" aria-expanded="false">
+            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block "
+              id="topnavProduct" role="button" aria-haspopup="true" aria-expanded="false">
               Sản phẩm
             </a>
             <span class="d-inline-block d-lg-none dropdown-toggle" data-toggle="dropdown" role="button"
@@ -227,9 +229,14 @@
               Tin tức sự kiện
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="cong-dong.html" role="button">
+          <!-- <li class="nav-item">
+            <a class="nav-link " href="cong-dong.html" role="button">
               Cộng đồng
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " href="mon-ngon-moi-ngay.html" role="button">
+              Món ngon mỗi ngày
             </a>
           </li>
           <li class="nav-item">
@@ -288,218 +295,231 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pCommunity">
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pNewsDetail ">
 
-    <section class="banner banner-full animate">
-      <div class="h-100 d-flex flex-column justify-content-center ">
-        <div class="img-cover w-100 h-100 position-absolute d-none d-md-block"
-          style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
-        <div class="img-cover w-100 h-100 position-absolute d-block d-md-none"
-          style="background-image: url('assets/img/demo/homepage-banner-1-mb.jpg');"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-6">
-              <h2 class="display-3 text-white slide-title stagger-up">
-                Phát triển bền vững từ cộng đồng Lighthouse Green
+    <section class="detail bg-white curve-bottom animate">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 detail-wrap">
+
+            <h4 class="text-uppercase text-secondary news-type stagger-left">TIN TỨC</h4>
+            <h3 class="text-primary news-title stagger-left">CHAIRWOMAN OF VINH HOAN CORP NAMED AMONG FORBES ASIA’S TOP
+              25 POWER BUSINESSWOMEN IN 2020 </h3>
+            <h4 class="news-calendar text-secondary font-weight-light .stagger-up">
+              <span class="icon mr-2">
+                <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
+              </span>
+              <span>29 June 2021</span>
+            </h4>
+
+            <div class="content text-secondary .stagger-up">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi massa, ac
+                hendrerit metus fringilla sit amet. Sed ac est porttitor, molestie velit eu, egestas
+                quam
+              </p>
+              <img src="assets/img/demo/news-fig-1.jpg" class="border-radius-xl w-100" alt="">
+              <p>
+                Ut ut erat rutrum, facilisis augue vel, blandit urna. Quisque sodales interdum lacus, at
+                mollis lorem sagittis vitae. Nulla facilisi. Cras posuere, augue eget feugiat tempor,
+                elit lectus consectetur elit, ac pellentesque lorem lectus vitae felis. Nunc vitae felis
+                nec dui consequat dapibus. Proin odio urna, lacinia at nisl et, vulputate commodo
+                ligula. Donec venenatis velit a nunc condimentum lobortis. Proin dictum, eros eu dictum
+                suscipit, neque tellus accumsan ex, eget scelerisque nibh risus et nibh. Maecenas quis
+                tellus et nulla aliquam lobortis. Donec pretium, odio at posuere rutrum, eros enim
+                venenatis lectus, eu tristique arcu sapien at mi. Etiam vel hendrerit nunc, sit amet
+                fringilla orci. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                fames ac turpis egestas. Integer bibendum finibus venenatis.
+              </p>
+              <p>
+                Integer semper commodo risus, ac porta tortor rhoncus eget. Vestibulum ac pellentesque
+                metus. Nulla maximus vehicula felis, eget faucibus diam finibus non. Aenean feugiat
+                purus in sem commodo, id bibendum ex pulvinar. Sed faucibus maximus magna sed placerat.
+                Proin vestibulum tristique augue ut vehicula. Nunc placerat aliquam sem, at aliquet ante
+                eleifend non. Vivamus rhoncus orci id sagittis vehicula. Pellentesque nisl ex,
+                vestibulum ac nulla vel, placerat porta est. Phasellus vel luctus diam. Fusce accumsan
+                iaculis pulvinar. Fusce blandit venenatis felis sed laoreet. Suspendisse vulputate ante
+                eu laoreet venenatis. Aliquam semper purus sit amet leo faucibus euismod.
+
+              </p>
+              <p>
+                Mauris id turpis id sapien euismod luctus a vitae ipsum. Etiam hendrerit feugiat tortor
+                convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce
+                fermentum, ex egestas tristique luctus, est tellus rutrum dui, vel euismod neque mauris
+                eget odio. Ut ut mauris a purus cursus molestie. Aenean vitae tellus semper, pretium ex
+                vitae, dignissim tortor. Integer arcu nisl, congue non nunc ac, bibendum lobortis eros.
+                Cras magna ligula, viverra ut pellentesque ac, tempus sit amet augue. Fusce porta
+                ultricies felis, at ullamcorper nunc ultricies eget. Vivamus commodo urna diam, vel
+                commodo est sollicitudin a. Donec sed odio eu nibh molestie iaculis. Mauris convallis
+                fringilla lectus ac scelerisque. Nullam sit amet laoreet magna, eleifend eleifend augue.
+              </p>
+            </div>
+
+            <div class="social">
+              <div class="text-bold text-uppercase">
+                <h4 class="d-inline-block mr-3">CHIA SẺ</h4>
+                <a href="http://google.com.vn" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-white d-inline-block btn-social facebook">
+                  <span class="icon middle-icon ">
+                    <img src="./assets/img/icons/facebook-white.svg" alt="..." class="">
+                  </span>
+                </a>
+                <a href="http://google.com.vn" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-white d-inline-block btn-social google">
+                  <span class="icon middle-icon ">
+                    <img src="./assets/img/icons/google.svg" alt="..." class="">
+                  </span>
+                </a>
+                <a href="http://google.com.vn" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-white d-inline-block btn-social linkedin">
+                  <span class="icon middle-icon ">
+                    <img src="./assets/img/icons/linkedin-white.svg" alt="..." class="">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="hot-news bg-green-dark border-radius-cross text-white">
+              <h2 class="display-1 serif text-capitalize stagger-right">
+                hot news
               </h2>
+              <div class="hot-news-item position-relative stagger-up">
+
+                <a href="tin-tuc-chi-tiet.html" class="">
+                  <img src="assets/img/demo/hot-news-fig-1.jpg" class="border-radius-xl w-100" alt="">
+                  <h3 class="title">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </h3>
+                </a>
+              </div>
+              <ul class="list">
+                <li class="hot-news-item stagger-up">
+                  <a href="tin-tuc-chi-tiet.html" class="">
+                    <h3 class="title d-inline">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </h3>
+                  </a>
+                </li>
+                <li class="hot-news-item stagger-up">
+                  <a href="tin-tuc-chi-tiet.html" class="">
+                    <h3 class="title d-inline">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </h3>
+                  </a>
+                </li>
+                <li class="hot-news-item stagger-up">
+                  <a href="tin-tuc-chi-tiet.html" class="">
+                    <h3 class="title d-inline">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </h3>
+                  </a>
+                </li>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- .banner -->
 
-    <section class="cores curve-top ">
-      <div class="container">
-        <div class="row justify-content-between align-items-center core-row row--1 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold scroll-anim-right stagger-right"
-              data-trigger=".col-xs-12.col-md-6">Giá trị cốt
-              lõi</span>
-            <h2 class="display-2 serif text-primary scroll-anim-right stagger-right" data-trigger=".col-xs-12.col-md-6">
-              Trách nhiệm xã
-              hội</h2>
-            <h3 class="serif text-green-dark stagger-right">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
-        </div>
+        <div class="row related-list">
+          <div class="col-12 col-lg-8">
+            <h4 class=" text-primary">Related news</h4>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
 
-        <div class="row justify-content-between align-items-center core-row row--2 animate">
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-left">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-left">Nhân văn
-              <br>
-              Môi trường
-            </h2>
-            <h3 class="serif text-green-dark stagger-left">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-5">
-            <div class="pin"></div>
-            <div class="decor-el ele circle-in d-inline-block ele-2">
-              <div class="wrap">
-                <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
-                  <canvas width="168" height="178" class="ratio-scale"></canvas>
-                </span>
-                
-                
-                <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu-2.png');">
-                  <canvas width="188" height="253" class="ratio-scale"></canvas>
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
                 </div>
-                
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
+
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
+
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="recent-news news-hor news-item">
+                  <div class="news-fig">
+                    <div class="img img-cover border-radius-xl"
+                      style="background-image: url('assets/img/demo/news-fig-2.jpg');">
+
+                      <canvas width="127" height="90" class="ratio-scale"></canvas>
+                    </div>
+                  </div>
+                  <div class="news-content text-left">
+                    <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.
+                      Donec
+                      tempor
+                      consectetur ex, a volutpat sapien. </h3>
+                  </div>
+                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
+                </div>
               </div>
             </div>
-            <div class="w-100 img-cover rounded-circle core-img stagger-right" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
-          </div>
 
-        </div>
-
-        <div class="row justify-content-between align-items-center core-row row--3 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
+            <div class="news-pagination site-pagination">
+              <button class="btn btn-light disabled btn-rounded-circle">
+                <span class="carousel-control-prev-icon icon-prev icon middle-icon icon-sm mt-n1 "
+                  aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <div class="btn-group" role="group" aria-label="">
+                <button type="button" class="btn border-0 btn-white text-primary text-bold  ">1</button>
+                <button type="button" class="btn border-0 btn-white text-secondary  ">2</button>
+                <button type="button" class="btn border-0 btn-white text-secondary  ">3</button>
+                <button type="button" class="btn border-0 btn-white text-secondary  ">4</button>
+              </div>
+              <button class="btn btn-success btn-rounded-circle">
+                <span class="carousel-control-next-icon icon-next icon middle-icon icon-sm mt-n1 "
+                  aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-right">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-right">Lợi nhuận - Phát triển</h2>
-            <h3 class="serif text-green-dark stagger-right">
-              Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
-            </h3>
-            <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
-            </p>
           </div>
         </div>
       </div>
-      <!--.container-->
-      <div class="pin"></div>
-      <div class="decor-el ele circle-in d-inline-block ele-1 static">
-        <div class="wrap">
-          <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
-            <canvas width="168" height="178" class="ratio-scale"></canvas>
-          </span>
-          
-          <div class="main img-contain" style="background-image: url('assets/img/elements/mushroom-illu.png');">
-            <canvas width="232" height="253" class="ratio-scale"></canvas>
-          </div>
-          
-          
-        </div>
-      </div>
-    </section><!-- .cores -->
-
-    <section class="section-news news curve-top curve-bottom bg-white animate">
-      <div class="container">
-        <h2 class="display-2 text-center serif text-primary title stagger-down">Tin tức và sự kiện</h2>
-        <div class="news-wrap text-center">
-          <div class="row list">
-
-            <div class="col-12 col-md-6 col-lg-4 stagger-up">
-              <div class="news-item">
-                  <div class="news-fig">
-                      <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-1.jpg');">
-                          <canvas width="380" height="254" class="ratio-scale"></canvas>
-                      </div>
-                  </div>
-                  <div class="news-content text-left">
-                      <h4 class="text-uppercase text-secondary news-type">THÔNG CÁO BÁO CHÍ</h4>
-                      <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.</h3>
-                      <h4 class="news-calendar text-secondary font-weight-light">
-                          <span class="icon mr-2">
-                              <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
-                          </span>
-                          <span>29 June 2021</span>
-                      </h4>
-                  </div>
-                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
-              </div>
-            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-
-            <div class="col-12 col-md-6 col-lg-4 stagger-up">
-              <div class="news-item">
-                  <div class="news-fig">
-                      <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-2.jpg');">
-                          <canvas width="380" height="254" class="ratio-scale"></canvas>
-                      </div>
-                  </div>
-                  <div class="news-content text-left">
-                      <h4 class="text-uppercase text-secondary news-type">TIN TỨC</h4>
-                      <h3 class="text-green-dark news-title ">Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.</h3>
-                      <h4 class="news-calendar text-secondary font-weight-light">
-                          <span class="icon mr-2">
-                              <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
-                          </span>
-                          <span>29 June 2021</span>
-                      </h4>
-                  </div>
-                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
-              </div>
-            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-
-            <div class="col-12 col-md-6 col-lg-4 stagger-up">
-              <div class="news-item">
-                  <div class="news-fig">
-                      <div class="img img-cover border-radius-xl" style="background-image: url('assets/img/demo/news-item-3.jpg');">
-                          <canvas width="380" height="254" class="ratio-scale"></canvas>
-                      </div>
-                  </div>
-                  <div class="news-content text-left">
-                      <h4 class="text-uppercase text-secondary news-type">SỰ KIỆN TRUYỀN THÔNG</h4>
-                      <h3 class="text-green-dark news-title ">NEWS</h3>
-                      <h4 class="news-calendar text-secondary font-weight-light">
-                          <span class="icon mr-2">
-                              <img src="./assets/img/icons/calendar.svg" alt="..." class="d-block">
-                          </span>
-                          <span>29 June 2021</span>
-                      </h4>
-                  </div>
-                  <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
-              </div>
-            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-          </div>
-          <button class="btn btn-primary rounded-pill stagger-up">
-            Xem thêm bài tin
-          </button>
-        </div>
-      </div>
-
-    </section> <!-- / .news -->
+    </section>
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -593,19 +613,19 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -617,7 +637,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 
 </body>
 

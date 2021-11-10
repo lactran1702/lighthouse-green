@@ -14,19 +14,21 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css" />
 
   <!-- Map -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
 
   <!-- Theme CSS -->
   
-  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <!-- build:css ./assets/css/theme.min.css -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" />
+  <!-- endbuild -->
    
   <!-- Title -->
-  <title>COMMUNITY</title>
+  <title>PRODUCT_DETAIL</title>
 </head>
 
 <body>
@@ -180,8 +182,8 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block " id="topnavProduct" role="button"
-              aria-haspopup="true" aria-expanded="false">
+            <a href="san-pham.html" class="nav-link d-inline-block d-lg-block active"
+              id="topnavProduct" role="button" aria-haspopup="true" aria-expanded="false">
               Sản phẩm
             </a>
             <span class="d-inline-block d-lg-none dropdown-toggle" data-toggle="dropdown" role="button"
@@ -227,9 +229,14 @@
               Tin tức sự kiện
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="cong-dong.html" role="button">
+          <!-- <li class="nav-item">
+            <a class="nav-link " href="cong-dong.html" role="button">
               Cộng đồng
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " href="mon-ngon-moi-ngay.html" role="button">
+              Món ngon mỗi ngày
             </a>
           </li>
           <li class="nav-item">
@@ -288,81 +295,181 @@
 
   <!-- MAIN CONTENT
     ================================================== -->
-  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pCommunity">
+  <main class="main-content pProductDetail cuvre-sections cuvre-sections-last bg-green-dark">
 
     <section class="banner banner-full animate">
-      <div class="h-100 d-flex flex-column justify-content-center ">
-        <div class="img-cover w-100 h-100 position-absolute d-none d-md-block"
-          style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
-        <div class="img-cover w-100 h-100 position-absolute d-block d-md-none"
-          style="background-image: url('assets/img/demo/homepage-banner-1-mb.jpg');"></div>
+      <div class="h-100 d-flex align-items-center">
+        <div class="img-cover w-100 h-100 position-absolute"
+          style="background-image: url('assets/img/demo/homepage-product-1.jpg');"></div>
+
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-6">
-              <h2 class="display-3 text-white slide-title stagger-up">
-                Phát triển bền vững từ cộng đồng Lighthouse Green
-              </h2>
+          <div class="row justify-content-end">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="copy">
+                <span class="text-green-dark text-bold ml-md-5 stagger-down">Sản phẩm đặc trưng</span>
+                <h2 class="display-2 text-primary serif stagger-down">Nấm mối đen</h2>
+                <p class="text-secondary stagger-right">
+                  Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời
+                  từ
+                  loại thực
+                  vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không nên ăn những
+                  loại
+                  nấm
+                  không rõ nguồn gốc sẽ có hại cho cơ thể.
+                </p>
+              </div>
+              <form action="" class="buy-form">
+                <div class="group-norm">
+                  <h4 class="text-secondary text-bold stagger-right">Khối Lượng</h4>
+                  <div class="input-group btn-group-toggle stagger-right">
+                    <input type="radio" class="btn-check" name="inputweight" id="option1" autocomplete="off" checked="">
+                    <label class="btn btn-white rounded-pill font-weight-light" for="option1">
+                      1kg
+                    </label>
+
+                    <input type="radio" class="btn-check" name="inputweight" id="option2" autocomplete="off">
+                    <label class="btn btn-white rounded-pill font-weight-light" for="option2">
+                      2kg
+                    </label>
+
+                    <input type="radio" class="btn-check" name="inputweight" id="option3" autocomplete="off">
+                    <label class="btn btn-white rounded-pill font-weight-light" for="option3">
+                      4kg
+                    </label>
+                  </div>
+                  <span class="text-secondary stagger-right"><i>*Khi lựa chọn cân nặng giá của sản phẩm sẽ thay
+                      đổi</i>
+                  </span>
+                </div>
+
+                <div class="group-large">
+                  <h4 class="text-secondary text-bold stagger-up">Số lượng</h4>
+                  <div class="row justify-content-between ">
+                    <div class="col-12 col-md-4 stagger-up">
+                      <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                        <span class="" data-toggle="count">-</span>
+                        <input name="countNumber" type="number" class="form-control input" value="1">
+                        <span class="" data-toggle="count">+</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-8 stagger-up">
+                      <button class="btn btn-primary rounded-pill w-100"> <span>250.000 VND</span>
+                        |
+                        Mua ngay</button>
+                    </div>
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section> <!-- / .banner.banner-full -->
+
+    <section class="intro vh-100 curve-bottom bg-white animate">
+
+      <div class="h-100 d-flex align-items-center">
+        <div class="curve-fig curve-fig-bottom-right img-cover stagger-right"
+          style="background-image: url('assets/img/demo/product-intro-1.jpg');">
+        </div>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-12 col-lg-5">
+              <span class="text-green-dark text-bold ml-md-5 stagger-left">Đặc điểm nổi bật</span>
+              <h2 class="display-2 text-primary serif stagger-left">Nấm mối đen</h2>
+              <p class="text-secondary mb-0 stagger-left">
+                Nấm là một loại thực vật đặc biệt, chúng chứa rất nhiều vitamin và khoáng chất có lợi
+                cho cơ thể. Các enzyme quan trọng như protein, các chất hữu cơ và khoáng chất đồng, kẽm,
+                kali là nguồn duy nhất cho vitamin D
+              </p>
+              <p class="text-secondary mb-0 stagger-left">
+
+                Nấm vô cùng hữu ích trong việc kiểm soát cân nặng. Vì thành phần nấm rất bổ dưỡng nhưng
+                lại “keo kiệt calo”. Nấm đặc biệt hiệu quả khi thay thế cho thịt đỏ, bởi chúng làm tăng
+                sản xuất năng lượng trong tế bào. Nấm trở thành một món ăn phổ biến cho các vận động
+                viên mong muốn gia tăng sức mạnh và độ bền.
+              </p>
+              <p class="text-secondary mb-0 stagger-left">
+
+                Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp,
+                giảm tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm
+                giúp giảm thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận
+                và gan của bạn. Giúp giảm thiểu nỗi đau của bệnh viêm khớp, thậm chí hỗ trợ cho cả những
+                bệnh nhân bị hen suyễn.
+              </p>
+              <p class="text-secondary mb-0 stagger-left">
+                Chúng ta hãy sử dụng nấm thật “chọn lọc” để có thể hấp thu những tinh túy tuyệt vời từ
+                loại thực vật quý hiếm này nhé. Lựa chọn những cơ sở sản xuất nấm uy tín, không nên ăn
+                những loại nấm không rõ nguồn gốc sẽ có hại cho cơ thể.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- .banner -->
 
-    <section class="cores curve-top ">
+    </section> <!-- / .intro -->
+
+    <section class="cores">
       <div class="container">
+        <div class="text-center">
+          <span class="text-green-dark text-bold stagger-down">Đặc điểm nổi bật</span>
+          <h2 class="cores-title display-1 text-primary serif stagger-down">Nấm mối đen</h2>
+        </div>
         <div class="row justify-content-between align-items-center core-row row--1 animate">
           <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
+            <div class="w-100 img-contain core-img stagger-left"
+              style="background-image: url('assets/img/demo/product-fact-1.png');">
               <canvas width="1" height="1" class="ratio-scale"></canvas>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold scroll-anim-right stagger-right"
-              data-trigger=".col-xs-12.col-md-6">Giá trị cốt
-              lõi</span>
-            <h2 class="display-2 serif text-primary scroll-anim-right stagger-right" data-trigger=".col-xs-12.col-md-6">
-              Trách nhiệm xã
-              hội</h2>
-            <h3 class="serif text-green-dark stagger-right">
+            <h3 class="core-title serif text-green-dark stagger-right">
               Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
             </h3>
             <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
+              Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp, giảm
+              tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm giúp giảm
+              thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận và gan của
+              bạn. Giúp giảm thiểu nỗi đau của bệnh viêm khớp, thậm chí hỗ trợ cho cả những bệnh nhân bị
+              hen suyễn.
             </p>
           </div>
         </div>
 
         <div class="row justify-content-between align-items-center core-row row--2 animate">
           <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-left">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-left">Nhân văn
-              <br>
-              Môi trường
-            </h2>
-            <h3 class="serif text-green-dark stagger-left">
+            <h3 class="core-title serif text-green-dark stagger-left">
               Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
             </h3>
             <p class="text-left stagger-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
+              Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp, giảm
+              tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm giúp giảm
+              thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận và gan của
+              bạn. Giúp giảm thiểu nỗi đau của bệnh viêm khớp, thậm chí hỗ trợ cho cả những bệnh nhân bị
+              hen suyễn.
             </p>
           </div>
           <div class="col-xs-12 col-md-5">
+            <div class="w-100 img-contain core-img stagger-right"
+              style="background-image: url('assets/img/demo/product-fact-2.png');">
+              <canvas width="1" height="1" class="ratio-scale"></canvas>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-between align-items-center core-row row--3 animate">
+          <div class="col-xs-12 col-md-5">
+            <div class="w-100 img-contain core-img stagger-left"
+              style="background-image: url('assets/img/demo/product-fact-3.png');">
+              <canvas width="1" height="1" class="ratio-scale"></canvas>
+            </div>
             <div class="pin"></div>
-            <div class="decor-el ele circle-in d-inline-block ele-2">
+            <div class="decor-el ele circle-in d-inline-block ele-2 left">
               <div class="wrap">
                 <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
                   <canvas width="168" height="178" class="ratio-scale"></canvas>
@@ -375,41 +482,23 @@
                 
               </div>
             </div>
-            <div class="w-100 img-cover rounded-circle core-img stagger-right" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row justify-content-between align-items-center core-row row--3 animate">
-          <div class="col-xs-12 col-md-5">
-            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('');">
-              <canvas width="1" height="1" class="ratio-scale"></canvas>
-            </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <span class="text-green-dark text-bold stagger-right">Giá trị cốt lõi</span>
-            <h2 class="display-2 serif text-primary stagger-right">Lợi nhuận - Phát triển</h2>
-            <h3 class="serif text-green-dark stagger-right">
+            <h3 class="core-title serif text-green-dark stagger-right">
               Nấm là báu vật tìm ẩn của thiên nhiên, là món quà quý giá của tạo hóa.
             </h3>
             <p class="text-left stagger-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
-              lorem
-              vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
-              fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
-              quam
-              purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
-              in
-              aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
+              Nấm giúp trái tim khỏe mạnh vì cải thiện lưu lượng máu, giảm cholesterol và huyết áp, giảm
+              tiểu cầu vón cục và chống lại mảng bám tích tụ trong động mạch. Cũng vì thế mà nấm giúp giảm
+              thiểu đột quỵ hiệu quả. Các chất chống viêm mạnh có trong nấm giúp bảo vệ thận và gan của
+              bạn. Giúp giảm thiểu nỗi đau của bệnh viêm khớp, thậm chí hỗ trợ cho cả những bệnh nhân bị
+              hen suyễn.
             </p>
           </div>
         </div>
-      </div>
-      <!--.container-->
+      </div> <!-- .container-->
       <div class="pin"></div>
-      <div class="decor-el ele circle-in d-inline-block ele-1 static">
+      <div class="decor-el ele circle-in d-inline-block right">
         <div class="wrap">
           <span class="circle img-contain" style="background-image: url('assets/img/elements/el-watercolor.png');">
             <canvas width="168" height="178" class="ratio-scale"></canvas>
@@ -422,14 +511,13 @@
           
         </div>
       </div>
-    </section><!-- .cores -->
+    </section> <!-- .cores -->
 
     <section class="section-news news curve-top curve-bottom bg-white animate">
       <div class="container">
         <h2 class="display-2 text-center serif text-primary title stagger-down">Tin tức và sự kiện</h2>
         <div class="news-wrap text-center">
           <div class="row list">
-
             <div class="col-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
@@ -450,7 +538,6 @@
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-
             <div class="col-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
@@ -471,7 +558,6 @@
                   <a href="tin-tuc-chi-tiet.html" class="overlay"></a>
               </div>
             </div> <!-- / .col-12.col-md-6 col-lg-4 -->
-
             <div class="col-12 col-md-6 col-lg-4 stagger-up">
               <div class="news-item">
                   <div class="news-fig">
@@ -499,7 +585,92 @@
         </div>
       </div>
 
-    </section> <!-- / .news -->
+    </section> <!-- .section-news -->
+
+
+    <div class="quick-buy">
+      <div class="container">
+        <form action="" class="buy-form">
+
+          <ul class="list">
+
+            <li class="item">
+              <span class="text-green-dark text-bold name">Nấm mối đen</span>
+              <h4 class="text-secondary text-uppercase text-bold mb-0">Khối Lượng</h4>
+              <div class="input-group btn-group-toggle group-norm">
+                <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op1" autocomplete="off"
+                  checked="">
+                <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op1">
+                  1kg
+                </label>
+
+                <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op2" autocomplete="off">
+                <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op2">
+                  2kg
+                </label>
+
+                <input type="radio" class="btn-check" name="quickbuyweight1" id="quickbuyweight1op3" autocomplete="off">
+                <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight1op3">
+                  4kg
+                </label>
+              </div>
+
+              <h4 class="text-secondary text-uppercase text-bold mb-0">Số lượng</h4>
+              <div class="group-large">
+                <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                  <span class="" data-toggle="count">-</span>
+                  <input name="quickbuyamount" type="number" class="form-control input" value="1">
+                  <span class="" data-toggle="count">+</span>
+                </div>
+              </div>
+              <div class="group-large">
+                <button class="btn btn-primary rounded-pill"> <span>250.000 VND</span> | Mua ngay</button>
+              </div>
+
+            </li>
+
+            <!-- multiple items ? -->
+            <!-- <li class="item">
+                        <span class="text-green-dark text-bold name">Nấm mối trắng</span>
+                        <h4 class="text-secondary text-uppercase text-bold mb-0">Khối Lượng</h4>
+                        <div class="input-group btn-group-toggle group-norm">
+                            <input type="radio" class="btn-check" name="quickbuyweight2" id="quickbuyweight2op1" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight2op1">
+                                1kg
+                            </label>
+
+                            <input type="radio" class="btn-check" name="quickbuyweight2" id="quickbuyweight2op2" autocomplete="off">
+                            <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight2op2">
+                                2kg
+                            </label>
+
+                            <input type="radio" class="btn-check" name="quickbuyweight2" id="quickbuyweight2op3" autocomplete="off">
+                            <label class="btn btn-white rounded-pill font-weight-light" for="quickbuyweight2op3">
+                                4kg
+                            </label>
+                        </div>
+
+                        <h4 class="text-secondary text-uppercase text-bold mb-0">Số lượng</h4>
+                        <div class="group-large">
+                            <div class="btn input-group btn-group-toggle count-input rounded-pill bg-white">
+                                <span class="" data-toggle="count">-</span>
+                                <input name="quickbuyamount2" type="number" class="form-control input" value="1">
+                                <span class="" data-toggle="count">+</span>
+                            </div>
+                        </div>
+                        <div class="group-large">
+                            <button class="btn btn-primary rounded-pill"> <span>250.000 VND</span> | Mua ngay</button>
+                        </div>
+
+                    </li> -->
+
+
+          </ul>
+
+        </form>
+      </div>
+    </div>
   </main> <!-- / .main-content -->
 
   <!-- FOOTER
@@ -593,19 +764,19 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="./assets/libs/keen-slider/keen-slider.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="./node_modules/keen-slider/keen-slider.js"></script>
   <script src="./assets/libs/chart.js/Chart.extension.js"></script>
   <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script>
   <script src="./assets/libs/tweenmax/TweenMax.min.js"></script>
@@ -617,7 +788,34 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <!-- <script src="./assets/js/dashkit.js"></script> -->
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <script src="./assets/js/checklist.js"></script>
+  <script src="./assets/js/wizard.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/decor.js"></script>
+  <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/GLoader.js"></script>
+  <script src="./assets/js/pages/pMain.js"></script>
+  <!-- endbuild -->
 
 </body>
 

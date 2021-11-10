@@ -30,6 +30,8 @@ var decorFn = (function () {
       var main = $(ele).find(".main");
       var wrap = $(ele).find(".wrap");
       var closestPin = $(ele).prev(".pin")[0];
+      var parentDuration = $(ele).parent().innerHeight();
+      
       let tl = new TimelineLite({ paused: true });
       let moving = false;
       const isAnimate = !$(ele).hasClass("static");
@@ -52,7 +54,8 @@ var decorFn = (function () {
       var scene = new ScrollMagic.Scene({
         triggerElement: closestPin,
         // offset: 50, // move trigger to center of element,
-        duration: "100%",
+        // duration: "200px",
+        duration: parseInt(parentDuration) / 2,
       })
         // .setClassToggle(circle, "visible")
         // .setPin(ele)
@@ -70,7 +73,7 @@ var decorFn = (function () {
         .on("update", function (event) {
           let scrolled = event.scrollPos - event.startPos;
           if (scrolled > 0 && moving) {
-            TweenLite.to(ele, 3, { y: scrolled, delay: 0.1, ease: Sine.easeInOut })
+            TweenLite.to(ele, 3, { y: scrolled, delay: 0.08, ease: Sine.easeInOut })
           }
 
         })
