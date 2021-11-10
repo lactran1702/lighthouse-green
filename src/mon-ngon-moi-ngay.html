@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "RECIPE"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- NAVIGATION
+    ================================================== -->
+
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "page",
+  "subcategory": "",
+  "page": "cong-dong.html"
+  })
+  }
+
+  <!-- MAIN CONTENT
+    ================================================== -->
+  <main class="main-content cuvre-sections cuvre-sections-last bg-green-dark pRecipe">
+
+    <section class="banner banner-full animate">
+      <div class="h-100 d-flex flex-column justify-content-center ">
+        <div class="img-cover w-100 h-100 position-absolute d-none d-md-block"
+          style="background-image: url('assets/img/demo/homepage-banner-1.jpg');"></div>
+        <div class="img-cover w-100 h-100 position-absolute d-block d-md-none"
+          style="background-image: url('assets/img/demo/homepage-banner-1-mb.jpg');"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6">
+              <h2 class="display-3 text-white slide-title stagger-up">
+                Phát triển bền vững từ cộng đồng Lighthouse Green
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- .banner -->
+
+    <section class="cores curve-top ">
+      <div class="container">
+        <div class="row justify-content-between align-items-center core-row row--1 animate">
+          <div class="col-xs-12 col-md-5">
+            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('assets/img/demo/recipe-1.jpg');">
+              <canvas width="1" height="1" class="ratio-scale"></canvas>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <span class="text-green-dark text-bold scroll-anim-right stagger-right"
+              data-trigger=".col-xs-12.col-md-6">Món ngon mỗi ngày</span>
+            <h2 class="display-2 serif text-primary scroll-anim-right stagger-right" data-trigger=".col-xs-12.col-md-6">
+              Súp Linh Chi thơm ngon,
+              bổ dưỡng khó cưỡng
+            </h2>
+            <p class="text-left stagger-right">
+              Nấm Linh Chi tuy rất bổ dưỡng nhưng có vị đắng hơi khó uống, ngoài cách hãm trà lấy nước hôm nay xưởng nấm
+              sẽ hướng dẫn các bạn chế biến món canh súp Linh Chi rất đơn giản lại thơm ngon, cả nhà đều dùng được.
+            </p>
+          </div>
+          <a href="cong-thuc.html" class="overlay"></a>
+        </div>
+
+        <div class="row justify-content-between align-items-center core-row row--2 animate">
+          <div class="col-xs-12 col-md-6">
+            <span class="text-green-dark text-bold stagger-left">Món ngon mỗi ngày</span>
+            <h2 class="display-2 serif text-primary stagger-left">Nấm nướng giấy bạc siêu bổ dưỡng, ăn chỉ có nghiện.
+            </h2>
+            <p class="text-left stagger-left">
+              Đậu hủ là món ngon rất dân giã nhưng lại vô cùng thơm ngon, bỗ dưỡng. Khi chúng ta kết hợp cùng với nấm sẽ
+              cho ra món ăn thanh đạm. Các bạn có thể sử dụng nấm mối, nấm đùi gà, nấm đông cô hoặc nấm mỡ. Đậu hủ non
+              mềm tan trong miệng, nấm nấu vừa chín tới giữ được độ ngọt, giòn, hương vị thanh đạm cả người già lẫn trẻ
+              nhỏ đều thích, chay mặn đều dùng được. Món này mang đi đãi tiệc bảo đảm các thực khách ăn chỉ có mê.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-5">
+            @@include("partials/decor-el.html", {
+            "className": "ele-2",
+            "main": 2
+            })
+            <div class="w-100 img-cover rounded-circle core-img stagger-right" style="background-image: url('assets/img/demo/recipe-2.jpg');">
+              <canvas width="1" height="1" class="ratio-scale"></canvas>
+            </div>
+          </div>
+          <a href="cong-thuc.html" class="overlay"></a>
+        </div>
+
+        <div class="row justify-content-between align-items-center core-row row--3 animate">
+          <div class="col-xs-12 col-md-5">
+            <div class="w-100 img-cover rounded-circle core-img stagger-left" style="background-image: url('assets/img/demo/recipe-1.jpg');">
+              <canvas width="1" height="1" class="ratio-scale"></canvas>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <span class="text-green-dark text-bold stagger-right">Món ngon mỗi ngày</span>
+            <h2 class="display-2 serif text-primary stagger-right">Súp Linh Chi thơm ngon,
+              bổ dưỡng khó cưỡng
+            </h2>
+            <p class="text-left stagger-right">Nấm Linh Chi tuy rất bổ dưỡng nhưng có vị đắng hơi khó uống, ngoài cách
+              hãm trà lấy nước hôm nay xưởng nấm sẽ hướng dẫn các bạn chế biến món canh súp Linh Chi rất đơn giản lại
+              thơm ngon, cả nhà đều dùng được.
+            </p>
+          </div>
+          <a href="cong-thuc.html" class="overlay"></a>
+        </div>
+      </div>
+      <!--.container-->
+      @@include("partials/decor-el.html", {
+      "className": "ele-1 static",
+      "main": 1
+      })
+    </section><!-- .cores -->
+
+    <section class="section-news news curve-top curve-bottom bg-white animate">
+      <div class="container">
+        <h2 class="display-2 text-center serif text-primary title stagger-down">Tin tức và sự kiện</h2>
+        <div class="news-wrap text-center">
+          <div class="row list">
+
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
+              @@include("partials/news/news-item.html", {
+              "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
+              "category": "THÔNG CÁO BÁO CHÍ",
+              "date": "29 June 2021",
+              "figure": "assets/img/demo/news-item-1.jpg",
+              })
+            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
+
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
+              @@include("partials/news/news-item.html", {
+              "title": "Mauris volutpat commodo eros vel dictum.Donec tempor consectetur ex, a volutpat sapien.",
+              "category": "TIN TỨC",
+              "date": "29 June 2021",
+              "figure": "assets/img/demo/news-item-2.jpg",
+              })
+            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
+
+            <div class="col-12 col-md-6 col-lg-4 stagger-up">
+              @@include("partials/news/news-item.html", {
+              "title": "NEWS",
+              "category": "SỰ KIỆN TRUYỀN THÔNG",
+              "date": "29 June 2021",
+              "figure": "assets/img/demo/news-item-3.jpg",
+              })
+            </div> <!-- / .col-12.col-md-6 col-lg-4 -->
+          </div>
+          <button class="btn btn-primary rounded-pill btn-lg stagger-up">
+            Xem thêm bài tin
+          </button>
+        </div>
+      </div>
+
+    </section> <!-- / .news -->
+  </main> <!-- / .main-content -->
+
+  <!-- FOOTER
+    ================================================== -->
+  @@include("partials/footer.html", {
+  "category": "page",
+  "subcategory": "",
+  "page": "cong-dong.html"
+  })
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>

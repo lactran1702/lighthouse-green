@@ -12843,6 +12843,150 @@ footer {
       transform: translate(22.5%, 0%);
       width: 30%; } }
 
+.pRecipe .banner .container {
+  flex: 0 0 40%;
+  padding-top: 10%; }
+
+.pRecipe .cores {
+  background-color: #F4FAEA;
+  padding-top: 3.8rem;
+  padding-bottom: 5rem; }
+  .pRecipe .cores::before {
+    background-color: #F4FAEA;
+    width: 250vw; }
+  .pRecipe .cores .core-row {
+    margin-bottom: 3.8rem; }
+  .pRecipe .cores .core-img {
+    background-color: #c4c4c4;
+    max-width: 90%; }
+  .pRecipe .cores .row--2 .core-img {
+    position: relative;
+    z-index: 2; }
+  .pRecipe .cores .ele-1 {
+    bottom: 0;
+    right: 0;
+    transform: translate(22.5%, 50%); }
+  .pRecipe .cores .ele-2 {
+    top: 0;
+    right: 0;
+    transform: translate(45%, -20%); }
+
+@media all and (max-width: 768px) {
+  .pRecipe .banner .container {
+    padding-top: 40%; }
+  .pRecipe .banner .img-cover {
+    background-position: center right 35%; }
+  .pRecipe .banner .slide-title {
+    font-size: 1.5rem;
+    line-height: 1.4; }
+  .pRecipe .cores::before {
+    width: 250vw; } }
+
+@media all and (max-width: 767px) {
+  .pRecipe .cores {
+    background-color: #F4FAEA !important;
+    padding-bottom: 3rem; }
+    .pRecipe .cores::before {
+      width: 3000px;
+      background-color: #F4FAEA; }
+    .pRecipe .cores .core-row .col-md-5 {
+      order: 1; }
+    .pRecipe .cores .core-img {
+      margin-top: 1.875rem;
+      max-width: 100%; }
+    .pRecipe .cores .ele-1 {
+      transform: translate(22.5%, 0%);
+      width: 30%; } }
+
+.pRecipeDetail .detail {
+  padding-top: 4rem;
+  padding-bottom: 4.5rem; }
+  .pRecipeDetail .detail::after {
+    width: 300vw; }
+
+.pRecipeDetail .detail-wrap .news-type {
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+
+.pRecipeDetail .detail-wrap .news-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem; }
+
+.pRecipeDetail .content {
+  margin-bottom: 1.9rem; }
+  .pRecipeDetail .content img {
+    margin-bottom: 1.25rem; }
+
+.pRecipeDetail .social {
+  margin-bottom: 2.5rem; }
+
+.pRecipeDetail .hot-news {
+  padding: 2.5rem 2.8rem; }
+  .pRecipeDetail .hot-news .list {
+    padding-left: 0;
+    list-style-position: inside; }
+    .pRecipeDetail .hot-news .list .hot-news-item {
+      border-top: 1px solid #F4FAEA;
+      padding-top: 10px; }
+  .pRecipeDetail .hot-news .hot-news-item {
+    position: relative;
+    margin-bottom: 13px; }
+    .pRecipeDetail .hot-news .hot-news-item img {
+      margin-bottom: 14px; }
+    .pRecipeDetail .hot-news .hot-news-item a {
+      color: white;
+      top: 0; }
+      .pRecipeDetail .hot-news .hot-news-item a:hover {
+        color: #93CD2A; }
+
+.pRecipeDetail .btn-social {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 30px;
+  padding: 0.17rem 0;
+  margin: 0 7.5px; }
+  .pRecipeDetail .btn-social.facebook {
+    background-color: #415a93; }
+  .pRecipeDetail .btn-social.google {
+    background-color: #cf2d48; }
+  .pRecipeDetail .btn-social.linkedin {
+    background-color: #2d95cf; }
+
+.pRecipeDetail .related-list {
+  margin-right: -8px;
+  margin-left: -8px; }
+  .pRecipeDetail .related-list div[class*="col"] {
+    padding-right: 8px;
+    padding-left: 8px; }
+  .pRecipeDetail .related-list hr {
+    margin-top: 0.7rem;
+    margin-bottom: 1.6rem; }
+  .pRecipeDetail .related-list .news-hor {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-bottom: 2.1rem; }
+  .pRecipeDetail .related-list .news-fig {
+    display: inline-block;
+    flex: 0 0 32%;
+    margin-right: 1.25rem; }
+  .pRecipeDetail .related-list .news-content {
+    display: inline-block;
+    max-height: 100%;
+    overflow-y: hidden; }
+
+@media all and (max-width: 768px) {
+  .pRecipeDetail .hot-news {
+    margin-bottom: 2.5rem; }
+  .pRecipeDetail .site-pagination {
+    display: flex; } }
+
+@media all and (max-width: 767px) {
+  .pRecipeDetail .detail:after {
+    width: 3000px; } }
+
 .pNews .recent {
   background-color: #F4FAEA;
   padding-top: 2.5rem;
