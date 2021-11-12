@@ -31,8 +31,9 @@ var pMain = (function () {
         // }
         console.info("page script loading status: ", script);
       });
+      
     }
-
+    document.body.classList.add("loaded");
   }
   //
   // Event
