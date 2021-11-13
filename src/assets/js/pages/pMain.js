@@ -5,7 +5,7 @@ var pMain = (function () {
   // Variables
   //
   //
-  const path_resource = "assets/";
+  // const path_resource = "assets/";
   // Functions
   //
   function init() {
