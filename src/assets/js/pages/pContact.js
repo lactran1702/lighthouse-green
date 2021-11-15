@@ -15,9 +15,14 @@ var pContact = (function () {
   var locationMap;
   var locations = document.getElementsByClassName("location-results")[0];
   // Icon: 
-  // if (typeof path_resource == "undefined") path_resource = "";
+  let _path = "";
+  if (typeof path_resource == "undefined") {
+    _path = "assets/";
+  } else {
+    _path = path_resource;
+  }
   var locIcon = L.icon({
-    iconUrl: "assets/img/icons/lighthouse-pin.svg",
+    iconUrl: _path + "img/icons/lighthouse-pin.svg",
     iconSize: [56, 76],
     popupAnchor: [0, -19],         // The coordinates of the point from which popups will "open", relative to the icon anchor.
   });
