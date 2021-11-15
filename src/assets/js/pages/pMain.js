@@ -8,6 +8,13 @@ var pMain = (function () {
   // const path_resource = "assets/";
   // Functions
   //
+  let _path = "";
+  if (typeof path_resource == "undefined") {
+    _path = "assets/";
+  } else {
+    _path = path_resource;
+  }
+
   function init() {
 
     console.log('<pMain> => INIT!');
@@ -25,13 +32,13 @@ var pMain = (function () {
       //return;
     }
     if (pageID) {
-      GLoader.loadScript(path_resource + "js/pages/" + pageID + ".js", function (script) {
+      GLoader.loadScript(_path + "js/pages/" + pageID + ".js", function (script) {
         // if (GLOBAL[pageID] && typeof GLOBAL[pageID].init != "undefined") {
         //   GLOBAL[pageID].init();
         // }
         console.info("page script loading status: ", script);
       });
-      
+
     }
     document.body.classList.add("loaded");
   }
