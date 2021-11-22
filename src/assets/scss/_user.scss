@@ -601,6 +601,13 @@ input[type="radio"]:checked {
     width: auto;
   }
 
+  @media all and (max-width: 1024px) {
+    .group-norm {
+      max-width: 170px;
+      white-space: nowrap;
+      overflow-y: hidden;
+    }
+  }
   @media all and (max-width: 767px) {
     display: none;
   }
@@ -613,6 +620,7 @@ input[type="radio"]:checked {
   .group-norm {
     label {
       margin-right: 0.9rem;
+      margin-bottom: 0.9rem;
     }
   }
   .group-large {
@@ -670,6 +678,8 @@ input[type="radio"]:checked {
   }
   .product-price {
     flex: 0 0 19%;
+    text-align: center !important; // late feedbacks
+    white-space: nowrap;
   }
   .count-input {
     width: auto;
@@ -710,6 +720,15 @@ input[type="radio"]:checked {
     .text-body {
       margin-bottom: 1rem;
     }
+  }
+
+  // seize down title font-size
+  .display-1 {
+    font-size: 2.8rem;
+    white-space: nowrap;
+  }
+  .display-2 {
+    font-size: 2.6rem;
   }
 }
 // MODALS
@@ -787,6 +806,16 @@ input[type="radio"]:checked {
   .curve-fig-bottom-right,
   .curve-fig-bottom-left {
     width: 1740px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  // seize down title font-size
+  .display-1 {
+    font-size: 2rem;
+  }
+  .display-1 {
+    font-size: 1.6rem;
   }
 }
 

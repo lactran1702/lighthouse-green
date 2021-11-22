@@ -22,16 +22,36 @@ var decorFn = (function () {
   //
   // Functions
   //
+  function init() {
+
+    window.addEventListener("resize", resizeHandler);
+
+    resizeHandler();
+  }
+
+  function resizeHandler() {
+    
+    const _width = window.innerWidth;
+
+    console.log(`_width`, _width);
+    if (_width && _width >= 768) {
+      
+      initDecorElements();
+
+    }
+
+  }
 
   function initDecorElements() {
 
     [].forEach.call(decorElements, function (ele) {
+      
       var circle = $(ele).find(".circle");
       var main = $(ele).find(".main");
       var wrap = $(ele).find(".wrap");
       var closestPin = $(ele).prev(".pin")[0];
       var parentDuration = $(ele).parent().innerHeight();
-      
+
       let tl = new TimelineLite({ paused: true });
       let moving = false;
       const isAnimate = !$(ele).hasClass("static");
@@ -61,16 +81,19 @@ var decorFn = (function () {
         // .setPin(ele)
         // .setTween(tl.play())
         .on("enter", function (e) {
-          if(isAnimate) {
+          
+          if (isAnimate) {
             moving = true;
-            
+
           }
           tl.play();
         })
         .on("leave", function () {
+          
           moving = false;
         })
         .on("update", function (event) {
+          
           let scrolled = event.scrollPos - event.startPos;
           if (scrolled > 0 && moving) {
             TweenLite.to(ele, 3, { y: scrolled, delay: 0.08, ease: Sine.easeInOut })
@@ -88,7 +111,7 @@ var decorFn = (function () {
   // Event
   //
   // init scroll decor-el
-  initDecorElements();
+  init();
 
   //
   // Return
