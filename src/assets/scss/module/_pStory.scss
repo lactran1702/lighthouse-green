@@ -69,7 +69,7 @@
   @media all and (max-width: 768px) {
     .banner {
       > .d-flex {
-        justify-content: end !important;
+        justify-content: flex-end !important;
       }
       .container {
         flex: 0 0 30%;

@@ -44,26 +44,35 @@
     .banner {
       background-color: $white;
       .d-flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-between;
       }
       .img-cover {
         position: relative !important;
         height: 50% !important;
         background-size: 100% auto;
-        background-position: bottom right 45%;
+        background-position: top right 45%;
       }
       .container {
         padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
       }
     }
     .product-even {
+      background-color: $green-light-2;
+
       .d-flex {
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
       }
       .copy {
         margin-bottom: 2.4rem;
+      }
+      p.text-white {
+        color: $black !important;
+      }
+      .curve-fig {
+        background-position: top center;
       }
     }
     .product-odd {
@@ -71,7 +80,7 @@
 
       .d-flex {
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
       }
       .img-cover {
         position: relative !important;
@@ -89,6 +98,28 @@
     .section-technology {
       .technology-item {
         margin-bottom: 3rem;
+      }
+    }
+  }
+
+  @media all and (max-width: 320px) {
+    .banner {
+      height: auto !important;
+      .img-cover {
+        height: 30vh !important;
+      }
+    }
+    .product-even {
+      height: auto !important;
+
+      .curve-fig {
+        position: relative;
+        width: auto;
+        height: 30vh;
+        border-radius: 0;
+      }
+      .d-flex {
+        height: auto !important;
       }
     }
   }

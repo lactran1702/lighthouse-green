@@ -104,6 +104,14 @@
         margin-bottom: 2.3755rem;
       }
     }
+    .form-control {
+      &:first-child {
+        text-transform: uppercase;
+        &::placeholder {
+          text-transform: none;
+        }
+      }
+    }
   }
 
   .address-wrap {

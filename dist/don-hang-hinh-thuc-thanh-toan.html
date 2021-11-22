@@ -81,8 +81,8 @@
                   </button>
                 </div>
 
-                <div class="product-price text-right">
-                  <h4 class="text-uppercase text-secondary news-type">500.000đ</h4>
+                <div class="product-price text-center">
+                  <h4 class="text-uppercase text-secondary news-type">1.250.000đ</h4>
                 </div>
 
               </div> <!-- / .list-group-item -->
@@ -116,7 +116,7 @@
                   </button>
                 </div>
 
-                <div class="product-price text-right">
+                <div class="product-price text-center">
                   <h4 class="text-uppercase text-secondary news-type">500.000đ</h4>
                 </div>
 
@@ -147,6 +147,70 @@
 
   <!-- Modal: Kanban task -->
   
+
+  <!-- Modal: Terms of use -->
+  <div class="modal fade site-modal terms-of-use" id="modalTerms" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class="display-2 serif text-primary">
+            Điều khoản sử dụng
+          </h2>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
+            lorem
+            vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
+            fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
+            quam
+            purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
+            in
+            aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- Modal: Privacy Policy -->
+  <div class="modal fade site-modal privacy-policy" id="modalPolicy" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class="display-2 serif text-primary">
+            Chính sách bảo mật
+          </h2>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit dapibus, dapibus
+            lorem
+            vitae, mollis erat. Sed euismod commodo nulla vel hendrerit. Duis ac ullamcorper felis, non
+            fermentum turpis. Proin ante justo, volutpat sed rutrum in, ullamcorper eget felis. Morbi
+            quam
+            purus, faucibus eget nunc quis, pellentesque imperdiet sapien. Nam tristique sagittis justo,
+            in
+            aliquet mi fermentum vel. Mauris sem ipsum, convallis ut tristique eu, tristique non augue.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
 
   <!-- NAVIGATION
     ================================================== -->
@@ -485,7 +549,7 @@
   <footer class="main-footer">
     <div class="container">
       <div class="row justify-content-between row-1">
-        <div class="col-12 col-md-8 col-lg-10 mb-5 mb-lg-0">
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10 mb-5 mb-lg-0">
           <h4 class="text-green-light">Trụ sở chính</h4>
 
           <ul class="list-style-none list-info">
@@ -511,7 +575,7 @@
           </ul>
         </div>
 
-        <div class="col-12 col-md-4 col-lg-2 text-left text-lg-right">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-left text-lg-right">
           <h4 class="text-green-light">Theo dõi chúng tôi</h4>
 
           <div class="row social-links justify-content-start justify-content-lg-end">
@@ -553,14 +617,14 @@
 
       <hr>
       <div class="row justify-content-between smaller">
-        <div class="col-xs-12 col-lg-8">
+        <div class="col-xs-12 col-lg-7">
           <p class="copyright">© Copyright 2021 Lighthouse Green Corporation. All rights reserved.</p>
         </div>
 
-        <div class="col-xs-12 col-lg-4 text-left text-lg-right">
-          <a href="/">Điều khoản sử dụng </a>
+        <div class="col-xs-12 col-lg-5 text-left text-lg-right">
+          <a href="#modalTerms" data-toggle="modal" aria-haspopup="true" aria-expanded="false">Điều khoản sử dụng </a>
           <span> |</span>
-          <a href="/">Chính sách bảo mật</a>
+          <a href="#modalPolicy" data-toggle="modal" aria-haspopup="true" aria-expanded="false">Chính sách bảo mật</a>
         </div>
       </div>
     </div>
