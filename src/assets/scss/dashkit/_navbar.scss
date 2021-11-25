@@ -573,3 +573,11 @@
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .navbar {
+    .navbar-user {
+      margin-right: 1rem;
+    }
+  }
+}
