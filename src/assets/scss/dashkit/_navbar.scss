@@ -123,12 +123,15 @@
 }
 
 .navbar-user .badge-icon {
-  padding: 0.13em 0.3em;
   position: absolute;
   right: 0;
   top: 0;
   background-color: $green-dark;
   color: $white;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 0.3em;
 }
 
 // Navbar dropdowns

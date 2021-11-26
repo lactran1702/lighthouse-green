@@ -304,10 +304,12 @@
     }
     .shopping-bag-foot {
       width: 93%;
+      margin: 0 auto;
       .name {
         white-space: unset;
         width: 300%;
         text-align: center;
+        font-size: 0.9em;
       }
     }
   }
