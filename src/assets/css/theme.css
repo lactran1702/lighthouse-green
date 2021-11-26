@@ -9041,12 +9041,15 @@ a.text-white:hover, a.text-white:focus {
   line-height: 1.40625rem; }
 
 .navbar-user .badge-icon {
-  padding: 0.13em 0.3em;
   position: absolute;
   right: 0;
   top: 0;
   background-color: #006731;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 0.3em; }
 
 .navbar-nav .dropdown-menu {
   border: none; }
@@ -13402,7 +13405,7 @@ footer {
     white-space: unset !important; }
   .pLogin .button-group {
     margin-bottom: 0; }
-    .pLogin .button-group button {
+    .pLogin .button-group .btn {
       margin-bottom: 20px; }
   .pLogin .col-5 {
     flex: 0 0 50%;
@@ -13637,11 +13640,13 @@ footer {
   .pShoppingBag .shopping-bag .product-price {
     text-align: left !important; }
   .pShoppingBag .shopping-bag-foot {
-    width: 93%; }
+    width: 93%;
+    margin: 0 auto; }
     .pShoppingBag .shopping-bag-foot .name {
       white-space: unset;
       width: 300%;
-      text-align: center; } }
+      text-align: center;
+      font-size: 0.9em; } }
 
 .pAccount {
   position: relative; }
