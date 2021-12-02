@@ -36,8 +36,17 @@
     .button-group {
       margin-bottom: 0;
 
-      button {
+      .btn {
         margin-bottom: 20px;
+      }
+    }
+    .col-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      text-align: center;
+
+      .btn {
+        width: 100%;
       }
     }
   }

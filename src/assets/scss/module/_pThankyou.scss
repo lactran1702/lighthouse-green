@@ -46,4 +46,31 @@
     top: 0;
     transform: translate(22.5%, 19%);
   }
+
+  @media all and (max-width: 768px) {
+    .col-12.col-md-7 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .ele-1 {
+      max-width: 20%;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .border {
+      padding: 3.2rem 1rem;
+    }
+    .container {
+      .ele {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  @media all and (max-width: 320px) {
+    .border {
+      padding: 3.2rem 0;
+    }
+  }
 }
