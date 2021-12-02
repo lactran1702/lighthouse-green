@@ -599,6 +599,15 @@ input[type="radio"]:checked {
   }
   .input-group {
     width: auto;
+    
+    &:not(.count-input) {
+      max-width: 100%;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+  }
+  .group-large {
+    margin-right: 10px;
   }
 
   @media all and (max-width: 1024px) {
