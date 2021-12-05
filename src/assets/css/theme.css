@@ -12722,6 +12722,9 @@ footer {
   .pStory .intro-factory .size-high {
     font-size: 5rem;
     font-weight: 700; }
+  .pStory .intro-factory .copy {
+    position: relative;
+    z-index: 3; }
 
 .pStory .technology .title {
   margin-bottom: 2rem; }
@@ -12894,6 +12897,10 @@ footer {
 
 .pProductDetail + .main-footer {
   padding-bottom: 100px; }
+
+@media all and (max-width: 1366px) {
+  .pProductDetail .intro .img-cover {
+    background-size: auto 100%; } }
 
 @media all and (max-width: 768px) {
   .pProductDetail .banner .img-cover {
@@ -13242,11 +13249,15 @@ footer {
   .pNews .section-news:before, .pNews .section-news:after {
     width: 3000px; } }
 
+.pNewsDetail.main-content {
+  padding-bottom: 12%; }
+
 .pNewsDetail .detail {
   padding-top: 4rem;
-  padding-bottom: 4.5rem; }
+  padding-bottom: 0; }
   .pNewsDetail .detail::after {
-    width: 300vw; }
+    width: 300vw;
+    bottom: -3%; }
 
 .pNewsDetail .detail-wrap .news-type {
   font-size: 1rem;
@@ -13261,6 +13272,7 @@ footer {
   .pNewsDetail .content img {
     margin-bottom: 1.25rem;
     height: auto !important;
+    width: 100% !important;
     border-radius: 0.65rem !important; }
 
 .pNewsDetail .social {

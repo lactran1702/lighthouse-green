@@ -70,6 +70,14 @@
     // quick-buy
     padding-bottom: 100px;
   }
+  
+  @media all and (max-width: 1366px) {
+    .intro {
+      .img-cover {
+        background-size: auto 100%;
+      }
+    }
+  }
 
   @media all and (max-width: 768px) {
     .banner {
