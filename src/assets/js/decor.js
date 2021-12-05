@@ -74,8 +74,8 @@ var decorFn = (function () {
       var scene = new ScrollMagic.Scene({
         triggerElement: closestPin,
         // offset: 50, // move trigger to center of element,
-        // duration: "200px",
-        duration: parseInt(parentDuration) / 2,
+        duration: "200px",
+        // duration: parseInt(parentDuration) / 2,
       })
         // .setClassToggle(circle, "visible")
         // .setPin(ele)

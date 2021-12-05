@@ -43,6 +43,10 @@
       font-size: 5rem;
       font-weight: 700;
     }
+    .copy {
+      position: relative;
+      z-index: 3;
+    }
   } // secion.intro-factory
 
   .technology {

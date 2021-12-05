@@ -1,10 +1,15 @@
 .pNewsDetail {
+  &.main-content {
+    padding-bottom: 12%;
+  }
   .detail {
     padding-top: 4rem;
-    padding-bottom: 4.5rem;
+    // padding-bottom: 4.5rem;
+    padding-bottom: 0;
 
     &::after {
       width: 300vw;
+      bottom: -3%;
     }
   } // section.detail
 
