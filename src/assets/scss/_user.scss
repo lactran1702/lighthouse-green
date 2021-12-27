@@ -52,6 +52,10 @@ button {
 .keen-slider-prev,
 .keen-slider-next {
   opacity: 1;
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
   &.disabled {
     opacity: 0.2;
     cursor: not-allowed;
@@ -69,7 +73,12 @@ button {
     vertical-align: -2px;
   }
 }
-
+.keen-slider-prev {
+  left: 7.5%;
+}
+.keen-slider-next {
+  right: 7.5%;
+}
 .icon-prev {
   background-image: url("#{$path-to-img}/icons/prev.svg");
 }
